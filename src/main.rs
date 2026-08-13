@@ -13,15 +13,20 @@ use tabld::{
     rdfxml,
 };
 
+// CLI setup
 #[derive(Parser, Debug)]
 #[command(name = "manuscript_data", version, about, long_about = None)]
 struct Cli {
+    // Toggle ontology downloading on
     #[arg(short = 'd', long = "download")]
     download: bool,
+    // Don't download files that are already in cache/ or unparseable/
     #[arg(short = 'l', long = "lazy")]
     lazy: bool,
+    // Toggle ontology downloading on and alignment analysis off
     #[arg(short = 'o', long = "download-only")]
     download_only: bool,
+    // Attempt to download only this number of ontologies
     #[arg(short = 't', long = "test-length")]
     test_length: Option<u16>,
 }
@@ -183,7 +188,7 @@ fn download_obo_onts(
 }
 
 // Iterate over an ontology file, outputting a CSV line for each class in the ontology
-fn print_terms(
+fn check_class_alignment(
     ont_path: PathBuf,
     wtr: &mut Writer<File>,
     cob_subjects: &Vec<&Subject>,
@@ -271,6 +276,7 @@ fn print_terms(
     Ok(())
 }
 
+// Generate a table of classes and relevant alignment info
 fn generate_class_tsv(cob_path: &str, output_path: &str) {
     let rdfxml_input = std::fs::read_to_string(cob_path).expect("Read from file");
     let graph = rdfxml::read(&rdfxml_input).expect("Read from string");
@@ -306,7 +312,7 @@ fn generate_class_tsv(cob_path: &str, output_path: &str) {
         if e.as_os_str() == cob_path {
             continue;
         }
-        print_terms(e, &mut wtr, &cob_subjects).expect("couldn't print terms");
+        check_class_alignment(e, &mut wtr, &cob_subjects).expect("couldn't print terms");
     }
 }
 
