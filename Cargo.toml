@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+clap = { version = "4.6.6", features = ["derive"] }
+csv = "1.4.0"
+reqwest = { version = "0.13.4", features = ["blocking"] }
+serde_yaml = "0.9.34"
+tabld = { git = "https://github.com/jamesaoverton/tabld.rs", version = "0.1.0" }
