@@ -3,13 +3,13 @@ use csv::Writer;
 use reqwest::Error;
 use serde_yaml::{Value, from_str};
 use std::{
-    collections::BTreeMap,
+    collections::{BTreeMap, BTreeSet},
     fs::{self, File, remove_file},
     io::{self, copy},
     path::{Path, PathBuf},
 };
 use tabld::{
-    model::{CLASS, Graph, IndexedMemoryGraph, Subject},
+    model::{CLASS, Graph, IndexedMemoryGraph, ONTOLOGY, Subject},
     rdfxml,
 };
 
@@ -222,6 +222,7 @@ fn check_class_alignment(
         aligned_ns_class_count: 0,
         unaligned_roots: BTreeMap::new(),
     };
+    let mut preferred_roots: BTreeSet<String> = BTreeSet::new();
     let graph = rdfxml::read(&rdfxml_input).expect("Read from string");
     // todo: should move files to unparseable/ automatically when tabld cannot read them
     // but tabld currently panics when it can't read the rdfxml in a file
@@ -229,6 +230,24 @@ fn check_class_alignment(
     let graph: IndexedMemoryGraph = graph.into();
 
     for subject in graph.subjects() {
+        if let Some(ONTOLOGY) = subject.owl_type() {
+            if subject
+                .predicates()
+                .contains_key("http://purl.obolibrary.org/obo/IAO_0000700")
+            {
+                match subject
+                    .predicates()
+                    .get("http://purl.obolibrary.org/obo/IAO_0000700")
+                {
+                    Some(val) => {
+                        for obj in val {
+                            preferred_roots.insert(obj.object());
+                        }
+                    }
+                    None => (),
+                };
+            }
+        }
         let mut in_base = "";
         if !subject.owl_types().contains(CLASS) {
             continue;
@@ -330,10 +349,15 @@ fn check_class_alignment(
             (ontology.aligned_ns_class_count as f32 / ontology.ns_class_count as f32).to_string()
     }
     for root in ontology.unaligned_roots.keys() {
+        let mut is_preferred = "N";
+        if preferred_roots.contains(root) {
+            is_preferred = "Y";
+        }
         roots_wtr
             .write_record([
                 ont_string.clone(),
                 root.to_string(),
+                is_preferred.to_string(),
                 ontology.unaligned_roots.get(root).unwrap().to_string(),
             ])
             .unwrap();
@@ -410,7 +434,7 @@ fn generate_class_tsv(
         .from_path(roots_tsv_path)
         .unwrap();
     roots_wtr
-        .write_record(["Ontology", "Root", "Descendent Term Count"])
+        .write_record(["Ontology", "Root", "Is Preferred?", "Descendent Term Count"])
         .unwrap();
 
     let mut entries = fs::read_dir("cache/")
