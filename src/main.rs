@@ -143,20 +143,24 @@ fn download_obo_onts(
         let rdfxml_error_path = Path::new(&rdfxml_error_path);
         if lazy {
             if path.exists() || rdfxml_error_path.exists() {
+                let mut dl_status = "Cached";
+                if rdfxml_error_path.exists() {
+                    dl_status = "Cached (unparseable)"
+                }
                 eprintln!("Already downloaded {filename}");
                 downloads += 1;
                 wtr.write_record([
                     ont.get("id").unwrap(),
                     ont.get("purl").unwrap(),
                     ont.get("activity_status").unwrap(),
-                    "Downloaded",
+                    dl_status,
                 ])
                 .unwrap();
                 continue;
             }
         }
         let purl = String::from(ont.get("purl").unwrap());
-        let mut dl_status = "Not downloaded";
+        let mut dl_status = "Download not attempted";
         match ont.get("activity_status") {
             Some(val) => {
                 if val == "active" {
@@ -168,6 +172,7 @@ fn download_obo_onts(
                         }
                         Err(_) => {
                             eprintln!("Couldn't download {filename}");
+                            dl_status = "Download failed";
                             match remove_file(path) {
                                 Ok(_) => (),
                                 Err(_) => (),
@@ -248,7 +253,7 @@ fn check_class_alignment(
                 };
             }
         }
-        let mut in_base = "";
+        let mut in_base = "False";
         if !subject.owl_types().contains(CLASS) {
             continue;
         }
@@ -266,7 +271,7 @@ fn check_class_alignment(
             .to_lowercase()
             .contains(&ont_string.to_lowercase())
         {
-            in_base = "T";
+            in_base = "True";
             ontology.ns_class_count = ontology.ns_class_count + 1;
         }
         let mut term_ancestors = graph.ancestors(&subject.name());
@@ -349,9 +354,9 @@ fn check_class_alignment(
             (ontology.aligned_ns_class_count as f32 / ontology.ns_class_count as f32).to_string()
     }
     for root in ontology.unaligned_roots.keys() {
-        let mut is_preferred = "N";
+        let mut is_preferred = "No";
         if preferred_roots.contains(root) {
-            is_preferred = "Y";
+            is_preferred = "Yes";
         }
         roots_wtr
             .write_record([
@@ -399,13 +404,13 @@ fn generate_class_tsv(
         .unwrap();
     class_wtr
         .write_record([
-            "Term IRI",
-            "Term Label",
-            "Ancestor IRI",
-            "Ancestor Label",
-            "Source",
-            "In Base?",
-            "Namespace Root",
+            "Class IRI",
+            "Class Label",
+            "Lowest COB Ancestor IRI",
+            "Lowest COB Ancestor Label",
+            "Found In",
+            "In Namespace?",
+            "Highest In-Namespace Ancestor IRI",
         ])
         .unwrap();
 
@@ -417,13 +422,13 @@ fn generate_class_tsv(
     analysis_wtr
         .write_record([
             "Ontology",
-            "Total Terms",
-            "Terms in Namespace",
-            "Namespace Ratio",
-            "Total Aligned Terms",
-            "Total Term Alignment Ratio",
-            "Aligned Namespace Terms",
-            "Namespace Term Alignment Ratio",
+            "Total Classes",
+            "Classes in Namespace",
+            "Ratio of In- to Out-of-Namespace Classes",
+            "Total Aligned Classes",
+            "Ratio of Aligned Classes to All Classes",
+            "Aligned in-Namespace Classes",
+            "Ratio of Aligned in-Namespace Classes to All in-Namespace Classes",
             "Unaligned Roots",
         ])
         .unwrap();
@@ -434,7 +439,12 @@ fn generate_class_tsv(
         .from_path(roots_tsv_path)
         .unwrap();
     roots_wtr
-        .write_record(["Ontology", "Root", "Is Preferred?", "Descendent Term Count"])
+        .write_record([
+            "Ontology",
+            "Root IRI",
+            "Is Preferred Root?",
+            "Descendent Class Count",
+        ])
         .unwrap();
 
     let mut entries = fs::read_dir("cache/")
