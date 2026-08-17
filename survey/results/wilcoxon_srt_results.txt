@@ -1,5 +1,8 @@
 Results of Wilcoxon Signed Rank Test on the following:
 
+============================================================
+All participants
+============================================================
 Participant correct response rate, BFO vs COB questions:
 	Statistic: 25.0
 	P-value: 4.318087860637278e-10
@@ -9,3 +12,42 @@ Participant guess response rate, BFO vs COB questions:
 Participant incorrect response rate, BFO vs COB questions:
 	Statistic: 736.5
 	P-value: 0.778926458328812
+
+============================================================
+Biomedical scientists only
+============================================================
+Participant correct response rate, BFO vs COB questions:
+	Statistic: 0.0
+	P-value: 1.1920928955078125e-07
+Participant guess response rate, BFO vs COB questions:
+	Statistic: 0.0
+	P-value: 1.1920928955078125e-07
+Participant incorrect response rate, BFO vs COB questions:
+	Statistic: 138.0
+	P-value: 0.746925950050354
+
+============================================================
+Data scientists only
+============================================================
+Participant correct response rate, BFO vs COB questions:
+	Statistic: 3.0
+	P-value: 1.9073486328125e-05
+Participant guess response rate, BFO vs COB questions:
+	Statistic: 0.0
+	P-value: 3.814697265625e-06
+Participant incorrect response rate, BFO vs COB questions:
+	Statistic: 91.5
+	P-value: 0.8905677795410156
+
+============================================================
+Ontology developers only
+============================================================
+Participant correct response rate, BFO vs COB questions:
+	Statistic: 12.0
+	P-value: 0.130859375
+Participant guess response rate, BFO vs COB questions:
+	Statistic: 10.0
+	P-value: 0.1386406338132186
+Participant incorrect response rate, BFO vs COB questions:
+	Statistic: 22.0
+	P-value: 0.625

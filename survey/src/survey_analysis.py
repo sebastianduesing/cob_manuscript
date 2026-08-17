@@ -328,14 +328,18 @@ def wsrt(data, dir):
     output_path = os.path.join(dir, "wilcoxon_srt_results.txt")
     file = open(output_path, "w")
     file.write("Results of Wilcoxon Signed Rank Test on the following:\n")
-    for res in ["correct", "guess", "incorrect"]:
-        bfo_scores = data["all"]["results"]["BFO"][res]
-        bfo_data = [i / 40 for i in bfo_scores]
-        cob_scores = data["all"]["results"]["COB"][res]
-        cob_data = [i / 50 for i in cob_scores]
-        stat, p_value = wilcoxon(bfo_data, cob_data)
-        file.write(f"\nParticipant {res} response rate, BFO vs COB questions:\n")
-        file.write(f"\tStatistic: {stat}\n\tP-value: {p_value}")
+    banner = "="*60
+    for group in data.keys():
+        group_txt = data[group]["subtitle"]
+        file.write(f"\n{banner}\n{group_txt}\n{banner}\n")
+        for res in ["correct", "guess", "incorrect"]:
+            bfo_scores = data[group]["results"]["BFO"][res]
+            bfo_data = [i / 40 for i in bfo_scores]
+            cob_scores = data[group]["results"]["COB"][res]
+            cob_data = [i / 50 for i in cob_scores]
+            stat, p_value = wilcoxon(bfo_data, cob_data)
+            file.write(f"Participant {res} response rate, BFO vs COB questions:\n")
+            file.write(f"\tStatistic: {stat}\n\tP-value: {p_value}\n")
     file.close()
 
 
