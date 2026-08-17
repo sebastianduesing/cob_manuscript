@@ -1,0 +1,91 @@
+Question	Correct Answer	Term	Actual Ancestor	Source	Question Ancestor
+Is an 'untufted pyramidal neuron' an 'anatomical entity'?	Yes	untufted pyramidal neuron	anatomical entity	CL	anatomical entity
+Is an 'owl' an 'information content entity'?	No	owl	anatomical entity	FOODON	information content entity
+Is a 'pink lentil' an 'anatomical entity'?	Yes	pink lentil	anatomical entity	FOODON	anatomical entity
+Is a 'sea urchin' a 'characteristic'?	No	sea urchin	anatomical entity	FOODON	characteristic
+Is a 'turkish snail' an 'anatomical entity'?	Yes	turkish snail	anatomical entity	FOODON	anatomical entity
+Is a 'foramen nutritium' a 'characteristic'?	No	foramen nutritium	anatomical entity	UBERON	characteristic
+Is a 'malleus cartilage element' an 'anatomical entity'?	Yes	malleus cartilage element	anatomical entity	UBERON	anatomical entity
+Is a 'mesopodium bone' a 'generically dependent continuant'?	No	mesopodium bone	anatomical entity	UBERON	generically dependent continuant
+Is a 'neural lamina' an 'anatomical entity'?	Yes	neural lamina	anatomical entity	UBERON	anatomical entity
+Is a 'surangular bone' a 'specifically dependent continuant'?	No	surangular bone	anatomical entity	UBERON	specifically dependent continuant
+Is a 'cell transfer function' a 'characteristic'?	Yes	cell transfer function	characteristic	OBI	characteristic
+Is a 'cytological stain role' an 'information content entity'?	No	cytological stain role	characteristic	OBI	information content entity
+Is 'increased volume' a 'characteristic'?	Yes	increased volume	characteristic	OBI	characteristic
+Is 'fibrotic' an 'occurrent'?	No	fibrotic	characteristic	PATO	occurrent
+Is 'generalized' a 'characteristic'?	Yes	generalized	characteristic	PATO	characteristic
+Is 'peg-like' a 'material entity'?	No	peg-like	characteristic	PATO	material entity
+Is 'prominent' a 'characteristic'?	Yes	prominent	characteristic	PATO	characteristic
+Is 'broken into two pieces' a 'generically dependent continuant'?	No	broken into two pieces	characteristic	PATO	generically dependent continuant
+Is 'size' a 'characteristic'?	Yes	size	characteristic	PATO	characteristic
+Is 'superficial' a 'process'?	No	superficial	characteristic	PATO	process
+Is a 'datum label' a 'generically dependent continuant'?	Yes	datum label	generically dependent continuant	IAO	generically dependent continuant
+Is a 'dendrogram' an 'anatomical entity'?	No	dendrogram	generically dependent continuant	IAO	anatomical entity
+Is a 'dot plot' a 'generically dependent continuant'?	Yes	dot plot	generically dependent continuant	IAO	generically dependent continuant
+Is a 'heatmap' a 'characteristic'?	No	heatmap	generically dependent continuant	IAO	characteristic
+Is a 'mass measurement datum' a 'generically dependent continuant'?	Yes	mass measurement datum	generically dependent continuant	IAO	generically dependent continuant
+Is a 'programming language' a 'process'?	No	programming language	generically dependent continuant	IAO	process
+Is a 'results section' a 'generically dependent continuant'?	Yes	results section	generically dependent continuant	IAO	generically dependent continuant
+Is a 'scatter plot' a 'material entity'?	No	scatter plot	generically dependent continuant	IAO	material entity
+Is an 'age since germination measurement datum' a 'generically dependent continuant'?	Yes	age since germination measurement datum	generically dependent continuant	OBI	generically dependent continuant
+Is an 'extraction date' a 'characteristic'?	No	extraction date	generically dependent continuant	OBI	characteristic
+Is a 'food' an 'independent continuant'?	Yes	food	independent continuant	FOODON	independent continuant
+Is a 'lime marmalade' a 'specifically dependent continuant'?	No	lime marmalade	independent continuant	FOODON	specifically dependent continuant
+Is a 'sapodilla plant' an 'independent continuant'?	Yes	sapodilla plant	independent continuant	FOODON	independent continuant
+Is a 'disinfectant' an 'information content entity'?	No	disinfectant	independent continuant	IDO	information content entity
+Is a 'microbicide' an 'independent continuant'?	Yes	microbicide	independent continuant	IDO	independent continuant
+Is an 'automatic staining machine' a 'specifically dependent continuant'?	No	automatic staining machine	independent continuant	OBI	specifically dependent continuant
+Is a 'decapitated organism' an 'independent continuant'?	Yes	decapitated organism	independent continuant	OBI	independent continuant
+Is a 'homogenizer' an 'occurrent'?	No	homogenizer	independent continuant	OBI	occurrent
+Is a 'mass selective detector' an 'independent continuant'?	Yes	mass selective detector	independent continuant	OBI	independent continuant
+Is a 'respiratory system mucosa' a 'process'?	No	respiratory system mucosa	independent continuant	UBERON	process
+Is an 'abstract' an 'information content entity'?	Yes	abstract	information content entity	IAO	information content entity
+Is a 'centrally registered identifier symbol' an 'independent continuant'?	No	centrally registered identifier symbol	information content entity	IAO	independent continuant
+Is a 'citation' an 'information content entity'?	Yes	citation	information content entity	IAO	information content entity
+Is a 'graph' an 'independent continuant'?	No	graph	information content entity	IAO	independent continuant
+Is an 'integer numeral' an 'information content entity'?	Yes	integer numeral	information content entity	IAO	information content entity
+Is a 'photograph' a 'material entity'?	No	photograph	information content entity	IAO	material entity
+Is a 'report' an 'information content entity'?	Yes	report	information content entity	IAO	information content entity
+Is a 'software script' an 'anatomical entity'?	No	software script	information content entity	IAO	anatomical entity
+Is an 'average value' an 'information content entity'?	Yes	average value	information content entity	OBI	information content entity
+Is a 'service provision objective' a 'specifically dependent continuant'?	No	service provision objective	information content entity	OBI	specifically dependent continuant
+Is a 'histaminergic neuron' a 'material entity'?	Yes	histaminergic neuron	material entity	CL	material entity
+Is a 'macular hair cell' a 'generically dependent continuant'?	No	macular hair cell	material entity	CL	generically dependent continuant
+Is a 'beerwurst' a 'material entity'?	Yes	beerwurst	material entity	FOODON	material entity
+Is 'sausage casing' an 'information content entity'?	No	sausage casing	material entity	FOODON	information content entity
+Is an 'infection' a 'material entity'?	Yes	infection	material entity	IDO	material entity
+Is a 'primary pathogen' an 'occurrent'?	No	primary pathogen	material entity	IDO	occurrent
+Is a 'container with environmental control' a 'material entity'?	Yes	container with environmental control	material entity	OBI	material entity
+Is a 'laboratory coat' an 'occurrent'?	No	laboratory coat	material entity	OBI	occurrent
+Is a 'glomerular epithelium' a 'material entity'?	Yes	glomerular epithelium	material entity	UBERON	material entity
+Is a 'uvular muscle' a 'generically dependent continuant'?	No	uvular muscle	material entity	UBERON	generically dependent continuant
+Is a 'colonization of host' an 'occurrent'?	Yes	colonization of host	occurrent	IDO	occurrent
+Is an 'establishment of a clinically abnormal colony' a 'material entity'?	No	establishment of a clinically abnormal colony	occurrent	IDO	material entity
+Is an 'infectious disease pandemic' an 'occurrent'?	Yes	infectious disease pandemic	occurrent	IDO	occurrent
+Is an 'artificially induced methylation' an 'independent continuant'?	No	artificially induced methylation	occurrent	OBI	independent continuant
+Is an 'ATP bioluminescence assay' an 'occurrent'?	Yes	ATP bioluminescence assay	occurrent	OBI	occurrent
+Is a 'body mass change assay' an 'information content entity'?	No	body mass change assay	occurrent	OBI	information content entity
+Is a 'ferritin assay' an 'occurrent'?	Yes	ferritin assay	occurrent	OBI	occurrent
+Is an 'isolation of cell culture supernatant' a 'specifically dependent continuant'?	No	isolation of cell culture supernatant	occurrent	OBI	specifically dependent continuant
+Is a 'methemoglobin assay' an 'occurrent'?	Yes	methemoglobin assay	occurrent	OBI	occurrent
+Is a 'polynomial transformation' a 'generically dependent continuant'?	No	polynomial transformation	occurrent	OBI	generically dependent continuant
+Is 'boiling without draining' a 'process'?	Yes	boiling without draining	process	FOODON	process
+Is 'assigning a centrally registered identifier' an 'anatomical entity'?	No	assigning a centrally registered identifier	process	IAO	anatomical entity
+Is an 'acute infectious disease course' a 'process'?	Yes	acute infectious disease course	process	IDO	process
+Is a 'severe sepsis' an 'anatomical entity'?	No	severe sepsis	process	IDO	anatomical entity
+Is an 'assay measuring binding of a MHC:ligand complex' a 'process'?	Yes	assay measuring binding of a MHC:ligand complex	process	OBI	process
+Is a 'binding assay using fluorescence detection' an 'independent continuant'?	No	binding assay using fluorescence detection	process	OBI	independent continuant
+Is a 'chromosome conformation capture-on-chip assay' a 'process'?	Yes	chromosome conformation capture-on-chip assay	process	OBI	process
+Is a 'lyophilization storage' a 'characteristic'?	No	lyophilization storage	process	OBI	characteristic
+Is a 'polyA RNA extraction' a 'process'?	Yes	polyA RNA extraction	process	OBI	process
+Is a 'venous blood creatine kinase assay' an 'independent continuant'?	No	venous blood creatine kinase assay	process	OBI	independent continuant
+Is 'blistered' a 'specifically dependent continuant'?	Yes	blistered	specifically dependent continuant	PATO	specifically dependent continuant
+Is 'scaly' a 'process'?	No	scaly	specifically dependent continuant	PATO	process
+Is 'elliptic' a 'specifically dependent continuant'?	Yes	elliptic	specifically dependent continuant	PATO	specifically dependent continuant
+Is 'friable' an 'occurrent'?	No	friable	specifically dependent continuant	PATO	occurrent
+Is a 'trial statistician role' a 'specifically dependent continuant'?	Yes	trial statistician role	specifically dependent continuant	PATO	specifically dependent continuant
+Is 'phosphorylation' an 'anatomical entity'?	No	phosphorylation	specifically dependent continuant	PATO	anatomical entity
+Is 'receptivity' a 'specifically dependent continuant'?	Yes	receptivity	specifically dependent continuant	PATO	specifically dependent continuant
+Is 'refractile' a 'material entity'?	No	refractile	specifically dependent continuant	PATO	material entity
+Is 'sexually dimorphic' a 'specifically dependent continuant'?	Yes	sexually dimorphic	specifically dependent continuant	PATO	specifically dependent continuant
+Is 'spongy' a 'process'?	No	spongy	specifically dependent continuant	PATO	process

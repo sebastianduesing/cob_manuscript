@@ -1,0 +1,11 @@
+Results of Wilcoxon Signed Rank Test on the following:
+
+Participant correct response rate, BFO vs COB questions:
+	Statistic: 25.0
+	P-value: 4.318087860637278e-10
+Participant guess response rate, BFO vs COB questions:
+	Statistic: 17.0
+	P-value: 4.1886936832192827e-10
+Participant incorrect response rate, BFO vs COB questions:
+	Statistic: 736.5
+	P-value: 0.778926458328812
