@@ -40,3 +40,7 @@ The results of the script end up in [`results/`](results/).
 [`results/obo_classes.tsv`](results/obo_classes.tsv) is a table of every class in every OBO Foundry ontology the script downloaded and analyzed, including for each class its IRI & label, the IRI & label of its lowest COB ancestor if one exists, the ontology in which that class was found, whether it is in that ontology's namespace, and if so and if it has no COB ancestor, what its highest in-namespace ancestor is.
 
 [`results/unaligned_roots.tsv`](results/unaligned_roots.tsv) is a table of unaligned roots (i.e., highest in-namespace classes without COB ancestors), the ontology they are from, whether they are marked as a preferred root (via an `IAO:0000700` annotation), and how many descendent terms are under that root.
+
+## COB Classification Survey Results
+
+More on this coming soon. Results, including graphs, are in [`survey/results/`](survey/results/).
