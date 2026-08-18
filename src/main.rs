@@ -281,7 +281,7 @@ fn check_class_alignment(
         for cob_subject in cob_subjects.iter() {
             if term_ancestors.contains(&cob_subject.name()) {
                 ontology.aligned_class_count = ontology.aligned_class_count + 1;
-                if in_base == "T" {
+                if in_base == "True" {
                     ontology.aligned_ns_class_count = ontology.aligned_ns_class_count + 1;
                 }
                 class_wtr
@@ -301,7 +301,7 @@ fn check_class_alignment(
         }
         if !found {
             let mut top_ns_ancestor = "";
-            if in_base == "T" {
+            if in_base == "True" {
                 let mut anc_vec: Vec<&String> = term_ancestors.into_iter().collect();
                 anc_vec.sort_by_key(|s| graph.ancestors(s).len());
                 anc_vec.reverse();
