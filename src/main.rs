@@ -37,7 +37,13 @@ struct Ontology {
     ns_class_count: u64,
     aligned_class_count: u64,
     aligned_ns_class_count: u64,
-    unaligned_roots: BTreeMap<String, u32>,
+    unaligned_roots: BTreeMap<String, Root>,
+}
+
+struct Root {
+    _id: String,
+    label: String,
+    desc_count: u64,
 }
 
 // Access a resource by url and read its contents to a string
@@ -293,6 +299,7 @@ fn check_class_alignment(
                         &ont_string,
                         in_base,
                         "",
+                        "",
                     ])
                     .unwrap();
                 found = true;
@@ -300,32 +307,40 @@ fn check_class_alignment(
             }
         }
         if !found {
-            let mut top_ns_ancestor = "";
+            let mut top_ns_ancestor = "".to_string();
+            let mut root_name = "".to_string();
+            let mut top_anc_label = "".to_string();
             if in_base == "True" {
                 let mut anc_vec: Vec<&String> = term_ancestors.into_iter().collect();
                 anc_vec.sort_by_key(|s| graph.ancestors(s).len());
                 anc_vec.reverse();
-                for ancestor in anc_vec.iter() {
-                    if ancestor.to_lowercase().contains(&ont_string.to_lowercase()) {
-                        top_ns_ancestor = ancestor;
-                    } else {
-                        if top_ns_ancestor != "" {
-                            match ontology.unaligned_roots.get(top_ns_ancestor) {
-                                Some(count) => {
-                                    let count = count + 1;
-                                    ontology
-                                        .unaligned_roots
-                                        .insert(top_ns_ancestor.to_string(), count);
-                                }
-                                None => {
-                                    ontology
-                                        .unaligned_roots
-                                        .insert(top_ns_ancestor.to_string(), 1);
-                                }
-                            }
+                if anc_vec.len() > 0 {
+                    for ancestor in anc_vec.iter() {
+                        if ancestor.to_lowercase().contains(&ont_string.to_lowercase()) {
+                            top_ns_ancestor = ancestor.to_string();
+                        } else {
+                            break;
                         }
-                        break;
                     }
+                }
+                root_name = if top_ns_ancestor != "".to_string() {
+                    top_ns_ancestor.clone()
+                } else {
+                    subject.name().clone()
+                };
+                if let Some(root) = ontology.unaligned_roots.get_mut(&root_name) {
+                    top_anc_label = root.label.clone();
+                    root.desc_count += 1;
+                } else {
+                    if let Some(subj) = graph.get(&root_name) {
+                        top_anc_label = subj.label().clone();
+                    };
+                    let root = Root {
+                        _id: root_name.to_string(),
+                        label: top_anc_label.to_string(),
+                        desc_count: 1,
+                    };
+                    ontology.unaligned_roots.insert(root_name.to_string(), root);
                 }
             }
             class_wtr
@@ -336,7 +351,8 @@ fn check_class_alignment(
                     "",
                     &ont_string,
                     in_base,
-                    top_ns_ancestor,
+                    &root_name,
+                    &top_anc_label,
                 ])
                 .unwrap();
         }
@@ -362,8 +378,14 @@ fn check_class_alignment(
             .write_record([
                 ont_string.clone(),
                 root.to_string(),
+                ontology.unaligned_roots.get(root).unwrap().label.clone(),
                 is_preferred.to_string(),
-                ontology.unaligned_roots.get(root).unwrap().to_string(),
+                ontology
+                    .unaligned_roots
+                    .get(root)
+                    .unwrap()
+                    .desc_count
+                    .to_string(),
             ])
             .unwrap();
     }
@@ -411,6 +433,7 @@ fn generate_class_tsv(
             "Found In",
             "In Namespace?",
             "Highest In-Namespace Ancestor IRI",
+            "Highest In-Namespace Ancestor Label",
         ])
         .unwrap();
 
@@ -442,6 +465,7 @@ fn generate_class_tsv(
         .write_record([
             "Ontology",
             "Root IRI",
+            "Root Label",
             "Is Preferred Root?",
             "Descendent Class Count",
         ])
