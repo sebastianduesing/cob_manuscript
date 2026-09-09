@@ -217,6 +217,7 @@ fn check_class_alignment(
 ) -> Result<(), String> {
     let ont = ont_path.file_prefix().unwrap().display();
     let ont_string = format!("{ont}");
+    let iri_flag = format!("/{}_", ont_string.to_lowercase()).to_string();
     eprintln!("Analyzing classes in {ont_string}");
 
     let rdfxml_input = match std::fs::read_to_string(ont_path) {
@@ -272,11 +273,7 @@ fn check_class_alignment(
             continue;
         }
         ontology.class_count = ontology.class_count + 1;
-        if subject
-            .name()
-            .to_lowercase()
-            .contains(&ont_string.to_lowercase())
-        {
+        if subject.name().to_lowercase().contains(&iri_flag) {
             in_base = "True";
             ontology.ns_class_count = ontology.ns_class_count + 1;
         }
@@ -316,7 +313,7 @@ fn check_class_alignment(
                 anc_vec.reverse();
                 if anc_vec.len() > 0 {
                     for ancestor in anc_vec.iter() {
-                        if ancestor.to_lowercase().contains(&ont_string.to_lowercase()) {
+                        if ancestor.to_lowercase().contains(&iri_flag) {
                             top_ns_ancestor = ancestor.to_string();
                         } else {
                             break;
@@ -335,10 +332,15 @@ fn check_class_alignment(
                     if let Some(subj) = graph.get(&root_name) {
                         top_anc_label = subj.label().clone();
                     };
+                    let desc_count = if subject.name() == root_name.to_string() {
+                        0
+                    } else {
+                        1
+                    };
                     let root = Root {
                         _id: root_name.to_string(),
                         label: top_anc_label.to_string(),
-                        desc_count: 1,
+                        desc_count: desc_count,
                     };
                     ontology.unaligned_roots.insert(root_name.to_string(), root);
                 }
