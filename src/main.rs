@@ -1,4 +1,4 @@
-use clap::Parser;
+use clap::{Parser, Subcommand};
 use csv::Writer;
 use reqwest::Error;
 use serde_yaml::{Value, from_str};
@@ -15,20 +15,28 @@ use tabld::{
 
 // CLI setup
 #[derive(Parser, Debug)]
-#[command(name = "manuscript_data", version, about, long_about = None)]
+#[command(name = "cob_align", version, about, long_about = None)]
 struct Cli {
-    // Toggle ontology downloading on
-    #[arg(short = 'd', long = "download")]
-    download: bool,
-    // Don't download files that are already in cache/ or unparseable/
-    #[arg(short = 'l', long = "lazy")]
-    lazy: bool,
-    // Toggle ontology downloading on and alignment analysis off
-    #[arg(short = 'o', long = "download-only")]
-    download_only: bool,
-    // Attempt to download only this number of ontologies
-    #[arg(short = 't', long = "test-length")]
-    test_length: Option<u16>,
+    #[command(subcommand)]
+    command: Commands,
+}
+
+#[derive(Subcommand, Debug)]
+enum Commands {
+    // Downloads active OBO ontologies
+    Download {
+        // Don't download files that are already in cache/ or unparseable/
+        #[arg(short = 'l', long = "lazy")]
+        lazy: bool,
+
+        // Attempt to download only this number of ontologies
+        #[arg(short = 't', long = "test-length")]
+        test_length: Option<u16>,
+    },
+    // Checks downloaded ontologies for COB alignment
+    Analyze {},
+    // Creates per-ontology alignment reports
+    Report {},
 }
 
 struct Ontology {
@@ -111,8 +119,8 @@ fn download_obo_onts(
     cache_dir: &str,
     unparseable_cache_dir: &str,
     summary_path: &str,
-    lazy: bool,
-    test_length: Option<u16>,
+    lazy: &bool,
+    test_length: &Option<u16>,
 ) {
     let registry = String::from(
         "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml",
@@ -135,7 +143,7 @@ fn download_obo_onts(
     for id in ont_info.keys() {
         match test_length {
             Some(int) => {
-                if downloads >= int {
+                if &downloads >= int {
                     break;
                 }
             }
@@ -147,7 +155,7 @@ fn download_obo_onts(
         let path = Path::new(&path);
         let rdfxml_error_path = format!("{unparseable_cache_dir}/{filename}");
         let rdfxml_error_path = Path::new(&rdfxml_error_path);
-        if lazy {
+        if *lazy {
             if path.exists() || rdfxml_error_path.exists() {
                 let mut dl_status = "Cached";
                 if rdfxml_error_path.exists() {
@@ -499,39 +507,37 @@ fn main() {
     let cache_dir = "cache";
     let unparseable_cache_dir = "unparseable";
     let results_dir = "results";
-    if !Path::new(cache_dir).exists() {
-        fs::create_dir("cache").expect("Failed to create cache");
-        eprintln!("Created directory: cache/")
-    }
-    if !Path::new(unparseable_cache_dir).exists() {
-        fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
-        eprintln!("Created directory: unparseable/")
-    }
-    if !Path::new(results_dir).exists() {
-        fs::create_dir("results").expect("Failed to create results dir");
-        eprintln!("Created directory: results/")
-    }
-    let summary_path = format!("{}/download_summary.tsv", results_dir);
     let cli = Cli::parse();
-    match cli.download_only {
-        true => download_obo_onts(
-            &cache_dir,
-            &unparseable_cache_dir,
-            &summary_path,
-            cli.lazy,
-            cli.test_length,
-        ),
-        false => {
-            match cli.download {
-                true => download_obo_onts(
-                    &cache_dir,
-                    &unparseable_cache_dir,
-                    &summary_path,
-                    cli.lazy,
-                    cli.test_length,
-                ),
-                false => (),
-            };
+    match &cli.command {
+        Commands::Download { lazy, test_length } => {
+            if !Path::new(cache_dir).exists() {
+                fs::create_dir("cache").expect("Failed to create cache");
+                eprintln!("Created directory: cache/")
+            }
+            if !Path::new(unparseable_cache_dir).exists() {
+                fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
+                eprintln!("Created directory: unparseable/")
+            }
+            let summary_path = format!("{}/download_summary.tsv", results_dir);
+            download_obo_onts(
+                &cache_dir,
+                &unparseable_cache_dir,
+                &summary_path,
+                lazy,
+                test_length,
+            );
+        }
+        Commands::Analyze {} => {
+            if !Path::new(cache_dir).exists() {
+                panic!("No cache found. Run 'cargo run -- download' to cache files")
+            }
+            if !Path::new(unparseable_cache_dir).exists() {
+                fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
+            }
+            if !Path::new(results_dir).exists() {
+                fs::create_dir("results").expect("Failed to create results dir");
+                eprintln!("Created directory: results/")
+            }
             let cob_purl = String::from("http://purl.obolibrary.org/obo/cob.owl");
             let cob_path = format!("{}/cob.owl", cache_dir);
             let class_tsv_path = format!("{}/obo_classes.tsv", results_dir);
@@ -545,5 +551,6 @@ fn main() {
                 &roots_tsv_path,
             );
         }
-    };
+        Commands::Report {} => todo!(),
+    }
 }

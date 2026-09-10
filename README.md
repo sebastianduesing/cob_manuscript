@@ -6,24 +6,33 @@ The scripts in this repository gather and analyze the two corpora of data used i
 
 The alignment analysis script downloads all active OBO ontologies and reads through the files, examining each class for whether it has an ancestor that is a term in COB, and if not, what its highest in-namespace ancestor is.
 
-Running the alignment-analysis script requires installing [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html). With Rust installed, run the following command from within the repository:
+Running the alignment-analysis script requires installing [Rust](https://doc.rust-lang.org/book/ch01-01-installation.html).
+
+### Downloading OBO Ontologies
+
+With Rust installed, run the following command from within the repository:
 
 ```
-cargo run --release -- -d
+cargo run --release -- download
 ```
 
-`-d` or `--download` toggles on the part of the script that downloads active OBO Foundry ontologies and saves them in a directory called `cache/`. Without including the `-d` flag, the script proceeds to attempting to analyze files in the `cache/` directory, so if you have the files downloaded and just want to rerun the analysis, run `cargo run --release`.
+Appending `-l` or `--lazy` makes the script skip downloading ontologies that already exist in the `cache/` directory (or in a directory called `unparseable/` further described in the next section). If you get part of the way through downloading ontologies and must restart the script, use `-l` to avoid redownloading what you've already got.
 
+Appending `-t <n>` or `--test-length <n>` makes the script stop attempting to download files after doing so for _n_ files.
 
-`-l` or `--lazy` makes the script skip downloading ontologies that already exist in the `cache/` directory (or in a directory called `unparseable/`, which I will discuss shortly). If you get part of the way through downloading ontologies and must restart the script, use `-l` to avoid redownloading what you've already got.
+On my machine, downloading all active OBO ontologies takes about 5 minutes.
 
-`-o` or `--download-only` makes the script attempt downloads as needed, but skip the analysis.
+### Running COB Alignment Analysis on Downloaded Ontologies
 
-`-t <n>` or `--test-length <n>` makes the script stop attempting to download files after doing so for _n_ files.
+After downloading ontologies, run the following command from within the repository:
 
-On my machine, downloading all active OBO ontologies takes about 5 minutes, and running the analysis portion of the script takes under 3 minutes.
+```
+cargo run --release -- analyze
+```
 
-### RDFXML Parsing Errors
+On my machine, running the alignment analysis over all OBO ontologies takes about 3 minutes.
+
+#### RDFXML Parsing Errors
 
 While running the analysis portion of the script, the script may abort with an RDFXML parsing error. When this occurs, move the file mentioned in the last `Analyzing classes in <ont>` printout from the `cache/` directory into the `unparseable/` directory, and then rerun the script.
 
@@ -37,9 +46,9 @@ The results of the script end up in [`results/`](results/).
 
 [`results/download_summary.tsv`](results/download_summary.tsv) is a table of the ontologies the script found in the OBO registry, their activity status, and whether it downloaded, skipped, or did not attempt to download that ontology.
 
-[`results/obo_classes.tsv`](results/obo_classes.tsv) is a table of every class in every OBO Foundry ontology the script downloaded and analyzed, including for each class its IRI & label, the IRI & label of its lowest COB ancestor if one exists, the ontology in which that class was found, whether it is in that ontology's namespace, and if so and if it has no COB ancestor, what its highest in-namespace ancestor is.
+[`results/obo_classes.tsv`](results/obo_classes.tsv) is a table of every class in every OBO Foundry ontology the script downloaded and analyzed, including for each class its IRI & label, the IRI & label of its lowest COB ancestor if one exists, the ontology in which that class was found, whether it is in that ontology's namespace, and if so and if it has no COB ancestor, the IRI & label of its highest in-namespace ancestor.
 
-[`results/unaligned_roots.tsv`](results/unaligned_roots.tsv) is a table of unaligned roots (i.e., highest in-namespace classes without COB ancestors), the ontology they are from, whether they are marked as a preferred root (via an `IAO:0000700` annotation), and how many descendent terms are under that root.
+[`results/unaligned_roots.tsv`](results/unaligned_roots.tsv) is a table of IRIs and labels of unaligned roots (i.e., highest in-namespace classes without COB ancestors), the ontology they are from, whether they are marked as a preferred root (via an `IAO:0000700` annotation), and how many descendent terms are under that root.
 
 ## COB Classification Survey Results
 
