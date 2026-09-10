@@ -1,11 +1,12 @@
 use clap::{Parser, Subcommand};
-use csv::Writer;
+use csv::{ReaderBuilder, Writer};
 use reqwest::Error;
+use serde::Deserialize;
 use serde_yaml::{Value, from_str};
 use std::{
     collections::{BTreeMap, BTreeSet},
     fs::{self, File, remove_file},
-    io::{self, copy},
+    io::{self, Write, copy},
     path::{Path, PathBuf},
 };
 use tabld::{
@@ -503,10 +504,116 @@ fn generate_class_tsv(
     }
 }
 
+#[derive(Debug, Deserialize)]
+struct AnalysisRecord {
+    #[serde(rename = "Ontology")]
+    ont_name: String,
+    #[serde(rename = "Total Classes")]
+    classes: u64,
+    #[serde(rename = "Classes in Namespace")]
+    ns_classes: u64,
+    #[serde(rename = "Ratio of In- to Out-of-Namespace Classes")]
+    ns_ratio: f64,
+    #[serde(rename = "Total Aligned Classes")]
+    aligned_classes: u64,
+    #[serde(rename = "Ratio of Aligned Classes to All Classes")]
+    aligned_all_ratio: f64,
+    #[serde(rename = "Aligned in-Namespace Classes")]
+    aligned_ns_classes: u64,
+    #[serde(
+        rename = "Ratio of Aligned in-Namespace Classes to All in-Namespace Classes",
+        deserialize_with = "csv::invalid_option"
+    )]
+    aligned_ns_all_ns_ratio: Option<f64>,
+    #[serde(rename = "Unaligned Roots")]
+    roots: u64,
+}
+
+#[derive(Debug, Deserialize)]
+struct RootRecord {
+    #[serde(rename = "Ontology")]
+    ontology: String,
+    #[serde(rename = "Root IRI")]
+    iri: String,
+    #[serde(rename = "Root Label")]
+    label: String,
+    #[serde(rename = "Is Preferred Root?")]
+    preferred: String,
+    #[serde(rename = "Descendent Class Count")]
+    desc_count: u64,
+}
+
+fn report(
+    // class_tsv_path: &str,
+    analysis_tsv_path: &str,
+    roots_tsv_path: &str,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let reports_dir = "reports/";
+    if !Path::new(reports_dir).exists() {
+        fs::create_dir("reports").expect("Failed to create reports dir");
+        eprintln!("Created directory: reports/")
+    }
+
+    let mut roots_rdr = ReaderBuilder::new()
+        .delimiter(b'\t')
+        .from_path(roots_tsv_path)?;
+    let mut ontology_roots: BTreeMap<String, Vec<RootRecord>> = BTreeMap::new();
+    for result in roots_rdr.deserialize() {
+        let record: RootRecord = result?;
+        let root_vec = ontology_roots
+            .entry(record.ontology.clone())
+            .or_insert(Vec::new());
+        root_vec.insert(root_vec.len(), record);
+    }
+
+    let mut analysis_rdr = ReaderBuilder::new()
+        .delimiter(b'\t')
+        .from_path(analysis_tsv_path)?;
+    for result in analysis_rdr.deserialize() {
+        let record: AnalysisRecord = result?;
+        let roots = ontology_roots.get(&record.ont_name);
+        let report_path = format!("{}/{}.md", reports_dir, &record.ont_name);
+        let mut f = File::create(report_path)?;
+        let name = &record.ont_name.to_uppercase();
+
+        write!(f, "# COB Alignment Report for {}\n\n", name)?;
+        write!(
+            f,
+            "In the table below, \"aligned classes\" are classes that have at least one ancestor that is a term in COB.\n\n"
+        )?;
+        write!(
+            f,
+            "| Class Set | Number of Classes | Number of Aligned Classes | Alignment % |\n"
+        )?;
+        write!(f, "| ----- | ----- | ----- | ----- |\n")?;
+        write!(
+            f,
+            "| All classes (including imports) | {:?} | {:?} | {:.2}% |\n",
+            record.classes,
+            record.aligned_classes,
+            record.aligned_all_ratio * 100.0
+        )?;
+        let ns_ratio = match record.aligned_ns_all_ns_ratio {
+            Some(n) => format!("{:.2}%", n * 100.0),
+            None => "N/A (no in-namespace classes)".to_string(),
+        };
+        write!(
+            f,
+            "| Classes in {} namespace | {:?} | {:?} | {} |\n\n",
+            name, record.ns_classes, record.aligned_ns_classes, ns_ratio
+        )?;
+    }
+
+    Ok(())
+}
+
 fn main() {
     let cache_dir = "cache";
     let unparseable_cache_dir = "unparseable";
     let results_dir = "results";
+    let class_tsv_path = format!("{}/obo_classes.tsv", results_dir);
+    let analysis_tsv_path = format!("{}/alignment_analysis.tsv", results_dir);
+    let roots_tsv_path = format!("{}/unaligned_roots.tsv", results_dir);
     let cli = Cli::parse();
     match &cli.command {
         Commands::Download { lazy, test_length } => {
@@ -540,9 +647,6 @@ fn main() {
             }
             let cob_purl = String::from("http://purl.obolibrary.org/obo/cob.owl");
             let cob_path = format!("{}/cob.owl", cache_dir);
-            let class_tsv_path = format!("{}/obo_classes.tsv", results_dir);
-            let analysis_tsv_path = format!("{}/alignment_analysis.tsv", results_dir);
-            let roots_tsv_path = format!("{}/unaligned_roots.tsv", results_dir);
             download(cob_purl, Path::new(&cob_path)).expect(&format!("Couldn't download cob.owl"));
             generate_class_tsv(
                 &cob_path,
@@ -551,6 +655,24 @@ fn main() {
                 &roots_tsv_path,
             );
         }
-        Commands::Report {} => todo!(),
+        Commands::Report {} => {
+            if !Path::new(results_dir).exists() {
+                panic!(
+                    "No analysis files found. \
+                    Run 'cargo run -- download' to cache files and \
+                    run 'cargo run -- analyze' to create analysis tables"
+                )
+            }
+            if !Path::new(&class_tsv_path).exists()
+                || !Path::new(&analysis_tsv_path).exists()
+                || !Path::new(&roots_tsv_path).exists()
+            {
+                panic!(
+                    "Missing some analysis file(s). \
+                    Run 'cargo run -- analyze' to create analysis tables"
+                )
+            }
+            report(&analysis_tsv_path, &roots_tsv_path).expect("Failed to generate reports");
+        }
     }
 }

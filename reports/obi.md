@@ -1,0 +1,9 @@
+# COB Alignment Report for OBI
+
+In the table below, "aligned classes" are classes that have at least one ancestor that is a term in COB.
+
+| Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
+| ----- | ----- | ----- | ----- |
+| All classes (including imports) | 5150 | 5150 | 100.00% |
+| Classes in OBI namespace | 4209 | 4209 | 100.00% |
+

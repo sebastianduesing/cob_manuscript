@@ -1,0 +1,9 @@
+# COB Alignment Report for T4FS
+
+In the table below, "aligned classes" are classes that have at least one ancestor that is a term in COB.
+
+| Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
+| ----- | ----- | ----- | ----- |
+| All classes (including imports) | 559 | 541 | 96.78% |
+| Classes in T4FS namespace | 534 | 523 | 97.94% |
+
