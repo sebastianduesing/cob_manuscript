@@ -11,7 +11,7 @@ MONDO has 2 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in MONDO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/MONDO_0021125 | disease characteristic | Yes | 40 |
 | http://purl.obolibrary.org/obo/MONDO_0021178 | injury | Yes | 17 |

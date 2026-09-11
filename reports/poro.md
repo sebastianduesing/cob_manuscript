@@ -11,8 +11,8 @@ PORO has 110 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains the first 100 unaligned roots in PORO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/PORO_0000001 | sponge | No | 3 |
 | http://purl.obolibrary.org/obo/PORO_0000017 | spicule | No | 218 |
 | http://purl.obolibrary.org/obo/PORO_0000029 | spongin | No | 0 |

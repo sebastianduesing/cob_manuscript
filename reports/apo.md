@@ -11,8 +11,8 @@ APO has 4 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in APO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/APO_0000001 | qualifier | No | 14 |
 | http://purl.obolibrary.org/obo/APO_0000006 | mutant_type | No | 10 |
 | http://purl.obolibrary.org/obo/APO_0000017 | observable | No | 222 |

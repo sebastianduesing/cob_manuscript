@@ -11,8 +11,8 @@ EXO has 24 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in EXO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/ExO_0000000 | exposure stressor | No | 10 |
 | http://purl.obolibrary.org/obo/ExO_0000001 | exposure recipient | No | 70 |
 | http://purl.obolibrary.org/obo/ExO_0000003 | exposure outcome | No | 7 |

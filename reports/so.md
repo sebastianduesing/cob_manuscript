@@ -11,8 +11,8 @@ SO has 4 unaligned roots. An unaligned root is the highest-level in-namespace te
 
 The table below contains all unaligned roots in SO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/SO_0000110 | sequence_feature | Yes | 1862 |
 | http://purl.obolibrary.org/obo/SO_0000400 | sequence_attribute | Yes | 233 |
 | http://purl.obolibrary.org/obo/SO_0001060 | sequence_variant | Yes | 238 |

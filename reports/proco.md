@@ -11,8 +11,8 @@ PROCO has 16 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in PROCO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/PROCO_0000010 | route selection milestone | No | 0 |
 | http://purl.obolibrary.org/obo/PROCO_0000012 | synthesis reaction time | No | 0 |
 | http://purl.obolibrary.org/obo/PROCO_0000013 | critical quality attribute | No | 0 |

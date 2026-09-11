@@ -11,8 +11,8 @@ APOLLO_SV has 21 unaligned roots. An unaligned root is the highest-level in-name
 
 The table below contains all unaligned roots in APOLLO_SV. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/APOLLO_SV_00000000 | purely intentional entity | No | 16 |
 | http://purl.obolibrary.org/obo/APOLLO_SV_00000002 | basic reproduction number | No | 0 |
 | http://purl.obolibrary.org/obo/APOLLO_SV_00000022 | count of simulated population | No | 0 |

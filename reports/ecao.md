@@ -11,8 +11,8 @@ ECAO has 98 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in ECAO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/ECAO_00000000 | root node | No | 0 |
 | http://purl.obolibrary.org/obo/ECAO_0000009 | Life cycle | No | 0 |
 | http://purl.obolibrary.org/obo/ECAO_0000010 | Life cycle phase | No | 0 |

@@ -11,8 +11,8 @@ ARO has 4 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in ARO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/ARO_1000001 | process or component of antibiotic biology or chemistry | No | 9003 |
 | http://purl.obolibrary.org/obo/ARO_3004387 | in-vivo microbial susceptibility test | No | 0 |
 | http://purl.obolibrary.org/obo/ARO_3004388 | in-vitro microbial susceptibility test | No | 17 |

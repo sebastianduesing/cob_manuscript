@@ -11,8 +11,8 @@ OHD has 9 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in OHD. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/OHD_0000010 | dental finding | No | 51 |
 | http://purl.obolibrary.org/obo/OHD_0000011 | performing a dental clinical assessment | No | 0 |
 | http://purl.obolibrary.org/obo/OHD_0000196 | titanium inlay restoration procedure | No | 0 |

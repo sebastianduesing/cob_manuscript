@@ -11,8 +11,8 @@ SCDO has 330 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains the first 100 unaligned roots in SCDO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/SCDO_0000007 | Abnormal Hemoglobin in SCD | No | 0 |
 | http://purl.obolibrary.org/obo/SCDO_0000021 | Acute Upper Respiratory Tract Infection | No | 0 |
 | http://purl.obolibrary.org/obo/SCDO_0000032 | Agenesis of Corpus Callosum | No | 0 |

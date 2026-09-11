@@ -11,8 +11,8 @@ GSSO has 618 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains the first 100 unaligned roots in GSSO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/GSSO_000001 | anniversary | No | 3 |
 | http://purl.obolibrary.org/obo/GSSO_000002 | awareness day | No | 2 |
 | http://purl.obolibrary.org/obo/GSSO_000003 | commemorative day | No | 0 |

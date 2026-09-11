@@ -631,11 +631,11 @@ fn report(
                     "The table below contains the first 100 unaligned roots in {name}. {pref_root_desc}\n\n"
                 )?;
             };
-            write!(f, "| ----- | ----- | ----- | ----- |\n")?;
             write!(
                 f,
                 "| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |\n"
             )?;
+            write!(f, "| ----- | ----- | ----- | ----- |\n")?;
             let mut count = 0;
             for root in roots.iter() {
                 count += 1;

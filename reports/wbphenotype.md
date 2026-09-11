@@ -11,6 +11,6 @@ WBPHENOTYPE has 1 unaligned roots. An unaligned root is the highest-level in-nam
 
 The table below contains all unaligned roots in WBPHENOTYPE. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/WBPhenotype_0000886 | nematode phenotype | Yes | 2650 |

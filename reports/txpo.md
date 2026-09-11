@@ -11,8 +11,8 @@ TXPO has 17 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in TXPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/TXPO_0000270 | state | No | 15 |
 | http://purl.obolibrary.org/obo/TXPO_0000275 | quality value | No | 32 |
 | http://purl.obolibrary.org/obo/TXPO_0000300 | attribute | No | 42 |

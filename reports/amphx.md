@@ -11,8 +11,8 @@ AMPHX has 331 unaligned roots. An unaligned root is the highest-level in-namespa
 
 The table below contains the first 100 unaligned roots in AMPHX. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/AMPHX_0000001 | gametogenesis | No | 0 |
 | http://purl.obolibrary.org/obo/AMPHX_0000002 | oogenesis | No | 0 |
 | http://purl.obolibrary.org/obo/AMPHX_0000003 | spermatogenesis | No | 0 |

@@ -11,8 +11,8 @@ OMRSE has 10 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in OMRSE. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/OMRSE_00000058 | student role | No | 0 |
 | http://purl.obolibrary.org/obo/OMRSE_00000084 | enrollment end date | No | 0 |
 | http://purl.obolibrary.org/obo/OMRSE_00000086 | human role within an organization | No | 13 |

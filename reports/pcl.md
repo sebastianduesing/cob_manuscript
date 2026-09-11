@@ -11,8 +11,8 @@ PCL has 13956 unaligned roots. An unaligned root is the highest-level in-namespa
 
 The table below contains the first 100 unaligned roots in PCL. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/PCL_0010001 | Cluster | No | 0 |
 | http://purl.obolibrary.org/obo/PCL_0010002 | Taxonomy | No | 0 |
 | http://purl.obolibrary.org/obo/PCL_0012501 | NS forest marker set of Lamp5-like Pax6 MOp (Mouse). | No | 0 |

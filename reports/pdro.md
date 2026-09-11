@@ -11,8 +11,8 @@ PDRO has 15 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in PDRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/PDRO_0000006 | health care prescription time identification | No | 0 |
 | http://purl.obolibrary.org/obo/PDRO_0000008 | prescribed site of drug administration specification | No | 0 |
 | http://purl.obolibrary.org/obo/PDRO_0000012 | drug treatment | No | 0 |

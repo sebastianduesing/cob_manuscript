@@ -11,8 +11,8 @@ IDO has 20 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in IDO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/IDO_0000463 | infectious agent transmissibility | No | 0 |
 | http://purl.obolibrary.org/obo/IDO_0000464 | infectivity | No | 0 |
 | http://purl.obolibrary.org/obo/IDO_0000466 | virulence | No | 0 |

@@ -11,7 +11,7 @@ CIO has 2 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in CIO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/CIO_0000000 | confidence information statement | No | 28 |
 | http://purl.obolibrary.org/obo/CIO_0000040 | confidence information element | No | 15 |

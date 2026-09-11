@@ -11,8 +11,8 @@ MCO has 68 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in MCO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/MCO_00000000 | mco | No | 0 |
 | http://purl.obolibrary.org/obo/MCO_0000041 | overexpression mutant | No | 82 |
 | http://purl.obolibrary.org/obo/MCO_0000042 | knockout mutant | No | 179 |

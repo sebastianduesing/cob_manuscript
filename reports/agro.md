@@ -11,8 +11,8 @@ AGRO has 160 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains the first 100 unaligned roots in AGRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/AGRO_00000010 | volume of irrigation water | No | 0 |
 | http://purl.obolibrary.org/obo/AGRO_00000152 | liming material area density | No | 0 |
 | http://purl.obolibrary.org/obo/AGRO_00000158 | nitrogen area density | No | 23 |

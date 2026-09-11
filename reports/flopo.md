@@ -11,8 +11,8 @@ FLOPO has 23012 unaligned roots. An unaligned root is the highest-level in-names
 
 The table below contains the first 100 unaligned roots in FLOPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/FLOPO_0000000 | flora phenotype | Yes | 489 |
 | http://purl.obolibrary.org/obo/FLOPO_0000002 | stem branched | No | 0 |
 | http://purl.obolibrary.org/obo/FLOPO_0000003 | stem branchiness | No | 0 |

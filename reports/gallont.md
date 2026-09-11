@@ -11,8 +11,8 @@ GALLONT has 20 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains all unaligned roots in GALLONT. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/GALLONT_0000007 | internal quality | No | 5 |
 | http://purl.obolibrary.org/obo/GALLONT_0000013 | nectarous | No | 0 |
 | http://purl.obolibrary.org/obo/GALLONT_0000014 | caneliform | No | 0 |

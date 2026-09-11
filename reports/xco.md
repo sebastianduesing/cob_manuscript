@@ -11,8 +11,8 @@ XCO has 61 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in XCO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/XCO_0000000 | experimental condition | No | 1781 |
 | http://purl.obolibrary.org/obo/XCO_0000103 | glucose solution | No | 1 |
 | http://purl.obolibrary.org/obo/XCO_0000288 | R16 peptide of interphotoreceptor retinoid-binding protein | No | 0 |

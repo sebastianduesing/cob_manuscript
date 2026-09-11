@@ -11,8 +11,8 @@ OAE has 31 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in OAE. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/OAE_0000065 | adverse event incubation time | No | 0 |
 | http://purl.obolibrary.org/obo/OAE_0000071 | time at medical intervention | No | 0 |
 | http://purl.obolibrary.org/obo/OAE_0000072 | time instant of an adverse event outcome observed | No | 0 |

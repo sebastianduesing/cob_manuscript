@@ -11,8 +11,8 @@ HANCESTRO has 3 unaligned roots. An unaligned root is the highest-level in-names
 
 The table below contains all unaligned roots in HANCESTRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| ----- | ----- | ----- | ----- |
 | http://purl.obolibrary.org/obo/HANCESTRO_0304 | ancestry status | Yes | 2 |
 | http://purl.obolibrary.org/obo/HANCESTRO_0599 | ethnicity descriptor | No | 0 |
 | http://purl.obolibrary.org/obo/HANCESTRO_0600 | geographic descriptor | No | 0 |
