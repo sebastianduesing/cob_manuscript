@@ -11,6 +11,7 @@ ECOCORE has 28 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains all unaligned roots in ECOCORE. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/ECOCORE_00000034 | copepodid stage 2 | No | 0 |
 | http://purl.obolibrary.org/obo/ECOCORE_00000035 | copepodid stage 3 | No | 0 |

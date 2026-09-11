@@ -11,6 +11,7 @@ GENO has 33 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in GENO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/GENO_0000033 | variant genome | No | 0 |
 | http://purl.obolibrary.org/obo/GENO_0000047 | danio rerio gene | No | 0 |

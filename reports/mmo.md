@@ -11,5 +11,6 @@ MMO has 1 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in MMO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/MMO_0000000 | measurement method | No | 852 |

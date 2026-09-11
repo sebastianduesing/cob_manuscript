@@ -11,6 +11,7 @@ EMAPA has 3629 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains the first 100 unaligned roots in EMAPA. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/EMAPA_0 | Anatomical structure | Yes | 1 |
 | http://purl.obolibrary.org/obo/EMAPA_16035 | zona pellucida | No | 0 |

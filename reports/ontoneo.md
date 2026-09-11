@@ -11,6 +11,7 @@ ONTONEO has 65 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains all unaligned roots in ONTONEO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/ONTONEO_00000002 | exame da mama feminina | No | 4 |
 | http://purl.obolibrary.org/obo/ONTONEO_00000003 | exame abdominal feminino | No | 0 |

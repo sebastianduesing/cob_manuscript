@@ -11,6 +11,7 @@ FIDEO has 1702 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains the first 100 unaligned roots in FIDEO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/fideo/FIDEO_000001500 | FDI alcoholic beverage--abacavir | No | 0 |
 | http://purl.obolibrary.org/obo/fideo/FIDEO_000001501 | FDI grapefruit food product--abemaciclib | No | 0 |

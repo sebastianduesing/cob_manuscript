@@ -11,6 +11,7 @@ NCIT has 19 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in NCIT. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/NCIT_C12218 | Chemotherapy Regimen or Agent Combination | No | 4740 |
 | http://purl.obolibrary.org/obo/NCIT_C12219 | Anatomic Structure, System, or Substance | No | 7629 |

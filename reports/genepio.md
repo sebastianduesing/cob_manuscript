@@ -11,6 +11,7 @@ GENEPIO has 2 unaligned roots. An unaligned root is the highest-level in-namespa
 
 The table below contains all unaligned roots in GENEPIO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/GENEPIO_0001432 | awaiting ontology review | No | 7 |
 | http://purl.obolibrary.org/obo/GENEPIO_0100104 | mRNA extract | No | 0 |

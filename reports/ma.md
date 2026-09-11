@@ -11,6 +11,7 @@ MA has 1320 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains the first 100 unaligned roots in MA. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/MA_0000001 | mouse anatomical entity | No | 279 |
 | http://purl.obolibrary.org/obo/MA_0000015 | muscle organ | No | 151 |

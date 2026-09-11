@@ -11,6 +11,7 @@ AISM has 35 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in AISM. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/AISM_0000000 | cuticular internal depression | No | 1 |
 | http://purl.obolibrary.org/obo/AISM_0000005 | cuticular depression | No | 19 |

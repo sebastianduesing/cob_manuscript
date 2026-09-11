@@ -11,6 +11,7 @@ SPD has 200 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains the first 100 unaligned roots in SPD. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/SPD_0000000 | anatomical entity | No | 231 |
 | http://purl.obolibrary.org/obo/SPD_0000011 | anal tubercle | No | 0 |

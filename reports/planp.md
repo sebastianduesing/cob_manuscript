@@ -11,6 +11,7 @@ PLANP has 29 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in PLANP. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/PLANP_00000000 | Planarian Phenotype | No | 644 |
 | http://purl.obolibrary.org/obo/PLANP_0000018 | obsolete abnormal gastrovascular compartment | No | 0 |

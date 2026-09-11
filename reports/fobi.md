@@ -11,6 +11,7 @@ FOBI has 29 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in FOBI. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/FOBI_0001 | Foods | No | 2 |
 | http://purl.obolibrary.org/obo/FOBI_0018 | Unfermented milk products | No | 0 |

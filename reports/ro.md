@@ -11,5 +11,6 @@ RO has 1 unaligned roots. An unaligned root is the highest-level in-namespace te
 
 The table below contains all unaligned roots in RO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/RO_0002532 | sequentially ordered entity | No | 2 |

@@ -11,6 +11,7 @@ CRO has 19 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in CRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/CRO_0000000 | contributor role | No | 61 |
 | http://purl.obolibrary.org/obo/CRO_0000003 | figure development role | No | 0 |

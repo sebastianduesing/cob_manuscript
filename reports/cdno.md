@@ -11,6 +11,7 @@ CDNO has 8 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in CDNO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/CDNO_0200001 | concentration of dietary chemical component in material entity | No | 1033 |
 | http://purl.obolibrary.org/obo/CDNO_0200473 | concentration of mannan derived from hemicellulose in material entity | No | 0 |

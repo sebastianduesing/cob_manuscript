@@ -11,6 +11,7 @@ OPMI has 32 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in OPMI. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/OPMI_0000070 | month of year | No | 12 |
 | http://purl.obolibrary.org/obo/OPMI_0000083 | day of week | No | 7 |

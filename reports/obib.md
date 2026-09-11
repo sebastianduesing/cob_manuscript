@@ -11,6 +11,7 @@ OBIB has 11 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in OBIB. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/OBIB_0000094 | cessation of brain activity death | No | 0 |
 | http://purl.obolibrary.org/obo/OBIB_0000095 | cessation of cardiac activity death | No | 0 |

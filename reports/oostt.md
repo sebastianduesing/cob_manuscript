@@ -11,6 +11,7 @@ OOSTT has 92 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in OOSTT. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
+| ----- | ----- | ----- | ----- |
 | IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
 | http://purl.obolibrary.org/obo/OOSTT_00000002 | trauma center | No | 0 |
 | http://purl.obolibrary.org/obo/OOSTT_00000011 | trauma team activation | No | 0 |
