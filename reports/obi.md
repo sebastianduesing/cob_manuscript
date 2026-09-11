@@ -7,3 +7,5 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 5150 | 5150 | 100.00% |
 | Classes in OBI namespace | 4209 | 4209 | 100.00% |
 
+OBI has 0 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. OBI is fully aligned with COB.
+

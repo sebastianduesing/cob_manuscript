@@ -7,3 +7,5 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 38092 | 38092 | 100.00% |
 | Classes in GO namespace | 38092 | 38092 | 100.00% |
 
+GO has 0 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. GO is fully aligned with COB.
+

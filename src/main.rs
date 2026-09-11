@@ -513,7 +513,7 @@ struct AnalysisRecord {
     #[serde(rename = "Classes in Namespace")]
     ns_classes: u64,
     #[serde(rename = "Ratio of In- to Out-of-Namespace Classes")]
-    ns_ratio: f64,
+    _ns_ratio: f64,
     #[serde(rename = "Total Aligned Classes")]
     aligned_classes: u64,
     #[serde(rename = "Ratio of Aligned Classes to All Classes")]
@@ -526,7 +526,7 @@ struct AnalysisRecord {
     )]
     aligned_ns_all_ns_ratio: Option<f64>,
     #[serde(rename = "Unaligned Roots")]
-    roots: u64,
+    _roots: u64,
 }
 
 #[derive(Debug, Deserialize)]
@@ -571,7 +571,10 @@ fn report(
         .from_path(analysis_tsv_path)?;
     for result in analysis_rdr.deserialize() {
         let record: AnalysisRecord = result?;
-        let roots = ontology_roots.get(&record.ont_name);
+        let roots = match ontology_roots.get(&record.ont_name) {
+            Some(roots) => roots,
+            None => &Vec::new(),
+        };
         let report_path = format!("{}/{}.md", reports_dir, &record.ont_name);
         let mut f = File::create(report_path)?;
         let name = &record.ont_name.to_uppercase();
@@ -602,6 +605,49 @@ fn report(
             "| Classes in {} namespace | {:?} | {:?} | {} |\n\n",
             name, record.ns_classes, record.aligned_ns_classes, ns_ratio
         )?;
+        let root_num = roots.iter().len();
+        let instructions = if root_num == 0 {
+            format!("{name} is fully aligned with COB.")
+        } else {
+            format!(
+                "To align {name} with COB, these terms should be moved under COB terms or added to COB."
+            )
+        };
+        write!(
+            f,
+            "{name} has {} unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. {instructions}\n\n",
+            roots.iter().len(),
+        )?;
+        let pref_root_desc = "The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.";
+        if root_num > 0 {
+            if root_num <= 100 {
+                write!(
+                    f,
+                    "The table below contains all unaligned roots in {name}. {pref_root_desc}\n\n"
+                )?;
+            } else {
+                write!(
+                    f,
+                    "The table below contains the first 100 unaligned roots in {name}. {pref_root_desc}\n\n"
+                )?;
+            };
+            write!(
+                f,
+                "| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |\n"
+            )?;
+            let mut count = 0;
+            for root in roots.iter() {
+                count += 1;
+                if count > 100 {
+                    break;
+                }
+                write!(
+                    f,
+                    "| {} | {} | {} | {} |\n",
+                    root.iri, root.label, root.preferred, root.desc_count
+                )?
+            }
+        }
     }
 
     Ok(())

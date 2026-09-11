@@ -7,3 +7,12 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 2256 | 91 | 4.03% |
 | Classes in OMP namespace | 2006 | 0 | 0.00% |
 
+OMP has 4 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align OMP with COB, these terms should be moved under COB terms or added to COB.
+
+The table below contains all unaligned roots in OMP. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
+
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| http://purl.obolibrary.org/obo/OMP_0000000 | microbial phenotype | No | 2002 |
+| http://purl.obolibrary.org/obo/OMP_0007188 | altered_process_quality | No | 0 |
+| http://purl.obolibrary.org/obo/OMP_0007189 | altered_relative_to | No | 0 |
+| http://purl.obolibrary.org/obo/OMP_0007193 | altered_physical_object_quality | No | 0 |

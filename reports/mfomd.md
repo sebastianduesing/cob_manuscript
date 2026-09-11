@@ -7,3 +7,15 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 7 | 0 | 0.00% |
 | Classes in MFOMD namespace | 7 | 0 | 0.00% |
 
+MFOMD has 7 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align MFOMD with COB, these terms should be moved under COB terms or added to COB.
+
+The table below contains all unaligned roots in MFOMD. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
+
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| http://purl.obolibrary.org/obo/MFOMD_0000001 | http://purl.obolibrary.org/obo/MFOMD_0000001 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000004 | http://purl.obolibrary.org/obo/MFOMD_0000004 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000024 | http://purl.obolibrary.org/obo/MFOMD_0000024 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000025 | http://purl.obolibrary.org/obo/MFOMD_0000025 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000038 | http://purl.obolibrary.org/obo/MFOMD_0000038 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000040 | http://purl.obolibrary.org/obo/MFOMD_0000040 | No | 0 |
+| http://purl.obolibrary.org/obo/MFOMD_0000041 | http://purl.obolibrary.org/obo/MFOMD_0000041 | No | 0 |

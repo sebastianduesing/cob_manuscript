@@ -7,3 +7,5 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 1023 | 1015 | 99.22% |
 | Classes in PBPKO namespace | 858 | 858 | 100.00% |
 
+PBPKO has 0 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. PBPKO is fully aligned with COB.
+

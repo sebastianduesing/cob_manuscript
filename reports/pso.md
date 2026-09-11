@@ -7,3 +7,9 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 4899 | 4881 | 99.63% |
 | Classes in PSO namespace | 754 | 752 | 99.73% |
 
+PSO has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align PSO with COB, these terms should be moved under COB terms or added to COB.
+
+The table below contains all unaligned roots in PSO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
+
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| http://purl.obolibrary.org/obo/PSO_0000001 | plant stress | No | 1 |

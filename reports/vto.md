@@ -7,3 +7,15 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 | All classes (including imports) | 107066 | 0 | 0.00% |
 | Classes in VTO namespace | 107005 | 0 | 0.00% |
 
+VTO has 7 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align VTO with COB, these terms should be moved under COB terms or added to COB.
+
+The table below contains all unaligned roots in VTO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
+
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
+| http://purl.obolibrary.org/obo/VTO_0000001 | Chordata | No | 106998 |
+| http://purl.obolibrary.org/obo/VTO_9017748 | Gonorhynchidae | No | 0 |
+| http://purl.obolibrary.org/obo/VTO_9031891 | Neohalecopsis | No | 0 |
+| http://purl.obolibrary.org/obo/VTO_9031895 | Salminops | No | 0 |
+| http://purl.obolibrary.org/obo/VTO_9031906 | Caeus | No | 0 |
+| http://purl.obolibrary.org/obo/VTO_9031907 | Chanopsis | No | 0 |
+| http://purl.obolibrary.org/obo/VTO_9031916 | Halecopsis | No | 0 |
