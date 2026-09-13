@@ -672,6 +672,10 @@ fn main() {
                 fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
                 eprintln!("Created directory: unparseable/")
             }
+            if !Path::new(results_dir).exists() {
+                fs::create_dir("results").expect("Failed to create results dir");
+                eprintln!("Created directory: results/")
+            }
             let summary_path = format!("{}/download_summary.tsv", results_dir);
             download_obo_onts(
                 &cache_dir,
