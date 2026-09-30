@@ -72,7 +72,7 @@ def draw_ont_alignment_hist(data, fname):
     fig.set_dpi(300)
     dataset = np.array(vals)
     n = len(dataset)
-    median = np.median(dataset)
+    median = np.median(dataset).round(2)
     box_props = dict(boxstyle="round", facecolor="white")
     box_text = f"n = {n}\nmedian = {median}"
     bin = list(range(101))
@@ -132,7 +132,7 @@ def draw_root_hist(data, fname):
     fig.set_dpi(300)
     dataset = np.array(vals)
     n = len(dataset)
-    median = np.median(dataset)
+    median = np.median(dataset).round(2)
     box_props = dict(boxstyle="round", facecolor="white")
     box_text = f"n = {n}\nmedian = {median}"
     bin = [0, 1, 2, 4, 7, 11, 21, 51, 101, 100000000]
