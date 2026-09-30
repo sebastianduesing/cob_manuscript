@@ -53,6 +53,7 @@ struct Root {
     _id: String,
     label: String,
     desc_count: u64,
+    bot_bfo_ancestor: String,
 }
 
 // Access a resource by url and read its contents to a string
@@ -117,8 +118,8 @@ fn get_ontology_purls(
 
 // Download ontologies
 fn download_obo_onts(
-    cache_dir: &str,
-    unparseable_cache_dir: &str,
+    destination: &str,
+    unparseable_dir: &str,
     summary_path: &str,
     lazy: &bool,
     test_length: &Option<u16>,
@@ -152,9 +153,9 @@ fn download_obo_onts(
         }
         let ont = ont_info.get(id).unwrap();
         let filename = format!("{id}.owl");
-        let path = format!("{cache_dir}/{filename}");
+        let path = format!("{destination}/{filename}");
         let path = Path::new(&path);
-        let rdfxml_error_path = format!("{unparseable_cache_dir}/{filename}");
+        let rdfxml_error_path = format!("{unparseable_dir}/{filename}");
         let rdfxml_error_path = Path::new(&rdfxml_error_path);
         if *lazy {
             if path.exists() || rdfxml_error_path.exists() {
@@ -314,6 +315,7 @@ fn check_class_alignment(
         }
         if !found {
             let mut top_ns_ancestor = "".to_string();
+            let mut bot_bfo_ancestor = "".to_string();
             let mut root_name = "".to_string();
             let mut top_anc_label = "".to_string();
             if in_base == "True" {
@@ -324,8 +326,8 @@ fn check_class_alignment(
                     for ancestor in anc_vec.iter() {
                         if ancestor.to_lowercase().contains(&iri_flag) {
                             top_ns_ancestor = ancestor.to_string();
-                        } else {
-                            break;
+                        } else if ancestor.contains("/BFO_") && bot_bfo_ancestor == "".to_string() {
+                            bot_bfo_ancestor = ancestor.to_string();
                         }
                     }
                 }
@@ -350,6 +352,7 @@ fn check_class_alignment(
                         _id: root_name.to_string(),
                         label: top_anc_label.to_string(),
                         desc_count: desc_count,
+                        bot_bfo_ancestor: bot_bfo_ancestor.to_string(),
                     };
                     ontology.unaligned_roots.insert(root_name.to_string(), root);
                 }
@@ -397,6 +400,12 @@ fn check_class_alignment(
                     .unwrap()
                     .desc_count
                     .to_string(),
+                ontology
+                    .unaligned_roots
+                    .get(root)
+                    .unwrap()
+                    .bot_bfo_ancestor
+                    .to_string(),
             ])
             .unwrap();
     }
@@ -418,6 +427,7 @@ fn check_class_alignment(
 
 // Generate a table of classes and relevant alignment info
 fn generate_class_tsv(
+    reasoned_dir: &str,
     cob_path: &str,
     class_tsv_path: &str,
     analysis_tsv_path: &str,
@@ -479,10 +489,11 @@ fn generate_class_tsv(
             "Root Label",
             "Is Preferred Root?",
             "Descendent Class Count",
+            "Lowest BFO Ancestor",
         ])
         .unwrap();
 
-    let mut entries = fs::read_dir("cache/")
+    let mut entries = fs::read_dir(reasoned_dir)
         .expect("Could not read directory")
         .map(|res| res.map(|e| e.path()))
         .collect::<Result<Vec<_>, io::Error>>()
@@ -541,11 +552,40 @@ struct RootRecord {
     preferred: String,
     #[serde(rename = "Descendent Class Count")]
     desc_count: u64,
+    #[serde(rename = "Lowest BFO Ancestor")]
+    bot_bfo_ancestor: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct MappingRecord {
+    #[serde(rename = "BFO ID")]
+    bfo_iri: String,
+    #[serde(rename = "BFO Label")]
+    _bfo_label: String,
+    #[serde(rename = "Replacement COB ID")]
+    _cob_iri: String,
+    #[serde(rename = "Replacement COB Label")]
+    cob_label: String,
+}
+
+fn make_mappings(
+    mappings_path: &str,
+) -> Result<BTreeMap<String, MappingRecord>, Box<dyn std::error::Error>> {
+    let mut mappings_rdr = ReaderBuilder::new()
+        .delimiter(b'\t')
+        .from_path(mappings_path)?;
+    let mut mappings: BTreeMap<String, MappingRecord> = BTreeMap::new();
+    for result in mappings_rdr.deserialize() {
+        let record: MappingRecord = result?;
+        let iri = record.bfo_iri.clone();
+        mappings.insert(iri, record);
+    }
+    Ok(mappings)
 }
 
 fn report(
-    // class_tsv_path: &str,
     analysis_tsv_path: &str,
+    mappings_path: &str,
     roots_tsv_path: &str,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let reports_dir = "reports/";
@@ -554,6 +594,7 @@ fn report(
         eprintln!("Created directory: reports/")
     }
 
+    let mappings = make_mappings(mappings_path)?;
     let mut roots_rdr = ReaderBuilder::new()
         .delimiter(b'\t')
         .from_path(roots_tsv_path)?;
@@ -633,19 +674,33 @@ fn report(
             };
             write!(
                 f,
-                "| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |\n"
+                "| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |\n"
             )?;
-            write!(f, "| ----- | ----- | ----- | ----- |\n")?;
+            write!(f, "| ----- | ----- | ----- | ----- | ----- | ----- |\n")?;
             let mut count = 0;
             for root in roots.iter() {
                 count += 1;
                 if count > 100 {
                     break;
                 }
+                let repl = if mappings.contains_key(&root.bot_bfo_ancestor) {
+                    &mappings
+                        .get(&root.bot_bfo_ancestor)
+                        .unwrap()
+                        .cob_label
+                        .to_string()
+                } else {
+                    ""
+                };
                 write!(
                     f,
-                    "| {} | {} | {} | {} |\n",
-                    root.iri, root.label, root.preferred, root.desc_count
+                    "| {} | {} | {} | {} | {} | {} |\n",
+                    root.iri,
+                    root.label,
+                    root.preferred,
+                    root.desc_count,
+                    root.bot_bfo_ancestor,
+                    repl
                 )?
             }
         }
@@ -655,51 +710,44 @@ fn report(
 }
 
 fn main() {
-    let cache_dir = "cache";
-    let unparseable_cache_dir = "unparseable";
-    let results_dir = "results";
+    let cache_dir = "cache".to_string();
+    let reasoned_dir = format!("{}/reasoned", cache_dir);
+    let unreasoned_dir = format!("{}/unreasoned", cache_dir);
+    let unparseable_dir = "unparseable".to_string();
+    let results_dir = "results".to_string();
     let class_tsv_path = format!("{}/obo_classes.tsv", results_dir);
     let analysis_tsv_path = format!("{}/alignment_analysis.tsv", results_dir);
     let roots_tsv_path = format!("{}/unaligned_roots.tsv", results_dir);
+    for dir in [
+        &cache_dir,
+        &reasoned_dir,
+        &unreasoned_dir,
+        &unparseable_dir,
+        &results_dir,
+    ] {
+        if !Path::new(&dir).exists() {
+            fs::create_dir(&dir).expect(&format!("Failed to create {}", &dir));
+            eprintln!("Created directory: {}", &dir);
+        }
+    }
     let cli = Cli::parse();
     match &cli.command {
         Commands::Download { lazy, test_length } => {
-            if !Path::new(cache_dir).exists() {
-                fs::create_dir("cache").expect("Failed to create cache");
-                eprintln!("Created directory: cache/")
-            }
-            if !Path::new(unparseable_cache_dir).exists() {
-                fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
-                eprintln!("Created directory: unparseable/")
-            }
-            if !Path::new(results_dir).exists() {
-                fs::create_dir("results").expect("Failed to create results dir");
-                eprintln!("Created directory: results/")
-            }
-            let summary_path = format!("{}/download_summary.tsv", results_dir);
+            let summary_path = format!("{}/download_summary.tsv", &results_dir);
             download_obo_onts(
-                &cache_dir,
-                &unparseable_cache_dir,
+                &unreasoned_dir,
+                &unparseable_dir,
                 &summary_path,
                 lazy,
                 test_length,
             );
         }
         Commands::Analyze {} => {
-            if !Path::new(cache_dir).exists() {
-                panic!("No cache found. Run 'cargo run -- download' to cache files")
-            }
-            if !Path::new(unparseable_cache_dir).exists() {
-                fs::create_dir("unparseable").expect("Failed to create unparseable file dir");
-            }
-            if !Path::new(results_dir).exists() {
-                fs::create_dir("results").expect("Failed to create results dir");
-                eprintln!("Created directory: results/")
-            }
             let cob_purl = String::from("http://purl.obolibrary.org/obo/cob.owl");
-            let cob_path = format!("{}/cob.owl", cache_dir);
+            let cob_path = format!("{}/cob.owl", unreasoned_dir);
             download(cob_purl, Path::new(&cob_path)).expect(&format!("Couldn't download cob.owl"));
             generate_class_tsv(
+                &reasoned_dir,
                 &cob_path,
                 &class_tsv_path,
                 &analysis_tsv_path,
@@ -707,13 +755,7 @@ fn main() {
             );
         }
         Commands::Report {} => {
-            if !Path::new(results_dir).exists() {
-                panic!(
-                    "No analysis files found. \
-                    Run 'cargo run -- download' to cache files and \
-                    run 'cargo run -- analyze' to create analysis tables"
-                )
-            }
+            let mappings_path = "src/mappings.tsv";
             if !Path::new(&class_tsv_path).exists()
                 || !Path::new(&analysis_tsv_path).exists()
                 || !Path::new(&roots_tsv_path).exists()
@@ -723,7 +765,8 @@ fn main() {
                     Run 'cargo run -- analyze' to create analysis tables"
                 )
             }
-            report(&analysis_tsv_path, &roots_tsv_path).expect("Failed to generate reports");
+            report(&analysis_tsv_path, &mappings_path, &roots_tsv_path)
+                .expect("Failed to generate reports");
         }
     }
 }
