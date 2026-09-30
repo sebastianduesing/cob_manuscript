@@ -4,112 +4,112 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 24045 | 1 | 0.00% |
-| Classes in FLOPO namespace | 23523 | 1 | 0.00% |
+| All classes (including imports) | 23628 | 8525 | 36.08% |
+| Classes in FLOPO namespace | 23523 | 8521 | 36.22% |
 
-FLOPO has 23012 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align FLOPO with COB, these terms should be moved under COB terms or added to COB.
+FLOPO has 491 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align FLOPO with COB, these terms should be moved under COB terms or added to COB.
 
 The table below contains the first 100 unaligned roots in FLOPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
-| ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/FLOPO_0000000 | flora phenotype | Yes | 489 |
-| http://purl.obolibrary.org/obo/FLOPO_0000002 | stem branched | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000003 | stem branchiness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000005 | leaf lanceolate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000006 | leaf sharpness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000008 | leaf tendril bifurcated | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000009 | leaf tendril branchiness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000011 | bark broken | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000012 | bark wholeness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000014 | petal linear | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000015 | petal shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000017 | shoot apex glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000018 | shoot apex pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000020 | corolla glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000021 | corolla pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000023 | involucre conspicuous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000025 | axillary bud meristem spherical | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000026 | axillary bud meristem convex 3-D shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000028 | testa smooth | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000029 | testa texture | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000031 | fruit truncated | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000032 | fruit shape | No | 1 |
-| http://purl.obolibrary.org/obo/FLOPO_0000033 | shoot apex hairy | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000035 | inflorescence leaf-like | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000036 | inflorescence shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000037 | shoot apex pinnate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000038 | shoot apex shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000040 | root fleshy | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000041 | root composition | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000043 | calyx hairy | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000044 | calyx pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000046 | leaflet symmetrical | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000047 | leaflet symmetry | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000049 | lamina unbranched | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000050 | lamina branchiness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000052 | vascular leaf increased length | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000053 | vascular leaf length | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000054 | shoot apex elliptic | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000055 | shoot apex 2-D shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000057 | keel left | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000058 | keel direction | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000059 | shoot apex orbicular | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000060 | petal pink | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000061 | petal color | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000062 | fruit rugose | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000063 | fruit surface feature shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000064 | leaflet basal to | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000065 | leaflet position | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000067 | vascular bundle oblong | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000068 | vascular bundle 2-D shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000069 | vascular bundle glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000070 | vascular bundle pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000072 | lower glume grey | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000073 | lower glume color | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000075 | seed yellow | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000076 | seed color | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000078 | calyx maturity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000079 | inflorescence swollen | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000080 | inflorescence structure | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000081 | fruit pedicellate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000082 | fruit attachment quality | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000084 | ovary wall glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000085 | ovary wall pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000087 | central zone glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000088 | central zone pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000090 | whole plant glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000091 | whole plant pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000092 | stem linear | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000093 | stem shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000095 | central spike of tassel inflorescence pinnate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000096 | central spike of tassel inflorescence shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000098 | perianth brittle | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000099 | perianth structure | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000101 | branch rough | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000102 | branch texture | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000103 | leaf oblong | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000104 | leaf 2-D shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000105 | fruit basal to | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000106 | fruit position | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000110 | branch smooth | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000112 | bract linear | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000113 | bract shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000114 | inflorescence terminal | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000115 | inflorescence position | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000116 | shoot apex undulate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000118 | petiole ovate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000119 | petiole convex 3-D shape | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000120 | branch erect | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000121 | branch position | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000123 | flower pedicellate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000124 | flower attachment quality | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000125 | flower increased length | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000126 | flower length | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000127 | flower lanceolate | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000128 | flower sharpness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000130 | ovule primordium glabrous | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000131 | ovule primordium pilosity | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000132 | shoot apex dentated | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000133 | shoot apex decreased thickness | No | 0 |
-| http://purl.obolibrary.org/obo/FLOPO_0000134 | shoot apex thickness | No | 0 |
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| http://purl.obolibrary.org/obo/FLOPO_0000000 | flora phenotype | Yes | 11688 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0000437 | vascular bundle prominent | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0000438 | vascular bundle position | No | 15 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0000451 | whole plant morphology | No | 269 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0000508 | whole plant position | No | 29 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001097 | collective phyllome structure spatial pattern | No | 7 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001159 | plant callus maturity | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001330 | septum position | No | 9 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001421 | bud direction | No | 7 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001824 | tuber position | No | 5 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0001912 | shoot system position | No | 82 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002018 | collective phyllome structure position | No | 10 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002036 | vascular bundle flexibility | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002042 | vascular bundle maturity | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002206 | plant callus position | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002267 | vascular bundle reflectivity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002276 | pappus amount | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002579 | placenta morphology | No | 53 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002590 | bud mass density | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002743 | portion of secretory tissue maturity | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0002770 | portion of secretory tissue position | No | 18 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003000 | collective phyllome structure shape | No | 52 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003046 | tuber direction | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003415 | pseudostem structure | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003528 | plant cell position | No | 13 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003887 | pappus exserted | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0003888 | pappus position | No | 10 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004243 | plant cuticle thickness | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004253 | portion of secretory tissue reflectivity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004320 | vascular bundle amount | No | 5 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004352 | vascular bundle morphology | No | 146 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004425 | sporangium position | No | 6 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004514 | collective phyllome structure thickness | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004605 | plant callus caudate | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0004906 | whole plant maturity | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005078 | bulb direction | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005578 | collective phyllome structure color | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005654 | whole plant age | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005698 | tuber age | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005768 | whole plant shedability | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005778 | plant cell caudate | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0005909 | plant cell prominent | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006049 | bud wetness | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006111 | columella position | No | 5 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006182 | portion of secretory tissue adhesivity | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006220 | bud inconspicuous | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006245 | bud edibility | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006359 | whole plant fertility | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006445 | whole plant viscosity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006644 | portion of secretory tissue morphology | No | 199 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006670 | collective phyllome structure sexually dimorphic | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006711 | bud conspicuous | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0006981 | whole plant opacity | No | 8 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007085 | vascular bundle fertility | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007229 | plant embryo conspicuous | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007333 | collective phyllome structure exserted | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007403 | tuber hardness | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007442 | tuber shedability | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007834 | portion of secretory tissue opacity | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0007983 | portion of secretory tissue amount | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008033 | septum structure | No | 13 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008063 | whole plant mass density | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008137 | whole plant aromaticity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008202 | portion of secretory tissue fertility | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008274 | collective phyllome structure structure | No | 11 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008363 | collective phyllome structure maturity | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008482 | columella shape | No | 23 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008815 | plant callus morphology | No | 77 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008817 | pseudostem direction | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0008906 | corm hardness | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009220 | columella texture | No | 5 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009254 | septum shape | No | 27 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009345 | vascular bundle conspicuous | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009516 | plant cell reflectivity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009585 | phloem color | No | 5 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009722 | xylem vessel spatial pattern | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0009765 | septum direction | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0010215 | whole plant flexibility | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0010337 | collective phyllome structure length | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0010685 | whole plant prominent | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0010940 | plant cell adhesivity | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011035 | root-borne shoot system reflectivity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011142 | vascular bundle wetness | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011183 | sporangium morphology | No | 22 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011423 | corm age | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011495 | whole plant reflectivity | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011708 | pappus direction | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0011929 | phloem shape | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012123 | whole plant amount | No | 8 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012178 | placenta pressure | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012236 | pappus flexibility | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012280 | placenta position | No | 10 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012339 | vascular bundle opacity | No | 3 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012434 | whole plant adhesivity | No | 4 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012458 | whole plant direction | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012613 | collective phyllome structure fertility | No | 2 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0012912 | shoot system amount | No | 16 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0013221 | pseudostem position | No | 6 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0013274 | portion of secretory tissue prominent | No | 0 |  |  |
+| http://purl.obolibrary.org/obo/FLOPO_0013308 | pappus maturity | No | 1 |  |  |

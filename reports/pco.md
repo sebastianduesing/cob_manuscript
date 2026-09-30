@@ -11,13 +11,13 @@ PCO has 8 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in PCO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
-| ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/PCO_0000003 | quality of a population | No | 4 |
-| http://purl.obolibrary.org/obo/PCO_0000004 | quality of an ecological community | No | 11 |
-| http://purl.obolibrary.org/obo/PCO_0000006 | population birth rate | No | 0 |
-| http://purl.obolibrary.org/obo/PCO_0000007 | population death rate | No | 0 |
-| http://purl.obolibrary.org/obo/PCO_0000008 | population growth rate | No | 0 |
-| http://purl.obolibrary.org/obo/PCO_0000048 | invisible to unaided eye | No | 0 |
-| http://purl.obolibrary.org/obo/PCO_0000050 | collection of microbial organisms | No | 1 |
-| http://purl.obolibrary.org/obo/PCO_0000077 | plant density | No | 1 |
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| http://purl.obolibrary.org/obo/PCO_0000003 | quality of a population | No | 4 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000004 | quality of an ecological community | No | 11 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000006 | population birth rate | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000007 | population death rate | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000008 | population growth rate | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000048 | invisible to unaided eye | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/PCO_0000050 | collection of microbial organisms | No | 1 |  |  |
+| http://purl.obolibrary.org/obo/PCO_0000077 | plant density | No | 1 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |

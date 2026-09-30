@@ -11,25 +11,25 @@ VO has 20 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in VO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
-| ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/VO_0000129 | vaccination frequency | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000151 | immunized | No | 1 |
-| http://purl.obolibrary.org/obo/VO_0000162 | vaccine organism avirulent | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000173 | vaccine organism live attenuated | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000245 | edibility | No | 2 |
-| http://purl.obolibrary.org/obo/VO_0000247 | vaccine efficacy | No | 3 |
-| http://purl.obolibrary.org/obo/VO_0000426 | period of persistence of vaccine induced immune response | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000456 | protection efficacy | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000540 | time of survival of live vaccine inside host | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000549 | bacterial phenotype | No | 3 |
-| http://purl.obolibrary.org/obo/VO_0000612 | vaccine organism virulent | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000804 | effectiveness | No | 3 |
-| http://purl.obolibrary.org/obo/VO_0000815 | monthly | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000816 | biweekly | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0000897 | age at vaccination | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0001139 | vaccine organism viability | No | 3 |
-| http://purl.obolibrary.org/obo/VO_0001372 | unimmunized | No | 0 |
-| http://purl.obolibrary.org/obo/VO_0001376 | vaccinated | No | 1 |
-| http://purl.obolibrary.org/obo/VO_0001377 | unvaccinated | No | 1 |
-| http://purl.obolibrary.org/obo/VO_0004921 | human age | No | 4 |
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| http://purl.obolibrary.org/obo/VO_0000129 | vaccination frequency | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/VO_0000151 | immunized | No | 1 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000162 | vaccine organism avirulent | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000173 | vaccine organism live attenuated | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000245 | edibility | No | 2 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000247 | vaccine efficacy | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000426 | period of persistence of vaccine induced immune response | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
+| http://purl.obolibrary.org/obo/VO_0000456 | protection efficacy | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000540 | time of survival of live vaccine inside host | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
+| http://purl.obolibrary.org/obo/VO_0000549 | bacterial phenotype | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000612 | vaccine organism virulent | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000804 | effectiveness | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0000815 | monthly | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/VO_0000816 | biweekly | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| http://purl.obolibrary.org/obo/VO_0000897 | age at vaccination | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0001139 | vaccine organism viability | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0001372 | unimmunized | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0001376 | vaccinated | No | 1 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0001377 | unvaccinated | No | 1 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/VO_0004921 | human age | No | 4 | http://purl.obolibrary.org/obo/BFO_0000019 |  |

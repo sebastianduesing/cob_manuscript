@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 1554 | 0 | 0.00% |
-| Classes in OVAE namespace | 0 | 0 | N/A (no in-namespace classes) |
+| All classes (including imports) | 1554 | 1521 | 97.88% |
+| Classes in OVAE namespace | 627 | 627 | 100.00% |
 
 OVAE has 0 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. OVAE is fully aligned with COB.
 

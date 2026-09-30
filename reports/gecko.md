@@ -11,9 +11,9 @@ GECKO has 4 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in GECKO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses |
-| ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/GECKO_0000009 | population quality | No | 3 |
-| http://purl.obolibrary.org/obo/GECKO_0000060 | gender | No | 0 |
-| http://purl.obolibrary.org/obo/GECKO_0000061 | ethnicity | No | 0 |
-| http://purl.obolibrary.org/obo/GECKO_0000065 | education level | No | 0 |
+| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| http://purl.obolibrary.org/obo/GECKO_0000009 | population quality | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/GECKO_0000060 | gender | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/GECKO_0000061 | ethnicity | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| http://purl.obolibrary.org/obo/GECKO_0000065 | education level | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
