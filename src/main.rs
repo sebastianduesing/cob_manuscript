@@ -5,6 +5,7 @@ use serde::Deserialize;
 use serde_yaml::{Value, from_str};
 use std::{
     collections::{BTreeMap, BTreeSet},
+    ffi::OsStr,
     fs::{self, File, remove_file},
     io::{self, Write, copy},
     path::{Path, PathBuf},
@@ -501,7 +502,7 @@ fn generate_class_tsv(
     entries.sort();
 
     for e in entries {
-        if e.as_os_str() == cob_path {
+        if e.file_name().unwrap() == OsStr::new("cob.owl") {
             continue;
         }
         check_class_alignment(
