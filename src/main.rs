@@ -55,6 +55,7 @@ struct Ontology {
 struct Root {
     _id: String,
     label: String,
+    anc_count: u64,
     desc_count: u64,
     bot_bfo_ancestor: String,
 }
@@ -338,6 +339,7 @@ fn check_class_alignment(
             let mut top_anc_label = "".to_string();
             if in_base == "True" {
                 let mut anc_vec: Vec<&String> = term_ancestors.into_iter().collect();
+                let anc_count = anc_vec.len() as u64 - 1;
                 anc_vec.sort_by_key(|s| graph.ancestors(s).len());
                 anc_vec.reverse();
                 if anc_vec.len() > 0 {
@@ -369,6 +371,7 @@ fn check_class_alignment(
                     let root = Root {
                         _id: root_name.to_string(),
                         label: top_anc_label.to_string(),
+                        anc_count: anc_count,
                         desc_count: desc_count,
                         bot_bfo_ancestor: bot_bfo_ancestor.to_string(),
                     };
@@ -412,6 +415,12 @@ fn check_class_alignment(
                 root.to_string(),
                 ontology.unaligned_roots.get(root).unwrap().label.clone(),
                 is_preferred.to_string(),
+                ontology
+                    .unaligned_roots
+                    .get(root)
+                    .unwrap()
+                    .anc_count
+                    .to_string(),
                 ontology
                     .unaligned_roots
                     .get(root)
@@ -506,6 +515,7 @@ fn generate_class_tsv(
             "Root IRI",
             "Root Label",
             "Is Preferred Root?",
+            "Ancestor Class Count",
             "Descendent Class Count",
             "Lowest BFO Ancestor",
         ])
