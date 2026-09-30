@@ -11,7 +11,7 @@ ECO has 2 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in ECO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/ECO_0000000 | evidence | No | 730 |  |  |
-| http://purl.obolibrary.org/obo/ECO_0000217 | assertion method | No | 3 |  |  |
+| ECO:0000000 | evidence | No | 730 |  |  |
+| ECO:0000217 | assertion method | No | 3 |  |  |

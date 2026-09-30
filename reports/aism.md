@@ -11,17 +11,17 @@ AISM has 12 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in AISM. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/AISM_0000005 | cuticular depression | No | 24 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000013 | evaginated | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/AISM_0000174 | insect region of cuticle | Yes | 499 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000353 | reticulate | No | 3 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/AISM_0000374 | tibial margin | No | 6 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000376 | interpunctural distance | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/AISM_0000381 | head margin at genoclypeal sulcus | No | 0 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000385 | clypeal margin | No | 3 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000386 | genal margin | No | 0 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000405 | antero-distal margin | No | 0 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0000406 | postero-distal margin | No | 0 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/AISM_0004317 | deflexed | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| AISM:0000005 | cuticular depression | No | 24 | BFO:0000004 |  |
+| AISM:0000013 | evaginated | No | 0 | BFO:0000019 |  |
+| AISM:0000174 | insect region of cuticle | Yes | 499 | BFO:0000004 |  |
+| AISM:0000353 | reticulate | No | 3 | BFO:0000019 |  |
+| AISM:0000374 | tibial margin | No | 6 | BFO:0000004 |  |
+| AISM:0000376 | interpunctural distance | No | 0 | BFO:0000019 |  |
+| AISM:0000381 | head margin at genoclypeal sulcus | No | 0 | BFO:0000004 |  |
+| AISM:0000385 | clypeal margin | No | 3 | BFO:0000004 |  |
+| AISM:0000386 | genal margin | No | 0 | BFO:0000004 |  |
+| AISM:0000405 | antero-distal margin | No | 0 | BFO:0000004 |  |
+| AISM:0000406 | postero-distal margin | No | 0 | BFO:0000004 |  |
+| AISM:0004317 | deflexed | No | 0 | BFO:0000019 |  |

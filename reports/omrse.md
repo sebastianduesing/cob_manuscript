@@ -11,10 +11,10 @@ OMRSE has 5 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in OMRSE. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/OMRSE_00000084 | enrollment end date | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/OMRSE_00000097 | enrollment start date | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/OMRSE_00000242 | intimate partnership | No | 0 | http://purl.obolibrary.org/obo/BFO_0000145 |  |
-| http://purl.obolibrary.org/obo/OMRSE_00000277 | subjective representation | No | 7 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/OMRSE_00002060 | family relationship | No | 0 | http://purl.obolibrary.org/obo/BFO_0000145 |  |
+| OMRSE:00000084 | enrollment end date | No | 0 | BFO:0000038 |  |
+| OMRSE:00000097 | enrollment start date | No | 0 | BFO:0000038 |  |
+| OMRSE:00000242 | intimate partnership | No | 0 | BFO:0000145 |  |
+| OMRSE:00000277 | subjective representation | No | 7 | BFO:0000020 | characteristic |
+| OMRSE:00002060 | family relationship | No | 0 | BFO:0000145 |  |

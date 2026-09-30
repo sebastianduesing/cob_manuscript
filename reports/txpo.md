@@ -11,15 +11,15 @@ TXPO has 10 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in TXPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/TXPO_0000270 | state | No | 15 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/TXPO_0000275 | quality value | No | 32 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/TXPO_0000300 | attribute | No | 50 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/TXPO_0000315 | colorness (quality) | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0000316 | high brightness | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0000657 | predicted (quality) | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0002450 | decreased amount | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0002873 | chronic | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0003518 | acidophilic | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/TXPO_0003563 | increased affinity | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| TXPO:0000270 | state | No | 15 | BFO:0000003 | process |
+| TXPO:0000275 | quality value | No | 32 | BFO:0000031 | information content entity |
+| TXPO:0000300 | attribute | No | 50 | BFO:0000020 | characteristic |
+| TXPO:0000315 | colorness (quality) | No | 0 | BFO:0000019 |  |
+| TXPO:0000316 | high brightness | No | 0 | BFO:0000019 |  |
+| TXPO:0000657 | predicted (quality) | No | 0 | BFO:0000019 |  |
+| TXPO:0002450 | decreased amount | No | 0 | BFO:0000019 |  |
+| TXPO:0002873 | chronic | No | 0 | BFO:0000019 |  |
+| TXPO:0003518 | acidophilic | No | 0 | BFO:0000019 |  |
+| TXPO:0003563 | increased affinity | No | 0 | BFO:0000019 |  |

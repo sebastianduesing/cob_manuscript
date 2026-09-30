@@ -11,12 +11,12 @@ VTO has 7 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in VTO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/VTO_0000001 | Chordata | No | 106998 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9017748 | Gonorhynchidae | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9031891 | Neohalecopsis | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9031895 | Salminops | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9031906 | Caeus | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9031907 | Chanopsis | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/VTO_9031916 | Halecopsis | No | 0 |  |  |
+| VTO:0000001 | Chordata | No | 106998 |  |  |
+| VTO:9017748 | Gonorhynchidae | No | 0 |  |  |
+| VTO:9031891 | Neohalecopsis | No | 0 |  |  |
+| VTO:9031895 | Salminops | No | 0 |  |  |
+| VTO:9031906 | Caeus | No | 0 |  |  |
+| VTO:9031907 | Chanopsis | No | 0 |  |  |
+| VTO:9031916 | Halecopsis | No | 0 |  |  |

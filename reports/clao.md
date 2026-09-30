@@ -11,7 +11,7 @@ CLAO has 2 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in CLAO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/CLAO_0001253 | molecular entity | No | 15 |  |  |
-| http://purl.obolibrary.org/obo/CLAO_0001571 | entity | No | 1497 | http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/BFO_0000004 |  |
+| CLAO:0001253 | molecular entity | No | 15 |  |  |
+| CLAO:0001571 | entity | No | 1497 | BFO:0000004 |  |

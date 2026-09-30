@@ -11,26 +11,26 @@ CDAO has 21 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in CDAO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/CDAO_0000006 | Network | No | 25 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000022 | DatumCoordinate | No | 4 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000024 | Branch | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000040 | CDAOAnnotation | No | 27 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000041 | originationEvent | No | 3 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000056 | CharacterStateDataMatrix | No | 1 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000059 | SetOfNodes | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000063 | EdgeLengthType | No | 14 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000071 | Character | No | 8 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000091 | CharacterStateDomain | No | 12 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000097 | hereditaryChange | No | 7 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000098 | CharacterStateDatum | No | 9 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000099 | Edge | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000104 | CoordinateSystem | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000116 | hereditaryPersistance | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000117 | SetOfCharacters | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000118 | SetOfThings | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000120 | Sequence | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000138 | TU | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000139 | DirectedEdge | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CDAO_0000140 | Node | No | 9 |  |  |
+| CDAO:0000006 | Network | No | 25 |  |  |
+| CDAO:0000022 | DatumCoordinate | No | 4 |  |  |
+| CDAO:0000024 | Branch | No | 0 |  |  |
+| CDAO:0000040 | CDAOAnnotation | No | 27 |  |  |
+| CDAO:0000041 | originationEvent | No | 3 |  |  |
+| CDAO:0000056 | CharacterStateDataMatrix | No | 1 |  |  |
+| CDAO:0000059 | SetOfNodes | No | 0 |  |  |
+| CDAO:0000063 | EdgeLengthType | No | 14 |  |  |
+| CDAO:0000071 | Character | No | 8 |  |  |
+| CDAO:0000091 | CharacterStateDomain | No | 12 |  |  |
+| CDAO:0000097 | hereditaryChange | No | 7 |  |  |
+| CDAO:0000098 | CharacterStateDatum | No | 9 |  |  |
+| CDAO:0000099 | Edge | No | 0 |  |  |
+| CDAO:0000104 | CoordinateSystem | No | 0 |  |  |
+| CDAO:0000116 | hereditaryPersistance | No | 0 |  |  |
+| CDAO:0000117 | SetOfCharacters | No | 0 |  |  |
+| CDAO:0000118 | SetOfThings | No | 0 |  |  |
+| CDAO:0000120 | Sequence | No | 0 |  |  |
+| CDAO:0000138 | TU | No | 0 |  |  |
+| CDAO:0000139 | DirectedEdge | No | 0 |  |  |
+| CDAO:0000140 | Node | No | 9 |  |  |

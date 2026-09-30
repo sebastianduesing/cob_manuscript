@@ -11,40 +11,40 @@ HAO has 35 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in HAO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/HAO_0000000 | anatomical entity | No | 2437 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0000648 | notch | No | 25 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0000709 | penisvalvo-gonossiculal muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0000893 | region | No | 4 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0001980 | anatomical region | No | 5 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002108 | palpal formula | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002168 | anterior angle of the first valvifer | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002176 | venom gland reservoir of the second valvifer | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002209 | apical glossal hairs | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002267 | median conjunctiva of abdominal tergum 9 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002272 | median anatomical line | No | 10 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002308 | width | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002311 | anterior pronotal slope | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002326 | maximum diameter of the compound eye | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002329 | angle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002330 | setal angle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002347 | minimum spine distance | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002349 | arithmetic mean | No | 1 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002373 | malar striae | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002454 | microtrichia | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002483 | hind wing tegula | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002516 | mesoscutellar comb | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002531 | sixth maxillary palpal sclerite | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002536 | Heitler&apos;s lump | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002537 | tibial flexor sclerite | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002544 | tibial extensor muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002550 | tergal apodeme | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002556 | distal crenulate carina | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002558 | proximomedian lamella of the Waterston&apos;s evaporatorium | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002578 | medial penisvalvo-gonossiculal muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002580 | lateral gonostyle/volsella complex-volsella muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002581 | intragonostyle muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002587 | 2nd valvifer-vagina muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002588 | 2nd valvifer-venom gland reservoir muscle | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HAO_0002596 | Medial 2nd valvifer-2nd valvula muscle | No | 0 |  |  |
+| HAO:0000000 | anatomical entity | No | 2437 |  |  |
+| HAO:0000648 | notch | No | 25 |  |  |
+| HAO:0000709 | penisvalvo-gonossiculal muscle | No | 0 |  |  |
+| HAO:0000893 | region | No | 4 |  |  |
+| HAO:0001980 | anatomical region | No | 5 |  |  |
+| HAO:0002108 | palpal formula | No | 0 |  |  |
+| HAO:0002168 | anterior angle of the first valvifer | No | 0 |  |  |
+| HAO:0002176 | venom gland reservoir of the second valvifer | No | 0 |  |  |
+| HAO:0002209 | apical glossal hairs | No | 0 |  |  |
+| HAO:0002267 | median conjunctiva of abdominal tergum 9 | No | 0 |  |  |
+| HAO:0002272 | median anatomical line | No | 10 |  |  |
+| HAO:0002308 | width | No | 0 |  |  |
+| HAO:0002311 | anterior pronotal slope | No | 0 |  |  |
+| HAO:0002326 | maximum diameter of the compound eye | No | 0 |  |  |
+| HAO:0002329 | angle | No | 0 |  |  |
+| HAO:0002330 | setal angle | No | 0 |  |  |
+| HAO:0002347 | minimum spine distance | No | 0 |  |  |
+| HAO:0002349 | arithmetic mean | No | 1 |  |  |
+| HAO:0002373 | malar striae | No | 0 |  |  |
+| HAO:0002454 | microtrichia | No | 0 |  |  |
+| HAO:0002483 | hind wing tegula | No | 0 |  |  |
+| HAO:0002516 | mesoscutellar comb | No | 0 |  |  |
+| HAO:0002531 | sixth maxillary palpal sclerite | No | 0 |  |  |
+| HAO:0002536 | Heitler&apos;s lump | No | 0 |  |  |
+| HAO:0002537 | tibial flexor sclerite | No | 0 |  |  |
+| HAO:0002544 | tibial extensor muscle | No | 0 |  |  |
+| HAO:0002550 | tergal apodeme | No | 0 |  |  |
+| HAO:0002556 | distal crenulate carina | No | 0 |  |  |
+| HAO:0002558 | proximomedian lamella of the Waterston&apos;s evaporatorium | No | 0 |  |  |
+| HAO:0002578 | medial penisvalvo-gonossiculal muscle | No | 0 |  |  |
+| HAO:0002580 | lateral gonostyle/volsella complex-volsella muscle | No | 0 |  |  |
+| HAO:0002581 | intragonostyle muscle | No | 0 |  |  |
+| HAO:0002587 | 2nd valvifer-vagina muscle | No | 0 |  |  |
+| HAO:0002588 | 2nd valvifer-venom gland reservoir muscle | No | 0 |  |  |
+| HAO:0002596 | Medial 2nd valvifer-2nd valvula muscle | No | 0 |  |  |

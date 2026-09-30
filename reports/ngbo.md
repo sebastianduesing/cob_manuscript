@@ -11,12 +11,12 @@ NGBO has 7 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in NGBO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/NGBO_6000089 | name of specimen donor | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/NGBO_6000103 | standard operating procedure actual use duration | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/NGBO_6000294 | specimen shipping temperature | No | 1 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/NGBO_6000318 | expression quantitative trait loci | No | 0 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/NGBO_6000402 | name of data generation assay executor | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/NGBO_6000406 | name of bioinformatics analysis executor | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/NGBO_6000476 | oligonucleotide probe | No | 0 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
+| NGBO:6000089 | name of specimen donor | No | 0 | BFO:0000020 | characteristic |
+| NGBO:6000103 | standard operating procedure actual use duration | No | 0 | BFO:0000038 |  |
+| NGBO:6000294 | specimen shipping temperature | No | 1 | BFO:0000019 |  |
+| NGBO:6000318 | expression quantitative trait loci | No | 0 | BFO:0000031 | information content entity |
+| NGBO:6000402 | name of data generation assay executor | No | 0 | BFO:0000020 | characteristic |
+| NGBO:6000406 | name of bioinformatics analysis executor | No | 0 | BFO:0000020 | characteristic |
+| NGBO:6000476 | oligonucleotide probe | No | 0 | BFO:0000031 | information content entity |

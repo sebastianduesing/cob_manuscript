@@ -11,19 +11,19 @@ PLANA has 14 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in PLANA. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/PLANA_0000001 | Stage 1 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000002 | Stage 2 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000003 | Stage 3 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000004 | Stage 4 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000005 | Stage 5 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000006 | Stage 6 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000007 | Stage 7 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000008 | Stage 8 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000021 | biotype | No | 2 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0000214 | juvenile stage | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0002122 | perturbation | No | 17 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0002134 | sagittal orientation | No | 1 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/PLANA_0004503 | adult hermaphrodite | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/PLANA_0004504 | asexual adult | No | 0 |  |  |
+| PLANA:0000001 | Stage 1 | No | 0 |  |  |
+| PLANA:0000002 | Stage 2 | No | 0 |  |  |
+| PLANA:0000003 | Stage 3 | No | 0 |  |  |
+| PLANA:0000004 | Stage 4 | No | 0 |  |  |
+| PLANA:0000005 | Stage 5 | No | 0 |  |  |
+| PLANA:0000006 | Stage 6 | No | 0 |  |  |
+| PLANA:0000007 | Stage 7 | No | 0 |  |  |
+| PLANA:0000008 | Stage 8 | No | 0 |  |  |
+| PLANA:0000021 | biotype | No | 2 |  |  |
+| PLANA:0000214 | juvenile stage | No | 0 |  |  |
+| PLANA:0002122 | perturbation | No | 17 |  |  |
+| PLANA:0002134 | sagittal orientation | No | 1 | BFO:0000020 | characteristic |
+| PLANA:0004503 | adult hermaphrodite | No | 0 |  |  |
+| PLANA:0004504 | asexual adult | No | 0 |  |  |

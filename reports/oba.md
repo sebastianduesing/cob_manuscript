@@ -11,6 +11,6 @@ OBA has 1 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in OBA. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/OBA_0000001 | biological attribute | Yes | 25229 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| OBA:0000001 | biological attribute | Yes | 25229 | BFO:0000020 | characteristic |

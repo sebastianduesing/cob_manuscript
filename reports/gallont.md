@@ -11,25 +11,25 @@ GALLONT has 20 unaligned roots. An unaligned root is the highest-level in-namesp
 
 The table below contains all unaligned roots in GALLONT. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/GALLONT_0000007 | internal quality | No | 5 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000013 | nectarous | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000014 | caneliform | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000015 | cupuliform | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000016 | echinoform | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000017 | infundibuliform | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000018 | lenticular | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000019 | semiterete | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000020 | confluent | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000021 | linear color gradient | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000022 | corrugated | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000023 | crackled | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000024 | dimpled | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000026 | faceted | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000027 | moss-like | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000028 | papery | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000029 | felt-like | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000030 | pruinose | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000031 | semideciduous | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GALLONT_0000032 | brittle | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
+| GALLONT:0000007 | internal quality | No | 5 | BFO:0000020 | characteristic |
+| GALLONT:0000013 | nectarous | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000014 | caneliform | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000015 | cupuliform | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000016 | echinoform | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000017 | infundibuliform | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000018 | lenticular | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000019 | semiterete | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000020 | confluent | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000021 | linear color gradient | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000022 | corrugated | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000023 | crackled | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000024 | dimpled | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000026 | faceted | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000027 | moss-like | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000028 | papery | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000029 | felt-like | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000030 | pruinose | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000031 | semideciduous | No | 0 | BFO:0000020 | characteristic |
+| GALLONT:0000032 | brittle | No | 0 | BFO:0000020 | characteristic |

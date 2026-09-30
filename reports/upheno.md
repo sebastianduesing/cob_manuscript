@@ -11,6 +11,6 @@ UPHENO has 1 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in UPHENO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/UPHENO_0001001 | phenotype | Yes | 10807 |  |  |
+| UPHENO:0001001 | phenotype | Yes | 10807 |  |  |

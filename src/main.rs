@@ -1,5 +1,6 @@
 use clap::{Parser, Subcommand};
 use csv::{ReaderBuilder, Writer};
+use regex::Regex;
 use reqwest::Error;
 use serde::Deserialize;
 use serde_yaml::{Value, from_str};
@@ -14,6 +15,7 @@ use tabld::{
     model::{CLASS, Graph, IndexedMemoryGraph, ONTOLOGY, Subject},
     rdfxml,
 };
+use url::Url;
 
 // CLI setup
 #[derive(Parser, Debug)]
@@ -71,6 +73,21 @@ fn download(url: String, destination: &Path) -> Result<(), Box<dyn std::error::E
     let content = response.bytes()?;
     copy(&mut content.as_ref(), &mut dest)?;
     Ok(())
+}
+
+// Convert a PURL to a CURIE
+fn purl_to_curie(purl: String) -> Result<String, Box<dyn std::error::Error>> {
+    let purl = Url::parse(&purl)?;
+    let re = Regex::new(r"(?<namespace>[a-zA-Z_]+)_(?<id>\d+)").unwrap();
+    let curie = purl
+        .path_segments()
+        .map(|c| c.collect::<Vec<_>>())
+        .unwrap()
+        .last()
+        .unwrap()
+        .to_string();
+    let curie = re.replace_all(&curie, "$namespace:$id").into_owned();
+    Ok(curie)
 }
 
 // Get IDs and PURLs of active OBO ontologies (minus COB and BFO)
@@ -675,7 +692,7 @@ fn report(
             };
             write!(
                 f,
-                "| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |\n"
+                "| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |\n"
             )?;
             write!(f, "| ----- | ----- | ----- | ----- | ----- | ----- |\n")?;
             let mut count = 0;
@@ -696,11 +713,12 @@ fn report(
                 write!(
                     f,
                     "| {} | {} | {} | {} | {} | {} |\n",
-                    root.iri,
+                    purl_to_curie(root.iri.clone()).unwrap_or(root.iri.clone()),
                     root.label,
                     root.preferred,
                     root.desc_count,
-                    root.bot_bfo_ancestor,
+                    purl_to_curie(root.bot_bfo_ancestor.clone())
+                        .unwrap_or(root.bot_bfo_ancestor.clone()),
                     repl
                 )?
             }

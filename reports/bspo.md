@@ -11,8 +11,8 @@ BSPO has 3 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in BSPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/BSPO_0000051 | anatomical gradient | No | 7 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/BSPO_0000070 | anatomical region | No | 83 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/BSPO_0000086 | anatomical compartment | No | 5 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
+| BSPO:0000051 | anatomical gradient | No | 7 | BFO:0000004 |  |
+| BSPO:0000070 | anatomical region | No | 83 | BFO:0000004 |  |
+| BSPO:0000086 | anatomical compartment | No | 5 | BFO:0000004 |  |

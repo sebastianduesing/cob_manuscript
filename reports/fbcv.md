@@ -11,8 +11,8 @@ FBCV has 3 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in FBCV. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/FBcv_0000000 | FlyBase CV | Yes | 1191 |  |  |
-| http://purl.obolibrary.org/obo/FBcv_0006003 | population of Drosophila | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/FBcv_0006007 | population of cells | No | 0 |  |  |
+| FBcv:0000000 | FlyBase CV | Yes | 1191 |  |  |
+| FBcv:0006003 | population of Drosophila | No | 0 |  |  |
+| FBcv:0006007 | population of cells | No | 0 |  |  |

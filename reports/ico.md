@@ -11,10 +11,10 @@ ICO has 5 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in ICO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/ICO_0000058 | investigation period | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ICO_0000088 | participation duration | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ICO_0000089 | actual duration of study subject participation | No | 0 | http://purl.obolibrary.org/obo/BFO_0000008 |  |
-| http://purl.obolibrary.org/obo/ICO_0000126 | storage duration of signed informed consent form | No | 0 | http://purl.obolibrary.org/obo/BFO_0000008 |  |
-| http://purl.obolibrary.org/obo/ICO_0000186 | permission temporal region | No | 0 | http://purl.obolibrary.org/obo/BFO_0000008 |  |
+| ICO:0000058 | investigation period | No | 0 | BFO:0000038 |  |
+| ICO:0000088 | participation duration | No | 0 | BFO:0000038 |  |
+| ICO:0000089 | actual duration of study subject participation | No | 0 | BFO:0000008 |  |
+| ICO:0000126 | storage duration of signed informed consent form | No | 0 | BFO:0000008 |  |
+| ICO:0000186 | permission temporal region | No | 0 | BFO:0000008 |  |

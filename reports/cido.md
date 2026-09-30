@@ -11,9 +11,9 @@ CIDO has 4 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in CIDO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/CIDO_0000266 | microvascular angina | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/CIDO_0000409 | obsolete term | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CIDO_0001095 | SARS2-Human N-MRPL45 association | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CIDO_0001113 | SARS-CoV-2 N protein and human protein association | No | 0 |  |  |
+| CIDO:0000266 | microvascular angina | No | 0 | BFO:0000019 |  |
+| CIDO:0000409 | obsolete term | No | 0 |  |  |
+| CIDO:0001095 | SARS2-Human N-MRPL45 association | No | 0 |  |  |
+| CIDO:0001113 | SARS-CoV-2 N protein and human protein association | No | 0 |  |  |

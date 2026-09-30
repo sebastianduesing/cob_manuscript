@@ -11,11 +11,11 @@ OHD has 6 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in OHD. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/OHD_0000211 | dental practice facility | No | 0 | http://purl.obolibrary.org/obo/BFO_0000004 |  |
-| http://purl.obolibrary.org/obo/OHD_0001076 | sodium oxide | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/OHD_0001077 | barium oxide | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/OHD_0001079 | zirconium oxide | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/OHD_0001080 | yttrium oxide | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/OHD_0001081 | lithium oxide | No | 0 |  |  |
+| OHD:0000211 | dental practice facility | No | 0 | BFO:0000004 |  |
+| OHD:0001076 | sodium oxide | No | 0 |  |  |
+| OHD:0001077 | barium oxide | No | 0 |  |  |
+| OHD:0001079 | zirconium oxide | No | 0 |  |  |
+| OHD:0001080 | yttrium oxide | No | 0 |  |  |
+| OHD:0001081 | lithium oxide | No | 0 |  |  |

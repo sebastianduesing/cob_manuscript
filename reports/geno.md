@@ -11,12 +11,12 @@ GENO has 7 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in GENO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/GENO_0000575 | zebrafish phenotype | No | 0 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GENO_0000701 | sequence feature or set | No | 60 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/GENO_0000713 | qualified sequence feature or collection | No | 15 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/GENO_0000788 | sequence feature attribute | No | 57 | http://purl.obolibrary.org/obo/BFO_0000020 | characteristic |
-| http://purl.obolibrary.org/obo/GENO_0000815 | sequence feature location | No | 1 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/GENO_0000897 | genomic entity | No | 0 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
-| http://purl.obolibrary.org/obo/GENO_0000921 | biological sequence or set | No | 16 | http://purl.obolibrary.org/obo/BFO_0000031 | information content entity |
+| GENO:0000575 | zebrafish phenotype | No | 0 | BFO:0000020 | characteristic |
+| GENO:0000701 | sequence feature or set | No | 60 | BFO:0000031 | information content entity |
+| GENO:0000713 | qualified sequence feature or collection | No | 15 | BFO:0000031 | information content entity |
+| GENO:0000788 | sequence feature attribute | No | 57 | BFO:0000020 | characteristic |
+| GENO:0000815 | sequence feature location | No | 1 | BFO:0000031 | information content entity |
+| GENO:0000897 | genomic entity | No | 0 | BFO:0000031 | information content entity |
+| GENO:0000921 | biological sequence or set | No | 16 | BFO:0000031 | information content entity |

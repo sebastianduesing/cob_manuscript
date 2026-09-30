@@ -11,17 +11,17 @@ LEPAO has 12 unaligned roots. An unaligned root is the highest-level in-namespac
 
 The table below contains all unaligned roots in LEPAO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/LEPAO_0000000 | root node | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000001 | muscle tissue | No | 2 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000004 | cellular anatomical entity | No | 1 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000006 | anatomical entity | Yes | 129 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000031 | galeal trachea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000034 | labial palp trachea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000035 | antennal trachea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000040 | leg trachea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000133 | subgalea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000134 | distigalea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000135 | basigalea | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/LEPAO_0000136 | proboscis | No | 0 |  |  |
+| LEPAO:0000000 | root node | No | 0 |  |  |
+| LEPAO:0000001 | muscle tissue | No | 2 |  |  |
+| LEPAO:0000004 | cellular anatomical entity | No | 1 |  |  |
+| LEPAO:0000006 | anatomical entity | Yes | 129 |  |  |
+| LEPAO:0000031 | galeal trachea | No | 0 |  |  |
+| LEPAO:0000034 | labial palp trachea | No | 0 |  |  |
+| LEPAO:0000035 | antennal trachea | No | 0 |  |  |
+| LEPAO:0000040 | leg trachea | No | 0 |  |  |
+| LEPAO:0000133 | subgalea | No | 0 |  |  |
+| LEPAO:0000134 | distigalea | No | 0 |  |  |
+| LEPAO:0000135 | basigalea | No | 0 |  |  |
+| LEPAO:0000136 | proboscis | No | 0 |  |  |

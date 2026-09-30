@@ -11,24 +11,24 @@ ENVO has 19 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in ENVO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/ENVO_01000785 | material extraction process | No | 1 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01000993 | manufacturing process | No | 1 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01000996 | human-directed construction process | No | 0 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01001303 | environmental role | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_01001436 | planned environmental usage process | No | 32 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01001492 | satellite imaging | No | 1 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01001496 | inorganic macronutrient dissolved in ocean water | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_01001641 | glaciation | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ENVO_01001642 | interglacial | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ENVO_01001643 | ice age | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ENVO_01001866 | well intervention | No | 2 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_01001877 | transient tracer | No | 1 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_01003005 | day | No | 1 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ENVO_02000007 | tissue culture | No | 4 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_02000146 | chemical engineering process | No | 2 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_02500041 | environmental monitoring | No | 1 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/ENVO_03000096 | season | No | 3 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/ENVO_06105267 | soil profile characterization | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ENVO_09200037 | hours of sunshine | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
+| ENVO:01000785 | material extraction process | No | 1 | BFO:0000003 | process |
+| ENVO:01000993 | manufacturing process | No | 1 | BFO:0000003 | process |
+| ENVO:01000996 | human-directed construction process | No | 0 | BFO:0000003 | process |
+| ENVO:01001303 | environmental role | No | 0 |  |  |
+| ENVO:01001436 | planned environmental usage process | No | 32 | BFO:0000003 | process |
+| ENVO:01001492 | satellite imaging | No | 1 | BFO:0000003 | process |
+| ENVO:01001496 | inorganic macronutrient dissolved in ocean water | No | 0 |  |  |
+| ENVO:01001641 | glaciation | No | 0 | BFO:0000038 |  |
+| ENVO:01001642 | interglacial | No | 0 | BFO:0000038 |  |
+| ENVO:01001643 | ice age | No | 0 | BFO:0000038 |  |
+| ENVO:01001866 | well intervention | No | 2 | BFO:0000003 | process |
+| ENVO:01001877 | transient tracer | No | 1 |  |  |
+| ENVO:01003005 | day | No | 1 | BFO:0000038 |  |
+| ENVO:02000007 | tissue culture | No | 4 |  |  |
+| ENVO:02000146 | chemical engineering process | No | 2 |  |  |
+| ENVO:02500041 | environmental monitoring | No | 1 | BFO:0000003 | process |
+| ENVO:03000096 | season | No | 3 | BFO:0000038 |  |
+| ENVO:06105267 | soil profile characterization | No | 0 |  |  |
+| ENVO:09200037 | hours of sunshine | No | 0 | BFO:0000038 |  |

@@ -11,10 +11,10 @@ CRO has 5 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in CRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/CRO_0000000 | contributor role | No | 75 |  |  |
-| http://purl.obolibrary.org/obo/CRO_0000003 | figure development role | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CRO_0000004 | translator role | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CRO_0000012 | graphic design role | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/CRO_0000070 | relationship | No | 1 |  |  |
+| CRO:0000000 | contributor role | No | 75 |  |  |
+| CRO:0000003 | figure development role | No | 0 |  |  |
+| CRO:0000004 | translator role | No | 0 |  |  |
+| CRO:0000012 | graphic design role | No | 0 |  |  |
+| CRO:0000070 | relationship | No | 1 |  |  |

@@ -11,9 +11,9 @@ ADO has 4 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in ADO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/ADO_0000010 | TM_BIN_VariantisGeneticRiskFactorFor | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ADO_0000011 | TM_BIN_isSignAndSymptomFor | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ADO_0000012 | TM_BIN_isTreatmentFor | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/ADO_0000024 | early sign | No | 0 | http://purl.obolibrary.org/obo/BFO_0000001 |  |
+| ADO:0000010 | TM_BIN_VariantisGeneticRiskFactorFor | No | 0 |  |  |
+| ADO:0000011 | TM_BIN_isSignAndSymptomFor | No | 0 |  |  |
+| ADO:0000012 | TM_BIN_isTreatmentFor | No | 0 |  |  |
+| ADO:0000024 | early sign | No | 0 | BFO:0000001 |  |

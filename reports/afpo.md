@@ -11,10 +11,10 @@ AFPO has 5 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in AFPO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/AfPO_0000188 | Eastern African | No | 163 |  |  |
-| http://purl.obolibrary.org/obo/AfPO_0000274 | Central African | No | 68 |  |  |
-| http://purl.obolibrary.org/obo/AfPO_0000275 | Northern African | No | 18 |  |  |
-| http://purl.obolibrary.org/obo/AfPO_0000276 | Southern African | No | 40 |  |  |
-| http://purl.obolibrary.org/obo/AfPO_0000277 | Western African | No | 102 |  |  |
+| AfPO:0000188 | Eastern African | No | 163 |  |  |
+| AfPO:0000274 | Central African | No | 68 |  |  |
+| AfPO:0000275 | Northern African | No | 18 |  |  |
+| AfPO:0000276 | Southern African | No | 40 |  |  |
+| AfPO:0000277 | Western African | No | 102 |  |  |

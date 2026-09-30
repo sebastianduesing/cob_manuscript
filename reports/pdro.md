@@ -11,9 +11,9 @@ PDRO has 4 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in PDRO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/PDRO_0000322 | drug prescription validity period | No | 0 | http://purl.obolibrary.org/obo/BFO_0000038 |  |
-| http://purl.obolibrary.org/obo/PDRO_9876001 | administration dose form | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/PDRO_9876002 | drug product dose form | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/PDRO_9876003 | active ingredient aggregate biological activity | No | 0 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
+| PDRO:0000322 | drug prescription validity period | No | 0 | BFO:0000038 |  |
+| PDRO:9876001 | administration dose form | No | 0 | BFO:0000019 |  |
+| PDRO:9876002 | drug product dose form | No | 0 | BFO:0000019 |  |
+| PDRO:9876003 | active ingredient aggregate biological activity | No | 0 | BFO:0000019 |  |

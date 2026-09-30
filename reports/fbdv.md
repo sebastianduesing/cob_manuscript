@@ -11,9 +11,9 @@ FBDV has 4 unaligned roots. An unaligned root is the highest-level in-namespace 
 
 The table below contains all unaligned roots in FBDV. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/FBdv_00000000 | Drosophila life | Yes | 0 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/FBdv_00005259 | developmental stage | Yes | 111 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/FBdv_00007013 | age | Yes | 72 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
-| http://purl.obolibrary.org/obo/FBdv_00007024 | biological process | Yes | 4 | http://purl.obolibrary.org/obo/BFO_0000003 | process |
+| FBdv:00000000 | Drosophila life | Yes | 0 | BFO:0000003 | process |
+| FBdv:00005259 | developmental stage | Yes | 111 | BFO:0000003 | process |
+| FBdv:00007013 | age | Yes | 72 | BFO:0000003 | process |
+| FBdv:00007024 | biological process | Yes | 4 | BFO:0000003 | process |

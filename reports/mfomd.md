@@ -11,11 +11,11 @@ MFOMD has 6 unaligned roots. An unaligned root is the highest-level in-namespace
 
 The table below contains all unaligned roots in MFOMD. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/MFOMD_0000001 | http://purl.obolibrary.org/obo/MFOMD_0000001 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/MFOMD_0000024 | http://purl.obolibrary.org/obo/MFOMD_0000024 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/MFOMD_0000025 | http://purl.obolibrary.org/obo/MFOMD_0000025 | No | 2 |  |  |
-| http://purl.obolibrary.org/obo/MFOMD_0000038 | http://purl.obolibrary.org/obo/MFOMD_0000038 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/MFOMD_0000040 | http://purl.obolibrary.org/obo/MFOMD_0000040 | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/MFOMD_0000041 | http://purl.obolibrary.org/obo/MFOMD_0000041 | No | 0 |  |  |
+| MFOMD:0000001 | http://purl.obolibrary.org/obo/MFOMD_0000001 | No | 0 |  |  |
+| MFOMD:0000024 | http://purl.obolibrary.org/obo/MFOMD_0000024 | No | 0 |  |  |
+| MFOMD:0000025 | http://purl.obolibrary.org/obo/MFOMD_0000025 | No | 2 |  |  |
+| MFOMD:0000038 | http://purl.obolibrary.org/obo/MFOMD_0000038 | No | 0 |  |  |
+| MFOMD:0000040 | http://purl.obolibrary.org/obo/MFOMD_0000040 | No | 0 |  |  |
+| MFOMD:0000041 | http://purl.obolibrary.org/obo/MFOMD_0000041 | No | 0 |  |  |

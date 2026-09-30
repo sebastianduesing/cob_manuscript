@@ -11,8 +11,8 @@ HTN has 3 unaligned roots. An unaligned root is the highest-level in-namespace t
 
 The table below contains all unaligned roots in HTN. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
-| IRI of Root | Label of Root | Preferred Root? | Number of Subclasses | Lowest BFO Ancestor | Suggested Replacement |
+| Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| http://purl.obolibrary.org/obo/HTN_00000014 | elevated blood pressure phenotype | No | 4 | http://purl.obolibrary.org/obo/BFO_0000019 |  |
-| http://purl.obolibrary.org/obo/HTN_00000040 | stage 1 elevated adult systolic blood pressure meaurement datum per ACC 2017 guidelines | No | 0 |  |  |
-| http://purl.obolibrary.org/obo/HTN_00000051 | adult over 18 years of age measurement datum | No | 0 |  |  |
+| HTN:00000014 | elevated blood pressure phenotype | No | 4 | BFO:0000019 |  |
+| HTN:00000040 | stage 1 elevated adult systolic blood pressure meaurement datum per ACC 2017 guidelines | No | 0 |  |  |
+| HTN:00000051 | adult over 18 years of age measurement datum | No | 0 |  |  |
