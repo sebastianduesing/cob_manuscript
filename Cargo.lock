@@ -204,10 +204,12 @@ version = "0.1.0"
 dependencies = [
  "clap",
  "csv",
+ "regex",
  "reqwest",
  "serde",
  "serde_yaml",
  "tabld",
+ "url",
 ]
 
 [[package]]
