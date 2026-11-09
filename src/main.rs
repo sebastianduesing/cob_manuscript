@@ -12,7 +12,10 @@ use std::{
     path::{Path, PathBuf},
 };
 use tabld::{
-    model::{CLASS, Graph, IndexedMemoryGraph, ONTOLOGY, Subject},
+    model::{
+        CLASS, Graph, IndexedMemoryGraph, ON_PROPERTY, ONTOLOGY, Object, Objects, SOME_VALUES_FROM,
+        SUBCLASS_OF, Subject,
+    },
     rdfxml,
 };
 use url::Url;
@@ -238,6 +241,53 @@ fn download_obo_onts(
     }
 }
 
+// Return a list of ancestors  by BFO:0000050 'part of' relations instead of subclass relations
+fn get_parthood_ancestors(subject: &Subject, graph: &IndexedMemoryGraph) -> BTreeSet<String> {
+    let mut parthood_ancestors: BTreeSet<String> = BTreeSet::new();
+    let mut next_search: BTreeSet<&Subject> = BTreeSet::new();
+    next_search.insert(subject);
+    while next_search.len() > 0 {
+        if let Some(subject) = next_search.pop_first() {
+            for (pred, objs) in subject.predicates() {
+                if pred == SUBCLASS_OF {
+                    for obj in objs {
+                        match obj {
+                            Object::Map { content, .. } => {
+                                let rdf_ns_type = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
+                                if content.contains_key(rdf_ns_type)
+                                    && content.contains_key(ON_PROPERTY)
+                                    && content.contains_key(SOME_VALUES_FROM)
+                                {
+                                    for i in content.get(ON_PROPERTY).unwrap() {
+                                        if i.object()
+                                            == "http://purl.obolibrary.org/obo/BFO_0000050"
+                                                .to_string()
+                                        {
+                                            for val in content.get(SOME_VALUES_FROM).unwrap() {
+                                                parthood_ancestors.insert(val.object());
+                                                let new_subj = graph.get(&val.object()).unwrap();
+                                                next_search.insert(new_subj);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            Object::ID { .. } => {}
+                            Object::LanguageLiteral { .. } => {}
+                            Object::TypedLiteral { .. } => {}
+                            Object::List { .. } => {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if parthood_ancestors.len() > 0 {
+        println!("{}, {:?}", subject.name(), parthood_ancestors);
+    }
+    parthood_ancestors
+}
+
 // Iterate over an ontology file, outputting a CSV line for each class in the ontology
 fn check_class_alignment(
     ont_path: PathBuf,
@@ -310,6 +360,9 @@ fn check_class_alignment(
             ontology.ns_class_count = ontology.ns_class_count + 1;
         }
         let mut term_ancestors = graph.ancestors(&subject.name());
+        if term_ancestors.len() == 0 {
+            let mut parthood_ancestors = get_parthood_ancestors(&subject, &graph);
+        }
         let name = subject.name();
         term_ancestors.insert(&name);
         let mut found: bool = false;
@@ -599,7 +652,7 @@ struct MappingRecord {
     #[serde(rename = "Label")]
     _label: String,
     #[serde(rename = "Replacement COB ID")]
-    cob_iri: String,
+    _cob_iri: String,
     #[serde(rename = "Replacement COB Label")]
     cob_label: String,
 }
