@@ -7,4 +7,3 @@ for filename in cache/unreasoned/*.owl; do
 done
 
 
-# 48874
