@@ -117,47 +117,75 @@ def draw_ont_alignment_hist(data, fname):
     plt.savefig(fname, dpi=300)
 
 
-def draw_root_hist(data, fname):
-    vals = []
+def draw_root_hist(data, slim_roots, fname):
+    all_roots_vals = []
     for index, rowdict in data.items():
         val = rowdict["Unaligned Roots"]
         if val == "":
             continue
         val = int(val)
-        vals.append(val)
-    fig, ax = plt.subplots()
+        all_roots_vals.append(val)
+    slim_roots_vals = []
+    for index, rowdict in data.items():
+        ont = rowdict["Ontology"]
+        if ont in slim_roots.keys():
+            val = slim_roots[rowdict["Ontology"]]
+        else:
+            val = 0
+        if val == "":
+            continue
+        val = int(val)
+        slim_roots_vals.append(val)
+    fig, (ax0, ax1) = plt.subplots(nrows=2, ncols=1)
+    fig.subplots_adjust(wspace=0.15, hspace=0.50, left=0.1, bottom=0.1)
     title = "Distribution of OBO Ontologies by # of Unaligned Root Classes"
     fig.suptitle(title, size="xx-large")
-    fig.set_size_inches(13, 8)
+    fig.set_size_inches(8, 10)
     fig.set_dpi(300)
-    dataset = np.array(vals)
-    n = len(dataset)
-    median = np.median(dataset).round(2)
-    box_props = dict(boxstyle="round", facecolor="white")
-    box_text = f"n = {n}\nmedian = {median}"
-    bin = [0, 1, 2, 4, 7, 11, 21, 51, 101, 100000000]
-    tick_labels = ["0", "1", "[2, 3]", "[4, 6]", "[7, 10]", "[11, 20]", "[21-50]", "[51, 100]", ">100" ]
-    hist, bin_edges = np.histogram(dataset, bin)
-    ax.grid(True, axis="y")
-    ax.set_axisbelow(True)
-    ax.bar(range(len(hist)),
-           hist,
-           width=1,
-           linewidth=1,
-           edgecolor="white",
-           color="xkcd:wine")
-    ax.set_xlabel("Number of Unaligned Root Classes", size="x-large")
-    ax.set_ylabel("Number of Ontologies", size="x-large")
-    ax.set_xticks([i for i, j in enumerate(hist)], labels=tick_labels)
-    ax.text(
-        0.70,
-        0.95,
-        box_text,
-        transform=ax.transAxes,
-        verticalalignment="top",
-        bbox=box_props,
-        size="large",
-    )
+    for (ax, vals, title, color) in [
+        (
+            ax0,
+            all_roots_vals,
+            "All Unaligned Roots",
+            "xkcd:wine",
+        ),
+        (
+            ax1,
+            slim_roots_vals,
+            "Unaligned Roots without Target Ancestors",
+            "xkcd:cerulean",
+        )
+    ]:
+        dataset = np.array(vals)
+        n = len(dataset)
+        median = np.median(dataset).round(2)
+        box_props = dict(boxstyle="round", facecolor="white")
+        box_text = f"n = {n}\nmedian = {median}"
+        bin = [0, 1, 2, 4, 7, 11, 21, 51, 101, 100000000]
+        tick_labels = ["0", "1", "[2, 3]", "[4, 6]", "[7, 10]", "[11, 20]", "[21-50]", "[51, 100]", ">100" ]
+        hist, bin_edges = np.histogram(dataset, bin)
+        ax.set_title(title, size="x-large")
+        ax.grid(True, axis="y")
+        ax.set_axisbelow(True)
+        bar = ax.bar(range(len(hist)),
+                     hist,
+                     width=1,
+                     linewidth=1,
+                     edgecolor="white",
+                     color=color)
+        ax.bar_label(bar, fontsize=10)
+        ax.set_xlabel("Number of Unaligned Root Classes", size="large")
+        ax.set_ylabel("Number of Ontologies", size="large")
+        ax.set_xticks([i for i, j in enumerate(hist)], labels=tick_labels)
+        ax.text(
+            0.70,
+            0.95,
+            box_text,
+            transform=ax.transAxes,
+            verticalalignment="top",
+            bbox=box_props,
+            size="large",
+        )
     plt.savefig(fname, dpi=300)
 
 
@@ -168,6 +196,7 @@ def main():
         os.makedirs(image_dir)
     class_tsv = os.path.join(results_dir, "obo_classes.tsv")
     analysis_tsv = os.path.join(results_dir, "alignment_analysis.tsv")
+    roots_tsv = os.path.join(results_dir, "unaligned_roots.tsv")
     if os.path.isfile(class_tsv):
         classes = tsv2dict(class_tsv)
         fname = os.path.join(image_dir, "class_alignment_pie.png")
@@ -177,7 +206,17 @@ def main():
         fname = os.path.join(image_dir, "ont_alignment_hist.png")
         draw_ont_alignment_hist(analysis, fname)
         fname = os.path.join(image_dir, "ont_root_hist.png")
-        draw_root_hist(analysis, fname)
+        if os.path.isfile(roots_tsv):
+            roots = tsv2dict(roots_tsv)
+            slim_roots = {}
+            for index, row in roots.items():
+                if row["Ontology"] not in slim_roots.keys():
+                    slim_roots[row["Ontology"]] = 0
+                if row["Special Ancestor"] == "":
+                    count = slim_roots[row["Ontology"]]
+                    count += 1
+                    slim_roots[row["Ontology"]] = count
+            draw_root_hist(analysis, slim_roots, fname)
 
 
 if __name__ == "__main__":
