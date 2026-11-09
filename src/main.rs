@@ -58,6 +58,8 @@ struct Root {
     anc_count: u64,
     desc_count: u64,
     bot_bfo_ancestor: String,
+    mappable_ancestor: String,
+    mapping: String,
 }
 
 // Access a resource by url and read its contents to a string
@@ -243,6 +245,7 @@ fn check_class_alignment(
     analysis_wtr: &mut Writer<File>,
     roots_wtr: &mut Writer<File>,
     cob_subjects: &Vec<&Subject>,
+    mappings: &BTreeMap<String, MappingRecord>,
 ) -> Result<(), String> {
     let ont = ont_path.file_prefix().unwrap().display();
     let ont_string = format!("{ont}");
@@ -337,6 +340,7 @@ fn check_class_alignment(
             let mut bot_bfo_ancestor = "".to_string();
             let mut root_name = "".to_string();
             let mut top_anc_label = "".to_string();
+            let mut mappable_ancestor = "".to_string();
             if in_base == "True" {
                 let mut anc_vec: Vec<&String> = term_ancestors.into_iter().collect();
                 let anc_count = anc_vec.len() as u64 - 1;
@@ -344,6 +348,11 @@ fn check_class_alignment(
                 anc_vec.reverse();
                 if anc_vec.len() > 0 {
                     for ancestor in anc_vec.iter() {
+                        if mappings.contains_key(&ancestor.to_string())
+                            && mappable_ancestor == "".to_string()
+                        {
+                            mappable_ancestor = ancestor.to_string();
+                        }
                         if ancestor.to_lowercase().contains(&iri_flag) {
                             top_ns_ancestor = ancestor.to_string();
                         } else if ancestor.contains("/BFO_") && bot_bfo_ancestor == "".to_string() {
@@ -368,12 +377,18 @@ fn check_class_alignment(
                     } else {
                         1
                     };
+                    let mapping = match mappings.get(&mappable_ancestor) {
+                        Some(mapping) => mapping.cob_label.clone(),
+                        None => "".to_string(),
+                    };
                     let root = Root {
                         _id: root_name.to_string(),
                         label: top_anc_label.to_string(),
                         anc_count: anc_count,
                         desc_count: desc_count,
                         bot_bfo_ancestor: bot_bfo_ancestor.to_string(),
+                        mappable_ancestor: mappable_ancestor.to_string(),
+                        mapping: mapping.to_string(),
                     };
                     ontology.unaligned_roots.insert(root_name.to_string(), root);
                 }
@@ -404,35 +419,23 @@ fn check_class_alignment(
         aligned_ns_ratio =
             (ontology.aligned_ns_class_count as f32 / ontology.ns_class_count as f32).to_string()
     }
-    for root in ontology.unaligned_roots.keys() {
+    for root_iri in ontology.unaligned_roots.keys() {
         let mut is_preferred = "No";
-        if preferred_roots.contains(root) {
+        if preferred_roots.contains(root_iri) {
             is_preferred = "Yes";
         }
+        let root = ontology.unaligned_roots.get(root_iri).unwrap();
         roots_wtr
             .write_record([
                 ont_string.clone(),
-                root.to_string(),
-                ontology.unaligned_roots.get(root).unwrap().label.clone(),
+                root_iri.to_string(),
+                root.label.clone(),
                 is_preferred.to_string(),
-                ontology
-                    .unaligned_roots
-                    .get(root)
-                    .unwrap()
-                    .anc_count
-                    .to_string(),
-                ontology
-                    .unaligned_roots
-                    .get(root)
-                    .unwrap()
-                    .desc_count
-                    .to_string(),
-                ontology
-                    .unaligned_roots
-                    .get(root)
-                    .unwrap()
-                    .bot_bfo_ancestor
-                    .to_string(),
+                root.anc_count.to_string(),
+                root.desc_count.to_string(),
+                root.bot_bfo_ancestor.to_string(),
+                root.mappable_ancestor.to_string(),
+                root.mapping.to_string(),
             ])
             .unwrap();
     }
@@ -459,7 +462,9 @@ fn generate_class_tsv(
     class_tsv_path: &str,
     analysis_tsv_path: &str,
     roots_tsv_path: &str,
+    mappings_path: &str,
 ) {
+    let mappings = make_mappings(mappings_path).unwrap();
     let rdfxml_input = std::fs::read_to_string(cob_path).expect("Read from file");
     let graph = rdfxml::read(&rdfxml_input).expect("Read from string");
     let cob_graph: IndexedMemoryGraph = graph.into();
@@ -518,6 +523,8 @@ fn generate_class_tsv(
             "Ancestor Class Count",
             "Descendent Class Count",
             "Lowest BFO Ancestor",
+            "Special Ancestor",
+            "Mapping",
         ])
         .unwrap();
 
@@ -538,6 +545,7 @@ fn generate_class_tsv(
             &mut analysis_wtr,
             &mut roots_wtr,
             &cob_subjects,
+            &mappings,
         )
         .expect("couldn't print terms");
     }
@@ -586,12 +594,12 @@ struct RootRecord {
 
 #[derive(Debug, Deserialize)]
 struct MappingRecord {
-    #[serde(rename = "BFO ID")]
-    bfo_iri: String,
-    #[serde(rename = "BFO Label")]
-    _bfo_label: String,
+    #[serde(rename = "ID")]
+    iri: String,
+    #[serde(rename = "Label")]
+    _label: String,
     #[serde(rename = "Replacement COB ID")]
-    _cob_iri: String,
+    cob_iri: String,
     #[serde(rename = "Replacement COB Label")]
     cob_label: String,
 }
@@ -605,7 +613,7 @@ fn make_mappings(
     let mut mappings: BTreeMap<String, MappingRecord> = BTreeMap::new();
     for result in mappings_rdr.deserialize() {
         let record: MappingRecord = result?;
-        let iri = record.bfo_iri.clone();
+        let iri = record.iri.clone();
         mappings.insert(iri, record);
     }
     Ok(mappings)
@@ -772,6 +780,7 @@ fn main() {
             );
         }
         Commands::Analyze {} => {
+            let mappings_path = "src/mappings.tsv";
             let cob_purl = String::from("http://purl.obolibrary.org/obo/cob.owl");
             let cob_path = format!("{}/cob.owl", unreasoned_dir);
             download(cob_purl, Path::new(&cob_path)).expect(&format!("Couldn't download cob.owl"));
@@ -781,6 +790,7 @@ fn main() {
                 &class_tsv_path,
                 &analysis_tsv_path,
                 &roots_tsv_path,
+                &mappings_path,
             );
         }
         Commands::Report {} => {
