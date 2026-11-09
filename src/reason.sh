@@ -5,5 +5,3 @@ for filename in cache/unreasoned/*.owl; do
       if [ -f "cache/reasoned/$(basename "$filename" .owl).owl"]; then
           echo "Successfully reasoned $(basename "$filename" .owl).owl"
 done
-
-
