@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 14597 | 14430 | 98.86% |
-| Classes in VO namespace | 13428 | 13389 | 99.71% |
+| All classes (including imports) | 15229 | 15062 | 98.90% |
+| Classes in VO namespace | 14046 | 14007 | 99.72% |
 
 VO has 20 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align VO with COB, these terms should be moved under COB terms or added to COB.
 

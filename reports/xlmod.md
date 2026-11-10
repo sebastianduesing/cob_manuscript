@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 1105 | 0 | 0.00% |
-| Classes in XLMOD namespace | 1105 | 0 | 0.00% |
+| All classes (including imports) | 1106 | 0 | 0.00% |
+| Classes in XLMOD namespace | 1106 | 0 | 0.00% |
 
 XLMOD has 8 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align XLMOD with COB, these terms should be moved under COB terms or added to COB.
 
@@ -14,7 +14,7 @@ The table below contains all unaligned roots in XLMOD. The column 'Preferred Roo
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | XLMOD:00000 | Proteomics Standards Initiative cross-linking and derivatization controlled vocabulary | No | 0 |  |  |
-| XLMOD:00001 | cross-linking entity | No | 450 |  |  |
+| XLMOD:00001 | cross-linking entity | No | 451 |  |  |
 | XLMOD:00002 | cross-linker related chemical modification | No | 108 |  |  |
 | XLMOD:00003 | label transfer reagent | No | 34 |  |  |
 | XLMOD:00026 | reactive group attribute | No | 43 |  |  |

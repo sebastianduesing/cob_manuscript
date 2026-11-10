@@ -4,7 +4,7 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 2138 | 15 | 0.70% |
+| All classes (including imports) | 2177 | 15 | 0.69% |
 | Classes in FBCV namespace | 1194 | 0 | 0.00% |
 
 FBCV has 3 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align FBCV with COB, these terms should be moved under COB terms or added to COB.

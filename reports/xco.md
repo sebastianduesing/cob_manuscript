@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 1850 | 0 | 0.00% |
-| Classes in XCO namespace | 1850 | 0 | 0.00% |
+| All classes (including imports) | 1858 | 0 | 0.00% |
+| Classes in XCO namespace | 1858 | 0 | 0.00% |
 
 XCO has 61 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align XCO with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,7 +13,7 @@ The table below contains all unaligned roots in XCO. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| XCO:0000000 | experimental condition | No | 1781 |  |  |
+| XCO:0000000 | experimental condition | No | 1789 |  |  |
 | XCO:0000103 | glucose solution | No | 1 |  |  |
 | XCO:0000288 | R16 peptide of interphotoreceptor retinoid-binding protein | No | 0 |  |  |
 | XCO:0000289 | R14 peptide of interphotoreceptor retinoid-binding protein | No | 0 |  |  |

@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 1780 | 1666 | 93.60% |
-| Classes in OHD namespace | 869 | 863 | 99.31% |
+| All classes (including imports) | 1892 | 1790 | 94.61% |
+| Classes in OHD namespace | 686 | 680 | 99.13% |
 
 OHD has 6 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align OHD with COB, these terms should be moved under COB terms or added to COB.
 

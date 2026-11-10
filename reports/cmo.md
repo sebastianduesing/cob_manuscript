@@ -4,16 +4,16 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 4091 | 0 | 0.00% |
-| Classes in CMO namespace | 4091 | 0 | 0.00% |
+| All classes (including imports) | 4133 | 0 | 0.00% |
+| Classes in CMO namespace | 4133 | 0 | 0.00% |
 
-CMO has 62 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align CMO with COB, these terms should be moved under COB terms or added to COB.
+CMO has 68 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align CMO with COB, these terms should be moved under COB terms or added to COB.
 
 The table below contains all unaligned roots in CMO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| CMO:0000000 | clinical measurement | No | 4005 |  |  |
+| CMO:0000000 | clinical measurement | No | 4041 |  |  |
 | CMO:0000047 | plasma indirect bilirubin level | No | 0 |  |  |
 | CMO:0000048 | plasma direct bilirubin level | No | 0 |  |  |
 | CMO:0000460 | cervical vertebral column length | No | 0 |  |  |
@@ -75,3 +75,9 @@ The table below contains all unaligned roots in CMO. The column 'Preferred Root?
 | CMO:0004155 | cerebral neural tissue ribonucleic acid level | No | 0 |  |  |
 | CMO:0004156 | cerebral blood vessel ribonucleic acid level | No | 0 |  |  |
 | CMO:0004161 | anterior cinglulate cortex ribonucleic acid level | No | 0 |  |  |
+| CMO:0004178 | duodenum length | No | 0 |  |  |
+| CMO:0004179 | duodenum weight | No | 0 |  |  |
+| CMO:0004180 | ileum length | No | 0 |  |  |
+| CMO:0004181 | ileum weight | No | 0 |  |  |
+| CMO:0004182 | jejunum length | No | 0 |  |  |
+| CMO:0004183 | jejunum weight | No | 0 |  |  |

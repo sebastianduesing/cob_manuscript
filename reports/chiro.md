@@ -4,7 +4,7 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 26 | 1 | 3.85% |
+| All classes (including imports) | 26 | 2 | 7.69% |
 | Classes in CHIRO namespace | 0 | 0 | N/A (no in-namespace classes) |
 
 CHIRO has 0 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. CHIRO is fully aligned with COB.

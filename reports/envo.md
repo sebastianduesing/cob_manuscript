@@ -4,10 +4,10 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 6482 | 6263 | 96.62% |
-| Classes in ENVO namespace | 3872 | 3806 | 98.30% |
+| All classes (including imports) | 6614 | 6389 | 96.60% |
+| Classes in ENVO namespace | 4007 | 3935 | 98.20% |
 
-ENVO has 19 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align ENVO with COB, these terms should be moved under COB terms or added to COB.
+ENVO has 21 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align ENVO with COB, these terms should be moved under COB terms or added to COB.
 
 The table below contains all unaligned roots in ENVO. The column 'Preferred Root?' indicates whether a term has an `IAO:0000700` annotation marking it as a preferred root in the ontology.
 
@@ -25,9 +25,11 @@ The table below contains all unaligned roots in ENVO. The column 'Preferred Root
 | ENVO:01001643 | ice age | No | 0 | BFO:0000038 |  |
 | ENVO:01001866 | well intervention | No | 2 | BFO:0000003 | process |
 | ENVO:01001877 | transient tracer | No | 1 |  |  |
+| ENVO:01001941 | facilitation | No | 0 |  |  |
 | ENVO:01003005 | day | No | 1 | BFO:0000038 |  |
 | ENVO:02000007 | tissue culture | No | 4 |  |  |
 | ENVO:02000146 | chemical engineering process | No | 2 |  |  |
+| ENVO:02000187 | biotransformation process | No | 4 |  |  |
 | ENVO:02500041 | environmental monitoring | No | 1 | BFO:0000003 | process |
 | ENVO:03000096 | season | No | 3 | BFO:0000038 |  |
 | ENVO:06105267 | soil profile characterization | No | 0 |  |  |

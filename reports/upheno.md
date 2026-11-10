@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 175674 | 117225 | 66.73% |
-| Classes in UPHENO namespace | 36998 | 26191 | 70.79% |
+| All classes (including imports) | 176146 | 117527 | 66.72% |
+| Classes in UPHENO namespace | 36737 | 26177 | 71.26% |
 
 UPHENO has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align UPHENO with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,4 +13,4 @@ The table below contains all unaligned roots in UPHENO. The column 'Preferred Ro
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| UPHENO:0001001 | phenotype | Yes | 10807 |  |  |
+| UPHENO:0001001 | phenotypic feature | Yes | 10560 |  |  |

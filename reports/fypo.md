@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 10224 | 5 | 0.05% |
-| Classes in FYPO namespace | 8321 | 0 | 0.00% |
+| All classes (including imports) | 16191 | 4154 | 25.66% |
+| Classes in FYPO namespace | 8344 | 0 | 0.00% |
 
 FYPO has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align FYPO with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,4 +13,4 @@ The table below contains all unaligned roots in FYPO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| FYPO:0000001 | phenotype | Yes | 8320 |  |  |
+| FYPO:0000001 | phenotype | Yes | 8343 |  |  |

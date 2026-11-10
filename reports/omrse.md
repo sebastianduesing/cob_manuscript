@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 465 | 430 | 92.47% |
-| Classes in OMRSE namespace | 285 | 273 | 95.79% |
+| All classes (including imports) | 458 | 423 | 92.36% |
+| Classes in OMRSE namespace | 286 | 274 | 95.80% |
 
 OMRSE has 5 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align OMRSE with COB, these terms should be moved under COB terms or added to COB.
 
@@ -16,5 +16,5 @@ The table below contains all unaligned roots in OMRSE. The column 'Preferred Roo
 | OMRSE:00000084 | enrollment end date | No | 0 | BFO:0000038 |  |
 | OMRSE:00000097 | enrollment start date | No | 0 | BFO:0000038 |  |
 | OMRSE:00000242 | intimate partnership | No | 0 | BFO:0000145 |  |
-| OMRSE:00000277 | subjective representation | No | 7 | BFO:0000020 | characteristic |
+| OMRSE:00000277 | self representation | No | 7 | BFO:0000020 | characteristic |
 | OMRSE:00002060 | family relationship | No | 0 | BFO:0000145 |  |

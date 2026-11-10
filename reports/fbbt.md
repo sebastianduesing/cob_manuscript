@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 28252 | 20143 | 71.30% |
-| Classes in FBBT namespace | 27141 | 19442 | 71.63% |
+| All classes (including imports) | 28328 | 20189 | 71.27% |
+| Classes in FBBT namespace | 27218 | 19488 | 71.60% |
 
 FBBT has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align FBBT with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,4 +13,4 @@ The table below contains all unaligned roots in FBBT. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| FBbt:10000000 | anatomical entity | Yes | 7699 | BFO:0000004 |  |
+| FBbt:10000000 | anatomical entity | Yes | 7730 | BFO:0000004 |  |

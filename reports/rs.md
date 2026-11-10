@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 5668 | 0 | 0.00% |
-| Classes in RS namespace | 5668 | 0 | 0.00% |
+| All classes (including imports) | 5676 | 0 | 0.00% |
+| Classes in RS namespace | 5676 | 0 | 0.00% |
 
 RS has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align RS with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,4 +13,4 @@ The table below contains all unaligned roots in RS. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| RS:0000457 | rat strain | No | 5668 |  |  |
+| RS:0000457 | rat strain | No | 5676 |  |  |

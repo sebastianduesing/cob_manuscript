@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 9242 | 9078 | 98.23% |
-| Classes in RBO namespace | 405 | 403 | 99.51% |
+| All classes (including imports) | 9251 | 9087 | 98.23% |
+| Classes in RBO namespace | 409 | 407 | 99.51% |
 
 RBO has 2 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align RBO with COB, these terms should be moved under COB terms or added to COB.
 

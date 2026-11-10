@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 3994 | 0 | 0.00% |
-| Classes in VT namespace | 3994 | 0 | 0.00% |
+| All classes (including imports) | 4060 | 0 | 0.00% |
+| Classes in VT namespace | 4060 | 0 | 0.00% |
 
 VT has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align VT with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,4 +13,4 @@ The table below contains all unaligned roots in VT. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| VT:0000001 | vertebrate trait | No | 3994 |  |  |
+| VT:0000001 | vertebrate trait | No | 4060 |  |  |

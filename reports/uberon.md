@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 25367 | 24286 | 95.74% |
-| Classes in UBERON namespace | 14975 | 14971 | 99.97% |
+| All classes (including imports) | 25483 | 24352 | 95.56% |
+| Classes in UBERON namespace | 15047 | 15043 | 99.97% |
 
 UBERON has 1 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align UBERON with COB, these terms should be moved under COB terms or added to COB.
 

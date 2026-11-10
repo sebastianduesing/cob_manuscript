@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 58985 | 45427 | 77.01% |
-| Classes in MONDO namespace | 32102 | 32044 | 99.82% |
+| All classes (including imports) | 59044 | 45465 | 77.00% |
+| Classes in MONDO namespace | 32137 | 32079 | 99.82% |
 
 MONDO has 2 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align MONDO with COB, these terms should be moved under COB terms or added to COB.
 
@@ -13,5 +13,5 @@ The table below contains all unaligned roots in MONDO. The column 'Preferred Roo
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| MONDO:0021125 | disease characteristic | Yes | 40 | BFO:0000020 | characteristic |
+| MONDO:0021125 | disease characteristic | Yes | 40 |  |  |
 | MONDO:0021178 | injury | Yes | 17 |  |  |

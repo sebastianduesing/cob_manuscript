@@ -4,8 +4,8 @@ In the table below, "aligned classes" are classes that have at least one ancesto
 
 | Class Set | Number of Classes | Number of Aligned Classes | Alignment % |
 | ----- | ----- | ----- | ----- |
-| All classes (including imports) | 3850 | 0 | 0.00% |
-| Classes in MS namespace | 3703 | 0 | 0.00% |
+| All classes (including imports) | 5851 | 0 | 0.00% |
+| Classes in MS namespace | 5703 | 0 | 0.00% |
 
 MS has 141 unaligned roots. An unaligned root is the highest-level in-namespace term without a COB ancestor. To align MS with COB, these terms should be moved under COB terms or added to COB.
 
@@ -40,16 +40,16 @@ The table below contains the first 100 unaligned roots in MS. The column 'Prefer
 | MS:1000480 | mass analyzer attribute | No | 9 |  |  |
 | MS:1000481 | detector attribute | No | 4 |  |  |
 | MS:1000482 | source attribute | No | 10 |  |  |
-| MS:1000499 | spectrum attribute | No | 46 |  |  |
+| MS:1000499 | spectrum attribute | No | 49 |  |  |
 | MS:1000507 | ion property | No | 2 |  |  |
 | MS:1000510 | precursor activation attribute | No | 18 |  |  |
-| MS:1000513 | binary data array | No | 30 |  |  |
+| MS:1000513 | binary data array | No | 31 |  |  |
 | MS:1000518 | binary data type | No | 5 |  |  |
 | MS:1000524 | data file content | No | 45 |  |  |
 | MS:1000525 | spectrum representation | No | 3 |  |  |
-| MS:1000531 | software | No | 410 |  |  |
-| MS:1000547 | object attribute | No | 220 |  |  |
-| MS:1000559 | spectrum type | No | 1 |  |  |
+| MS:1000531 | software | No | 419 |  |  |
+| MS:1000547 | object attribute | No | 2152 |  |  |
+| MS:1000559 | spectrum type | No | 0 |  |  |
 | MS:1000561 | data file checksum type | No | 3 |  |  |
 | MS:1000570 | spectra combination | No | 4 |  |  |
 | MS:1000572 | binary data compression type | No | 18 |  |  |
@@ -75,11 +75,11 @@ The table below contains the first 100 unaligned roots in MS. The column 'Prefer
 | MS:1000919 | target inclusion exclusion priority | No | 2 |  |  |
 | MS:1001000 | spectrum interpretation | No | 0 |  |  |
 | MS:1001055 | modification parameters | No | 17 |  |  |
-| MS:1001129 | quantification information | No | 164 |  |  |
+| MS:1001129 | quantification information | No | 166 |  |  |
 | MS:1001249 | search input details | No | 519 |  |  |
 | MS:1001354 | mass table options | No | 3 |  |  |
 | MS:1001359 | ambiguous residues | No | 2 |  |  |
-| MS:1001405 | spectrum identification result details | No | 505 |  |  |
+| MS:1001405 | spectrum identification result details | No | 509 |  |  |
 | MS:1001458 | spectrum generation information | No | 33 |  |  |
 | MS:1001459 | file format | No | 92 |  |  |
 | MS:1001471 | peptide modification details | No | 14 |  |  |
@@ -110,6 +110,6 @@ The table below contains the first 100 unaligned roots in MS. The column 'Prefer
 | MS:1002716 | measured element | No | 0 |  |  |
 | MS:1002809 | adduct ion attribute | No | 1 |  |  |
 | MS:1002814 | volt-second per square centimeter | No | 0 |  |  |
-| MS:1002840 | external reference data | No | 31 |  |  |
+| MS:1002840 | external reference data | No | 33 |  |  |
 | MS:1003025 | named element | No | 2 |  |  |
 | MS:1003033 | molecular entity attribute | No | 6 |  |  |
