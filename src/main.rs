@@ -599,7 +599,7 @@ struct MappingRecord {
     #[serde(rename = "Label")]
     _label: String,
     #[serde(rename = "Replacement COB ID")]
-    cob_iri: String,
+    _cob_iri: String,
     #[serde(rename = "Replacement COB Label")]
     cob_label: String,
 }
