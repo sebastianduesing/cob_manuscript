@@ -89,13 +89,14 @@ def draw_ont_alignment_hist(data, fname):
             break
     ax.grid(True, axis="y")
     ax.set_axisbelow(True)
-    ax.hist(
+    counts, bins, bars = ax.hist(
             dataset,
             bins=bin,
             linewidth=1,
             edgecolor="white",
             color="xkcd:wine"
         )
+    ax.bar_label(bars, labels=[f"{int(c)}" for c in counts])
     ax.set_xlabel("Percentage of In-Namespace Terms with an Ancestor in COB", size="x-large")
     ax.set_ylabel("Number of Ontologies", size="x-large")
     tick_start = bin_div / 2
@@ -152,7 +153,7 @@ def draw_root_hist(data, slim_roots, fname):
         (
             ax1,
             slim_roots_vals,
-            "Unaligned Roots without Target Ancestors",
+            "Unaligned Roots without Special Ancestors",
             "xkcd:cerulean",
         )
     ]:
@@ -190,6 +191,7 @@ def draw_root_hist(data, slim_roots, fname):
 
 
 def main():
+    plt.rcParams["font.family"] = "Times New Roman"
     results_dir = os.path.join("results")
     image_dir = os.path.join(results_dir, "images")
     if not os.path.exists(image_dir):
