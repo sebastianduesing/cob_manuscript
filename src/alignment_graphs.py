@@ -66,9 +66,10 @@ def draw_ont_alignment_hist(data, fname):
         val = float(val) * 100
         vals.append(val)
     fig, ax = plt.subplots()
+    ax.tick_params(axis="y", labelsize="large")
     title = "Distribution of OBO ontologies by # of in-namespace classes with a COB ancestor"
-    fig.suptitle(title, size="xx-large")
-    fig.set_size_inches(11, 8)
+    fig.suptitle(title, fontsize=24)
+    fig.set_size_inches(13, 7)
     fig.set_dpi(300)
     dataset = np.array(vals)
     n = len(dataset)
@@ -97,14 +98,14 @@ def draw_ont_alignment_hist(data, fname):
             color="xkcd:wine"
         )
     ax.bar_label(bars, labels=[f"{int(c)}" for c in counts])
-    ax.set_xlabel("Percentage of in-namespace classes with an ancestor in COB", size="x-large")
-    ax.set_ylabel("Number of ontologies", size="x-large")
+    ax.set_xlabel("Percentage of in-namespace classes with an ancestor in COB", fontsize=18)
+    ax.set_ylabel("Number of ontologies", fontsize=18)
     tick_start = bin_div / 2
     tick_end = (100 + tick_start) - 1
     ax.set_xticks(
         np.arange(tick_start, tick_end, bin_div),
         labels=tick_labels,
-        size="medium"
+        size="large"
     )
     ax.text(
         0.70,
@@ -113,7 +114,7 @@ def draw_ont_alignment_hist(data, fname):
         transform=ax.transAxes,
         verticalalignment="top",
         bbox=box_props,
-        size="large",
+        size="x-large",
     )
     plt.savefig(fname, dpi=300)
 
