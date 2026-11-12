@@ -68,7 +68,7 @@ def draw_ont_alignment_hist(data, fname):
     fig, ax = plt.subplots()
     title = "Distribution of OBO ontologies by # of in-namespace classes with a COB ancestor"
     fig.suptitle(title, size="xx-large")
-    fig.set_size_inches(13, 8)
+    fig.set_size_inches(11, 8)
     fig.set_dpi(300)
     dataset = np.array(vals)
     n = len(dataset)
