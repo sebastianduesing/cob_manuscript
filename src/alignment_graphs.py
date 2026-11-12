@@ -47,7 +47,7 @@ def draw_class_alignment_pie(classes, fname):
     colors = ["xkcd:tangerine", "xkcd:azure"]
     fig, ax = plt.subplots()
     fig.suptitle(title, size="x-large")
-    fig.set_size_inches(8, 5)
+    fig.set_size_inches(7, 5)
     fig.set_dpi(300)
     pie = ax.pie(data,
                  labels=labels,
@@ -66,7 +66,7 @@ def draw_ont_alignment_hist(data, fname):
         val = float(val) * 100
         vals.append(val)
     fig, ax = plt.subplots()
-    title = "Distribution of OBO Ontologies by # of In-Namespace Terms with a COB Ancestor"
+    title = "Distribution of OBO ontologies by # of in-namespace classes with a COB ancestor"
     fig.suptitle(title, size="xx-large")
     fig.set_size_inches(13, 8)
     fig.set_dpi(300)
@@ -97,8 +97,8 @@ def draw_ont_alignment_hist(data, fname):
             color="xkcd:wine"
         )
     ax.bar_label(bars, labels=[f"{int(c)}" for c in counts])
-    ax.set_xlabel("Percentage of In-Namespace Terms with an Ancestor in COB", size="x-large")
-    ax.set_ylabel("Number of Ontologies", size="x-large")
+    ax.set_xlabel("Percentage of in-namespace classes with an ancestor in COB", size="x-large")
+    ax.set_ylabel("Number of ontologies", size="x-large")
     tick_start = bin_div / 2
     tick_end = (100 + tick_start) - 1
     ax.set_xticks(
@@ -139,7 +139,7 @@ def draw_root_hist(data, slim_roots, fname):
         slim_roots_vals.append(val)
     fig, (ax0, ax1) = plt.subplots(nrows=2, ncols=1)
     fig.subplots_adjust(wspace=0.15, hspace=0.50, left=0.1, bottom=0.1)
-    title = "Distribution of OBO Ontologies by # of Unaligned Root Classes"
+    title = "Distribution of OBO ontologies by # of unaligned root classes"
     fig.suptitle(title, size="xx-large")
     fig.set_size_inches(8, 10)
     fig.set_dpi(300)
@@ -147,13 +147,13 @@ def draw_root_hist(data, slim_roots, fname):
         (
             ax0,
             all_roots_vals,
-            "All Unaligned Roots",
+            "All unaligned roots",
             "xkcd:wine",
         ),
         (
             ax1,
             slim_roots_vals,
-            "Unaligned Roots without Special Ancestors",
+            "Unaligned roots without special ancestors",
             "xkcd:cerulean",
         )
     ]:
@@ -175,8 +175,8 @@ def draw_root_hist(data, slim_roots, fname):
                      edgecolor="white",
                      color=color)
         ax.bar_label(bar, fontsize=10)
-        ax.set_xlabel("Number of Unaligned Root Classes", size="large")
-        ax.set_ylabel("Number of Ontologies", size="large")
+        ax.set_xlabel("Number of unaligned root classes", size="large")
+        ax.set_ylabel("Number of ontologies", size="large")
         ax.set_xticks([i for i, j in enumerate(hist)], labels=tick_labels)
         ax.text(
             0.70,
