@@ -13,4 +13,4 @@ The table below contains all unaligned roots in ARO. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| ARO:1000001 | process or component of antibiotic biology or chemistry | No | 9030 |  |  |
+| ARO:1000001 | process or component of antibiotic biology or chemistry | No | 9029 |  |  |

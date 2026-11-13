@@ -14,4 +14,4 @@ The table below contains all unaligned roots in ECO. The column 'Preferred Root?
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | ECO:0000000 | evidence | No | 730 |  |  |
-| ECO:0000217 | assertion method | No | 3 |  |  |
+| ECO:0000217 | assertion method | No | 2 |  |  |

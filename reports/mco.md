@@ -14,7 +14,7 @@ The table below contains all unaligned roots in MCO. The column 'Preferred Root?
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | MCO:00000000 | mco | No | 0 |  |  |
-| MCO:0000077 | optical density | No | 54 | BFO:0000019 |  |
+| MCO:0000077 | optical density | No | 53 | BFO:0000019 |  |
 | MCO:0000078 | aeration | No | 2 | BFO:0000019 |  |
 | MCO:0000079 | 10 to 40 MPa | No | 0 | BFO:0000019 |  |
 | MCO:0000080 | 0.1 MPa | No | 0 | BFO:0000019 |  |
@@ -73,4 +73,4 @@ The table below contains all unaligned roots in MCO. The column 'Preferred Root?
 | MCO:0000720 | pH 3.5 | No | 0 | BFO:0000019 |  |
 | MCO:0000721 | pH 5.3 | No | 0 | BFO:0000019 |  |
 | MCO:0000722 | pH 7.4 | No | 0 | BFO:0000019 |  |
-| MCO:0000895 | biological quality | No | 361 | BFO:0000019 |  |
+| MCO:0000895 | biological quality | No | 360 | BFO:0000019 |  |

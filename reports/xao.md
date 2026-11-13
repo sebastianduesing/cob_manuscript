@@ -14,4 +14,4 @@ The table below contains all unaligned roots in XAO. The column 'Preferred Root?
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | XAO:0000000 | Xenopus anatomical entity | No | 1684 |  |  |
-| XAO:1000000 | Xenopus developmental stage | No | 96 |  |  |
+| XAO:1000000 | Xenopus developmental stage | No | 95 |  |  |

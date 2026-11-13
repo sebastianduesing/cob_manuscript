@@ -13,4 +13,4 @@ The table below contains all unaligned roots in DOID. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| DOID:4 | disease | Yes | 12419 |  |  |
+| DOID:4 | disease | Yes | 12418 |  |  |

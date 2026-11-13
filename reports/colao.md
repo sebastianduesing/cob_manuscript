@@ -81,7 +81,7 @@ The table below contains all unaligned roots in COLAO. The column 'Preferred Roo
 | COLAO:0000106 | triangular folding area of the beetle wing | No | 0 |  |  |
 | COLAO:0000107 | humeral field of the beetle wing | No | 0 |  |  |
 | COLAO:0000113 | precostal vein of the beetle wing | No | 0 |  |  |
-| COLAO:0000114 | anterior branch of the beetle wing vein | No | 12 |  |  |
+| COLAO:0000114 | anterior branch of the beetle wing vein | No | 11 |  |  |
 | COLAO:0000115 | posterior branch of the beetle wing vein | No | 8 |  |  |
 | COLAO:0000120 | cross-vein of the beetle wing | No | 4 |  |  |
 | COLAO:0000124 | medial spur of the beetle wing | No | 0 |  |  |

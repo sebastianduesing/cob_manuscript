@@ -94,7 +94,7 @@ The table below contains all unaligned roots in CLYH. The column 'Preferred Root
 | CLYH:1000136 | gonozoid central tube | No | 0 |  |  |
 | CLYH:1000140 | medusa bud | No | 3 |  |  |
 | CLYH:1000150 | gastrozoid | No | 0 |  |  |
-| CLYH:1000153 | matrix | No | 9 |  |  |
+| CLYH:1000153 | matrix | No | 8 |  |  |
 | CLYH:1000161 | umbrella | No | 0 |  |  |
 | CLYH:1000162 | exumbrella | No | 0 |  |  |
 | CLYH:1000163 | subumbrella | No | 0 |  |  |
@@ -103,10 +103,10 @@ The table below contains all unaligned roots in CLYH. The column 'Preferred Root
 | CLYH:1000169 | medusa tentacle bud | No | 0 |  |  |
 | CLYH:1000170 | medusa tentacle bulb | No | 0 |  |  |
 | CLYH:1000179 | velum | No | 0 |  |  |
-| CLYH:1000182 | radial canal | No | 2 |  |  |
-| CLYH:1000183 | circular canal | No | 2 |  |  |
+| CLYH:1000182 | radial canal | No | 1 |  |  |
+| CLYH:1000183 | circular canal | No | 1 |  |  |
 | CLYH:1000184 | nerve ring | No | 0 |  |  |
 | CLYH:1000185 | inner nerve ring | No | 0 |  |  |
 | CLYH:1000186 | outer nerve ring | No | 0 |  |  |
-| CLYH:1000187 | manubrium | No | 2 |  |  |
+| CLYH:1000187 | manubrium | No | 1 |  |  |
 | CLYH:1000192 | gonad | No | 0 |  |  |

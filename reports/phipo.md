@@ -13,4 +13,4 @@ The table below contains all unaligned roots in PHIPO. The column 'Preferred Roo
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| PHIPO:0000505 | phenotype | No | 1126 |  |  |
+| PHIPO:0000505 | phenotype | No | 1125 |  |  |

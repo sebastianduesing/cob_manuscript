@@ -23,7 +23,7 @@ The table below contains all unaligned roots in PLANA. The column 'Preferred Roo
 | PLANA:0000008 | Stage 8 | No | 0 |  |  |
 | PLANA:0000021 | biotype | No | 2 |  |  |
 | PLANA:0000214 | juvenile stage | No | 0 |  |  |
-| PLANA:0002122 | perturbation | No | 17 |  |  |
+| PLANA:0002122 | perturbation | No | 16 |  |  |
 | PLANA:0002134 | sagittal orientation | No | 1 | BFO:0000020 | characteristic |
 | PLANA:0004503 | adult hermaphrodite | No | 0 |  |  |
 | PLANA:0004504 | asexual adult | No | 0 |  |  |

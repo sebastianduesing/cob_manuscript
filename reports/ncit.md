@@ -13,22 +13,22 @@ The table below contains all unaligned roots in NCIT. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| NCIT_C12218 | Chemotherapy Regimen or Agent Combination | No | 4740 |  |  |
-| NCIT_C12219 | Anatomic Structure, System, or Substance | No | 7629 |  |  |
-| NCIT_C12913 | Abnormal Cell | No | 822 |  |  |
-| NCIT_C14250 | Organism | No | 3458 |  |  |
-| NCIT_C16612 | Gene | No | 13719 |  |  |
-| NCIT_C17828 | Biological Process | No | 1244 |  |  |
-| NCIT_C1908 | Drug, Food, Chemical or Biomedical Material | No | 31991 |  |  |
-| NCIT_C20047 | Diagnostic or Prognostic Factor | No | 196 |  |  |
-| NCIT_C20181 | Conceptual Entity | No | 40487 |  |  |
-| NCIT_C20189 | Property or Attribute | No | 13874 |  |  |
-| NCIT_C20633 | Biochemical Pathway | No | 765 |  |  |
-| NCIT_C22187 | Experimental Organism Diagnosis | No | 1979 |  |  |
-| NCIT_C22188 | Experimental Organism Anatomical Concept | No | 505 |  |  |
-| NCIT_C26548 | Gene Product | No | 8225 |  |  |
+| NCIT_C12218 | Chemotherapy Regimen or Agent Combination | No | 4739 |  |  |
+| NCIT_C12219 | Anatomic Structure, System, or Substance | No | 7628 |  |  |
+| NCIT_C12913 | Abnormal Cell | No | 821 |  |  |
+| NCIT_C14250 | Organism | No | 3457 |  |  |
+| NCIT_C16612 | Gene | No | 13718 |  |  |
+| NCIT_C17828 | Biological Process | No | 1243 |  |  |
+| NCIT_C1908 | Drug, Food, Chemical or Biomedical Material | No | 31990 |  |  |
+| NCIT_C20047 | Diagnostic or Prognostic Factor | No | 195 |  |  |
+| NCIT_C20181 | Conceptual Entity | No | 40486 |  |  |
+| NCIT_C20189 | Property or Attribute | No | 13873 |  |  |
+| NCIT_C20633 | Biochemical Pathway | No | 764 |  |  |
+| NCIT_C22187 | Experimental Organism Diagnosis | No | 1978 |  |  |
+| NCIT_C22188 | Experimental Organism Anatomical Concept | No | 504 |  |  |
+| NCIT_C26548 | Gene Product | No | 8224 |  |  |
 | NCIT_C28428 | Retired Concept | No | 0 |  |  |
-| NCIT_C3910 | Molecular Abnormality | No | 4169 |  |  |
-| NCIT_C43431 | Activity | No | 17163 |  |  |
-| NCIT_C7057 | Disease, Disorder or Finding | No | 50359 |  |  |
-| NCIT_C97325 | Manufactured Object | No | 2970 |  |  |
+| NCIT_C3910 | Molecular Abnormality | No | 4168 |  |  |
+| NCIT_C43431 | Activity | No | 17162 |  |  |
+| NCIT_C7057 | Disease, Disorder or Finding | No | 50358 |  |  |
+| NCIT_C97325 | Manufactured Object | No | 2969 |  |  |

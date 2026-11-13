@@ -17,4 +17,4 @@ The table below contains all unaligned roots in MRO. The column 'Preferred Root?
 | MRO:0000005 | MHC haplotype | No | 60 |  |  |
 | MRO:0000008 | T cell epitope dependent biological activity assay | No | 0 |  |  |
 | MRO:0000009 | MHC ligand assay | No | 0 |  |  |
-| MRO:0037049 | Beta-2-microglobulin gene | No | 3 |  |  |
+| MRO:0037049 | Beta-2-microglobulin gene | No | 2 |  |  |

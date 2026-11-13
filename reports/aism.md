@@ -15,8 +15,8 @@ The table below contains all unaligned roots in AISM. The column 'Preferred Root
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | AISM:0000005 | cuticular depression | No | 24 | BFO:0000004 |  |
 | AISM:0000013 | evaginated | No | 0 | BFO:0000019 |  |
-| AISM:0000174 | insect region of cuticle | Yes | 499 | BFO:0000004 |  |
-| AISM:0000353 | reticulate | No | 3 | BFO:0000019 |  |
+| AISM:0000174 | insect region of cuticle | Yes | 498 | BFO:0000004 |  |
+| AISM:0000353 | reticulate | No | 2 | BFO:0000019 |  |
 | AISM:0000374 | tibial margin | No | 6 | BFO:0000004 |  |
 | AISM:0000376 | interpunctural distance | No | 0 | BFO:0000019 |  |
 | AISM:0000381 | head margin at genoclypeal sulcus | No | 0 | BFO:0000004 |  |

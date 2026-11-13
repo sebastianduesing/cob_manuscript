@@ -14,4 +14,4 @@ The table below contains all unaligned roots in CIO. The column 'Preferred Root?
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | CIO:0000000 | confidence information statement | No | 28 |  |  |
-| CIO:0000040 | confidence information element | No | 15 |  |  |
+| CIO:0000040 | confidence information element | No | 14 |  |  |

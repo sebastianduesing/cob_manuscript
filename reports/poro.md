@@ -15,7 +15,7 @@ The table below contains the first 100 unaligned roots in PORO. The column 'Pref
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | PORO:0000001 | sponge | No | 3 |  |  |
 | PORO:0000034 | trab | No | 0 |  |  |
-| PORO:0000039 | canal | No | 19 |  |  |
+| PORO:0000039 | canal | No | 18 |  |  |
 | PORO:0000045 | spicule ray | No | 12 |  |  |
 | PORO:0000094 | crystal | No | 0 |  |  |
 | PORO:0000095 | arrangement of spicules | No | 22 |  |  |
@@ -46,7 +46,7 @@ The table below contains the first 100 unaligned roots in PORO. The column 'Pref
 | PORO:0000266 | digitate | No | 0 |  |  |
 | PORO:0000292 | epitheca | No | 0 |  |  |
 | PORO:0000299 | exhalant system | No | 0 |  |  |
-| PORO:0000305 | fiber | No | 11 |  |  |
+| PORO:0000305 | fiber | No | 10 |  |  |
 | PORO:0000306 | fibroreticulate | No | 0 |  |  |
 | PORO:0000308 | ficiform | No | 0 |  |  |
 | PORO:0000313 | fistulose | No | 0 |  |  |
@@ -65,7 +65,7 @@ The table below contains the first 100 unaligned roots in PORO. The column 'Pref
 | PORO:0000389 | massive | No | 0 |  |  |
 | PORO:0000393 | mesolamella | No | 0 |  |  |
 | PORO:0000398 | microanchor | No | 0 |  |  |
-| PORO:0000409 | microstructure | No | 8 |  |  |
+| PORO:0000409 | microstructure | No | 7 |  |  |
 | PORO:0000410 | microsymbiont | No | 0 |  |  |
 | PORO:0000416 | node | No | 0 |  |  |
 | PORO:0000420 | olynthus stage | No | 0 |  |  |
@@ -93,23 +93,23 @@ The table below contains the first 100 unaligned roots in PORO. The column 'Pref
 | PORO:0000630 | vesicular | No | 0 |  |  |
 | PORO:0000634 | zygome | No | 0 | BFO:0000004 |  |
 | PORO:0000635 | zygosis | No | 0 |  |  |
-| PORO:0000700 | body layer | No | 4 | BFO:0000004 |  |
+| PORO:0000700 | body layer | No | 3 | BFO:0000004 |  |
 | PORO:0000701 | spermatid | No | 0 |  |  |
 | PORO:0000703 | bromotyrosin | No | 0 |  |  |
-| PORO:0000900 | reproductive body | No | 2 |  |  |
+| PORO:0000900 | reproductive body | No | 1 |  |  |
 | PORO:0000904 | collagen fibril | No | 0 |  |  |
-| PORO:0000905 | sponge surface | No | 20 |  |  |
-| PORO:0000906 | surface protruberance | No | 3 |  |  |
-| PORO:0000907 | mode of reproduction | No | 3 |  |  |
-| PORO:0000909 | ray axis | No | 2 |  |  |
-| PORO:0000910 | plate | No | 7 |  |  |
-| PORO:0000912 | pole of larva | No | 3 |  |  |
-| PORO:0000915 | chamber | No | 2 |  |  |
-| PORO:0000917 | groove, pit or depression | No | 8 |  |  |
-| PORO:0000922 | substrate | No | 3 |  |  |
-| PORO:0000926 | sponge larva | No | 6 |  |  |
-| PORO:0000927 | structural quality | No | 14 |  |  |
+| PORO:0000905 | sponge surface | No | 19 |  |  |
+| PORO:0000906 | surface protruberance | No | 2 |  |  |
+| PORO:0000907 | mode of reproduction | No | 2 |  |  |
+| PORO:0000909 | ray axis | No | 1 |  |  |
+| PORO:0000910 | plate | No | 6 |  |  |
+| PORO:0000912 | pole of larva | No | 2 |  |  |
+| PORO:0000915 | chamber | No | 1 |  |  |
+| PORO:0000917 | groove, pit or depression | No | 7 |  |  |
+| PORO:0000922 | substrate | No | 2 |  |  |
+| PORO:0000926 | sponge larva | No | 5 |  |  |
+| PORO:0000927 | structural quality | No | 13 |  |  |
 | PORO:0000928 | gemmule coat | No | 0 | BFO:0000004 |  |
-| PORO:0000929 | multicellular anatomical structure | No | 4 |  |  |
-| PORO:0000938 | organism subdivision | No | 44 |  |  |
+| PORO:0000929 | multicellular anatomical structure | No | 3 |  |  |
+| PORO:0000938 | organism subdivision | No | 43 |  |  |
 | PORO:0000959 | protein | No | 2 |  |  |

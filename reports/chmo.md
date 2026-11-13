@@ -18,16 +18,16 @@ The table below contains the first 100 unaligned roots in CHMO. The column 'Pref
 | CHMO:0000948 | charge-coupled device | No | 1 |  |  |
 | CHMO:0000951 | atomic force microscopy tip | No | 0 |  |  |
 | CHMO:0000952 | atomic force microscopy cantilever | No | 0 |  |  |
-| CHMO:0000953 | microscope | No | 28 |  |  |
-| CHMO:0000960 | ion source | No | 8 |  |  |
+| CHMO:0000953 | microscope | No | 27 |  |  |
+| CHMO:0000960 | ion source | No | 7 |  |  |
 | CHMO:0000964 | ion cyclotron resonance cell | No | 0 |  |  |
-| CHMO:0000978 | mass-to-charge analyser | No | 7 |  |  |
+| CHMO:0000978 | mass-to-charge analyser | No | 6 |  |  |
 | CHMO:0000979 | reflectron | No | 0 |  |  |
 | CHMO:0000983 | separation capillary | No | 0 |  |  |
 | CHMO:0000987 | capillary column | No | 0 |  |  |
-| CHMO:0000990 | open chromatographic bed | No | 3 |  |  |
-| CHMO:0000997 | chromatography column | No | 16 |  |  |
-| CHMO:0000999 | separation method | No | 135 |  |  |
+| CHMO:0000990 | open chromatographic bed | No | 2 |  |  |
+| CHMO:0000997 | chromatography column | No | 15 |  |  |
+| CHMO:0000999 | separation method | No | 134 |  |  |
 | CHMO:0001053 | magnetic sector | No | 0 |  |  |
 | CHMO:0001054 | electric sector | No | 0 |  |  |
 | CHMO:0001060 | electron multiplier | No | 2 |  |  |
@@ -36,7 +36,7 @@ The table below contains the first 100 unaligned roots in CHMO. The column 'Pref
 | CHMO:0001097 | thermocouple | No | 0 |  |  |
 | CHMO:0001098 | Wollaston wire | No | 0 |  |  |
 | CHMO:0001132 | laser ablation | No | 1 |  |  |
-| CHMO:0001301 | synthesis method | No | 209 |  |  |
+| CHMO:0001301 | synthesis method | No | 208 |  |  |
 | CHMO:0001460 | peptisation | No | 0 |  |  |
 | CHMO:0001464 | ageing of precipitate | No | 0 |  |  |
 | CHMO:0001466 | atomisation | No | 0 |  |  |
@@ -76,9 +76,9 @@ The table below contains the first 100 unaligned roots in CHMO. The column 'Pref
 | CHMO:0001707 | sonication | No | 1 |  |  |
 | CHMO:0001768 | trapping method | No | 4 |  |  |
 | CHMO:0001810 | synchrotron | No | 0 |  |  |
-| CHMO:0001841 | nuclear magnetic resonance pulse sequence | No | 30 |  |  |
+| CHMO:0001841 | nuclear magnetic resonance pulse sequence | No | 29 |  |  |
 | CHMO:0001842 | radio frequency pulse | No | 3 |  |  |
-| CHMO:0001904 | supercritical fluid method | No | 13 |  |  |
+| CHMO:0001904 | supercritical fluid method | No | 12 |  |  |
 | CHMO:0001909 | focal-plane array | No | 0 |  |  |
 | CHMO:0001938 | collision-induced dissociation | No | 0 |  |  |
 | CHMO:0001957 | flow cytometer | No | 0 |  |  |
@@ -93,7 +93,7 @@ The table below contains the first 100 unaligned roots in CHMO. The column 'Pref
 | CHMO:0002196 | activation | No | 1 |  |  |
 | CHMO:0002199 | rotary evaporator | No | 0 |  |  |
 | CHMO:0002203 | matrix assisted laser desorption-ionisation plate | No | 0 |  |  |
-| CHMO:0002244 | detector | No | 13 |  |  |
+| CHMO:0002244 | detector | No | 12 |  |  |
 | CHMO:0002344 | electrode | No | 21 |  |  |
 | CHMO:0002351 | electrochemical cell | No | 3 |  |  |
 | CHMO:0002396 | electrostatic detection apparatus | No | 0 |  |  |
@@ -112,4 +112,4 @@ The table below contains the first 100 unaligned roots in CHMO. The column 'Pref
 | CHMO:0002610 | transmission electron microscope grid | No | 0 |  |  |
 | CHMO:0002635 | magnetometer | No | 1 |  |  |
 | CHMO:0002768 | gas chromatograph-mass spectrometer transfer line | No | 0 |  |  |
-| CHMO:0002770 | sample heating | No | 4 |  |  |
+| CHMO:0002770 | sample heating | No | 3 |  |  |

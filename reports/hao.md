@@ -14,16 +14,16 @@ The table below contains all unaligned roots in HAO. The column 'Preferred Root?
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | HAO:0000000 | anatomical entity | No | 2437 |  |  |
-| HAO:0000648 | notch | No | 25 |  |  |
+| HAO:0000648 | notch | No | 24 |  |  |
 | HAO:0000709 | penisvalvo-gonossiculal muscle | No | 0 |  |  |
 | HAO:0000893 | region | No | 4 |  |  |
-| HAO:0001980 | anatomical region | No | 5 |  |  |
+| HAO:0001980 | anatomical region | No | 4 |  |  |
 | HAO:0002108 | palpal formula | No | 0 |  |  |
 | HAO:0002168 | anterior angle of the first valvifer | No | 0 |  |  |
 | HAO:0002176 | venom gland reservoir of the second valvifer | No | 0 |  |  |
 | HAO:0002209 | apical glossal hairs | No | 0 |  |  |
 | HAO:0002267 | median conjunctiva of abdominal tergum 9 | No | 0 |  |  |
-| HAO:0002272 | median anatomical line | No | 10 |  |  |
+| HAO:0002272 | median anatomical line | No | 9 |  |  |
 | HAO:0002308 | width | No | 0 |  |  |
 | HAO:0002311 | anterior pronotal slope | No | 0 |  |  |
 | HAO:0002326 | maximum diameter of the compound eye | No | 0 |  |  |

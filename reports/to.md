@@ -13,4 +13,4 @@ The table below contains all unaligned roots in TO. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| TO:0000387 | plant trait | No | 1501 |  |  |
+| TO:0000387 | plant trait | No | 1500 |  |  |

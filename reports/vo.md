@@ -22,13 +22,13 @@ The table below contains all unaligned roots in VO. The column 'Preferred Root?'
 | VO:0000426 | period of persistence of vaccine induced immune response | No | 0 | BFO:0000038 |  |
 | VO:0000456 | protection efficacy | No | 0 | BFO:0000019 |  |
 | VO:0000540 | time of survival of live vaccine inside host | No | 0 | BFO:0000038 |  |
-| VO:0000549 | bacterial phenotype | No | 3 | BFO:0000019 |  |
+| VO:0000549 | bacterial phenotype | No | 2 | BFO:0000019 |  |
 | VO:0000612 | vaccine organism virulent | No | 0 | BFO:0000019 |  |
 | VO:0000804 | effectiveness | No | 3 | BFO:0000019 |  |
 | VO:0000815 | monthly | No | 0 | BFO:0000020 | characteristic |
 | VO:0000816 | biweekly | No | 0 | BFO:0000020 | characteristic |
 | VO:0000897 | age at vaccination | No | 0 | BFO:0000019 |  |
-| VO:0001139 | vaccine organism viability | No | 3 | BFO:0000019 |  |
+| VO:0001139 | vaccine organism viability | No | 2 | BFO:0000019 |  |
 | VO:0001372 | unimmunized | No | 0 | BFO:0000019 |  |
 | VO:0001376 | vaccinated | No | 1 | BFO:0000019 |  |
 | VO:0001377 | unvaccinated | No | 1 | BFO:0000019 |  |

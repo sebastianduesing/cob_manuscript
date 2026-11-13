@@ -22,14 +22,14 @@ The table below contains all unaligned roots in ONTOAVIDA. The column 'Preferred
 | ONTOAVIDA:00000018 | parasite digital organism | No | 0 |  |  |
 | ONTOAVIDA:00000022 | instruction code | No | 62 |  |  |
 | ONTOAVIDA:00000085 | digital organism file | No | 2 |  |  |
-| ONTOAVIDA:00000096 | avida experiment | No | 3 |  |  |
+| ONTOAVIDA:00000096 | avida experiment | No | 2 |  |  |
 | ONTOAVIDA:00000097 | digital genome | No | 0 |  |  |
 | ONTOAVIDA:00000105 | CPU cycle | No | 0 |  |  |
 | ONTOAVIDA:00000106 | head | No | 4 |  |  |
 | ONTOAVIDA:00000111 | logic operation | No | 9 |  |  |
 | ONTOAVIDA:00000124 | digital transcriptome | No | 0 |  |  |
 | ONTOAVIDA:00000127 | update | No | 0 |  |  |
-| ONTOAVIDA:00000129 | digital storage space | No | 8 |  |  |
+| ONTOAVIDA:00000129 | digital storage space | No | 7 |  |  |
 | ONTOAVIDA:00000130 | instruction set | No | 3 |  |  |
 | ONTOAVIDA:00000135 | digital tandem repeat | No | 0 |  |  |
 | ONTOAVIDA:00000136 | template | No | 0 |  |  |

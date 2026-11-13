@@ -13,6 +13,6 @@ The table below contains all unaligned roots in BSPO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| BSPO:0000051 | anatomical gradient | No | 7 | BFO:0000004 |  |
-| BSPO:0000070 | anatomical region | No | 83 | BFO:0000004 |  |
+| BSPO:0000051 | anatomical gradient | No | 6 | BFO:0000004 |  |
+| BSPO:0000070 | anatomical region | No | 82 | BFO:0000004 |  |
 | BSPO:0000086 | anatomical compartment | No | 5 | BFO:0000004 |  |

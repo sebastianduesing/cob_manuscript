@@ -13,4 +13,4 @@ The table below contains all unaligned roots in WBPHENOTYPE. The column 'Preferr
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| WBPhenotype:0000886 | nematode phenotype | Yes | 2650 |  |  |
+| WBPhenotype:0000886 | nematode phenotype | Yes | 2649 |  |  |

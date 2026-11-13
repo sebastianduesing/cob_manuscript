@@ -13,4 +13,4 @@ The table below contains all unaligned roots in INO. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| INO:0000159 | obsolete class | No | 2 |  |  |
+| INO:0000159 | obsolete class | No | 1 |  |  |

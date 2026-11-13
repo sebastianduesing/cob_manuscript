@@ -13,4 +13,4 @@ The table below contains all unaligned roots in SYMP. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| SYMP:0000462 | symptom | Yes | 895 |  |  |
+| SYMP:0000462 | symptom | Yes | 894 |  |  |

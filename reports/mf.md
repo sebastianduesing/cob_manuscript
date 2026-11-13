@@ -14,4 +14,4 @@ The table below contains all unaligned roots in MF. The column 'Preferred Root?'
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | MF:0000030 | representation | No | 2 | BFO:0000020 | characteristic |
-| MF:0000074 | bodily quality | No | 3 | BFO:0000019 |  |
+| MF:0000074 | bodily quality | No | 2 | BFO:0000019 |  |

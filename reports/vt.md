@@ -13,4 +13,4 @@ The table below contains all unaligned roots in VT. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| VT:0000001 | vertebrate trait | No | 4060 |  |  |
+| VT:0000001 | vertebrate trait | No | 4059 |  |  |

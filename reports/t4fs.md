@@ -13,4 +13,4 @@ The table below contains all unaligned roots in T4FS. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| T4FS:0000519 | learning medium | No | 11 | BFO:0000004 |  |
+| T4FS:0000519 | learning medium | No | 10 | BFO:0000004 |  |

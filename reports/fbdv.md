@@ -14,6 +14,6 @@ The table below contains all unaligned roots in FBDV. The column 'Preferred Root
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | FBdv:00000000 | Drosophila life | Yes | 0 | BFO:0000003 | process |
-| FBdv:00005259 | developmental stage | Yes | 111 | BFO:0000003 | process |
+| FBdv:00005259 | developmental stage | Yes | 110 | BFO:0000003 | process |
 | FBdv:00007013 | age | Yes | 72 | BFO:0000003 | process |
-| FBdv:00007024 | biological process | Yes | 4 | BFO:0000003 | process |
+| FBdv:00007024 | biological process | Yes | 3 | BFO:0000003 | process |

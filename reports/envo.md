@@ -17,7 +17,7 @@ The table below contains all unaligned roots in ENVO. The column 'Preferred Root
 | ENVO:01000993 | manufacturing process | No | 1 | BFO:0000003 | process |
 | ENVO:01000996 | human-directed construction process | No | 0 | BFO:0000003 | process |
 | ENVO:01001303 | environmental role | No | 0 |  |  |
-| ENVO:01001436 | planned environmental usage process | No | 32 | BFO:0000003 | process |
+| ENVO:01001436 | planned environmental usage process | No | 31 | BFO:0000003 | process |
 | ENVO:01001492 | satellite imaging | No | 1 | BFO:0000003 | process |
 | ENVO:01001496 | inorganic macronutrient dissolved in ocean water | No | 0 |  |  |
 | ENVO:01001641 | glaciation | No | 0 | BFO:0000038 |  |
@@ -27,7 +27,7 @@ The table below contains all unaligned roots in ENVO. The column 'Preferred Root
 | ENVO:01001877 | transient tracer | No | 1 |  |  |
 | ENVO:01001941 | facilitation | No | 0 |  |  |
 | ENVO:01003005 | day | No | 1 | BFO:0000038 |  |
-| ENVO:02000007 | tissue culture | No | 4 |  |  |
+| ENVO:02000007 | tissue culture | No | 3 |  |  |
 | ENVO:02000146 | chemical engineering process | No | 2 |  |  |
 | ENVO:02000187 | biotransformation process | No | 4 |  |  |
 | ENVO:02500041 | environmental monitoring | No | 1 | BFO:0000003 | process |

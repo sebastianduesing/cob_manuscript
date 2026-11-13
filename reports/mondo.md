@@ -14,4 +14,4 @@ The table below contains all unaligned roots in MONDO. The column 'Preferred Roo
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | MONDO:0021125 | disease characteristic | Yes | 40 |  |  |
-| MONDO:0021178 | injury | Yes | 17 |  |  |
+| MONDO:0021178 | injury | Yes | 16 |  |  |

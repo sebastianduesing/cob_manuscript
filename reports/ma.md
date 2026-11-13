@@ -84,7 +84,7 @@ The table below contains the first 100 unaligned roots in MA. The column 'Prefer
 | MA:0000161 | coat hair bulb | No | 0 |  |  |
 | MA:0000162 | hair root sheath | No | 0 |  |  |
 | MA:0000163 | vibrissa | No | 0 |  |  |
-| MA:0000164 | myocardium | No | 6 |  |  |
+| MA:0000164 | myocardium | No | 5 |  |  |
 | MA:0000165 | set of skeletal muscles | No | 46 |  |  |
 | MA:0000167 | central nervous system | No | 0 |  |  |
 | MA:0000169 | brainstem | No | 0 |  |  |

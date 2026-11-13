@@ -15,7 +15,7 @@ The table below contains all unaligned roots in ONE. The column 'Preferred Root?
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | ONE:0002001 | abstract of a published study based on dietary survey(s) | No | 0 |  |  |
 | ONE:0002003 | methods of a published study based on dietary survey(s) | No | 12 |  |  |
-| ONE:0002004 | results section of a published study based on dietary survey(s) | No | 5 |  |  |
+| ONE:0002004 | results section of a published study based on dietary survey(s) | No | 4 |  |  |
 | ONE:0002005 | discussion of a published study based on dietary survey(s) | No | 2 |  |  |
 | ONE:0002006 | ethics of a published study based on dietary survey(s) | No | 0 |  |  |
 | ONE:0002008 | supplementary material of a published study based on dietary survey(s) | No | 0 |  |  |

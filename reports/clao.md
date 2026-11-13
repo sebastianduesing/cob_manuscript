@@ -13,5 +13,5 @@ The table below contains all unaligned roots in CLAO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| CLAO:0001253 | molecular entity | No | 15 |  |  |
-| CLAO:0001571 | entity | No | 1497 | BFO:0000004 |  |
+| CLAO:0001253 | molecular entity | No | 14 |  |  |
+| CLAO:0001571 | entity | No | 1496 | BFO:0000004 |  |

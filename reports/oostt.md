@@ -27,7 +27,7 @@ The table below contains all unaligned roots in OOSTT. The column 'Preferred Roo
 | OOSTT:00000120 | emergency medicine residency program | No | 0 |  |  |
 | OOSTT:00000121 | orthopedic surgery residency program | No | 0 |  |  |
 | OOSTT:00000122 | neurosurgery residency program | No | 0 |  |  |
-| OOSTT:00000140 | medical fellowship program | No | 3 |  |  |
+| OOSTT:00000140 | medical fellowship program | No | 2 |  |  |
 | OOSTT:00000156 | collection of anesthesiologists | No | 3 |  |  |
 | OOSTT:00000164 | emergency medical services quality improvement process | No | 0 | BFO:0000003 | process |
 | OOSTT:00000165 | collection of emergency physicians | No | 5 |  |  |
@@ -51,4 +51,4 @@ The table below contains all unaligned roots in OOSTT. The column 'Preferred Roo
 | OOSTT:00000373 | tqip coordinator obligor role | No | 0 |  |  |
 | OOSTT:00000374 | trauma nursing evaluator obligor role | No | 0 |  |  |
 | OOSTT:00000397 | unplanned endotracheal intubation | No | 0 |  |  |
-| OOSTT:00000400 | collection of surgeons | No | 27 |  |  |
+| OOSTT:00000400 | collection of surgeons | No | 26 |  |  |

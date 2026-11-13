@@ -13,4 +13,4 @@ The table below contains all unaligned roots in RS. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| RS:0000457 | rat strain | No | 5676 |  |  |
+| RS:0000457 | rat strain | No | 5675 |  |  |

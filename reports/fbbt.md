@@ -13,4 +13,4 @@ The table below contains all unaligned roots in FBBT. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| FBbt:10000000 | anatomical entity | Yes | 7730 | BFO:0000004 |  |
+| FBbt:10000000 | anatomical entity | Yes | 7729 | BFO:0000004 |  |

@@ -15,7 +15,7 @@ The table below contains all unaligned roots in OBIB. The column 'Preferred Root
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | OBIB:0000094 | cessation of brain activity death | No | 0 | BFO:0000035 |  |
 | OBIB:0000095 | cessation of cardiac activity death | No | 0 | BFO:0000035 |  |
-| OBIB:0000220 | buffered formalin condition | No | 3 | BFO:0000019 |  |
+| OBIB:0000220 | buffered formalin condition | No | 2 | BFO:0000019 |  |
 | OBIB:0000320 | microtome blade age | No | 1 | BFO:0000019 |  |
 | OBIB:0000481 | relationship between person signing research authorization and specimen donor | No | 0 | BFO:0000020 | characteristic |
 | OBIB:0000483 | donor&apos;s biological sex | No | 0 | BFO:0000019 |  |

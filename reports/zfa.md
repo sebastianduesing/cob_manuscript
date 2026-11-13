@@ -13,4 +13,4 @@ The table below contains all unaligned roots in ZFA. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| ZFA:0100000 | zebrafish anatomical entity | Yes | 3115 |  |  |
+| ZFA:0100000 | zebrafish anatomical entity | Yes | 3114 |  |  |

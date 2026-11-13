@@ -35,7 +35,7 @@ The table below contains the first 100 unaligned roots in BTO. The column 'Prefe
 | BTO:0000060 | alveolus | No | 0 |  |  |
 | BTO:0000061 | alveolar sac | No | 0 |  |  |
 | BTO:0000066 | amniocyte | No | 0 |  |  |
-| BTO:0000067 | kidney cell line | No | 30 |  |  |
+| BTO:0000067 | kidney cell line | No | 29 |  |  |
 | BTO:0000068 | amniotic fluid | No | 0 |  |  |
 | BTO:0000069 | WISH cell | No | 0 |  |  |
 | BTO:0000070 | fungal cell line | No | 2 |  |  |
@@ -88,18 +88,18 @@ The table below contains the first 100 unaligned roots in BTO. The column 'Prefe
 | BTO:0000180 | cervical carcinoma cell | No | 2 |  |  |
 | BTO:0000183 | pancreatic cell line | No | 61 |  |  |
 | BTO:0000187 | myeloblast | No | 0 |  |  |
-| BTO:0000193 | rectal cancer cell | No | 4 |  |  |
-| BTO:0000196 | thyroid cancer cell | No | 6 |  |  |
+| BTO:0000193 | rectal cancer cell | No | 3 |  |  |
+| BTO:0000196 | thyroid cancer cell | No | 5 |  |  |
 | BTO:0000198 | cardia | No | 0 |  |  |
 | BTO:0000201 | pheochromocytoma cell line | No | 3 |  |  |
-| BTO:0000202 | sense organ | No | 15 |  |  |
+| BTO:0000202 | sense organ | No | 14 |  |  |
 | BTO:0000203 | respiratory system | No | 6 |  |  |
 | BTO:0000205 | nerve plexus | No | 0 |  |  |
 | BTO:0000209 | corpus epididymis | No | 0 |  |  |
 | BTO:0000210 | cauda epididymis | No | 0 |  |  |
 | BTO:0000211 | caudate nucleus | No | 0 |  |  |
 | BTO:0000212 | caudate putamen | No | 0 |  |  |
-| BTO:0000216 | culture condition | No | 324 |  |  |
+| BTO:0000216 | culture condition | No | 323 |  |  |
 | BTO:0000219 | plastron | No | 0 |  |  |
 | BTO:0000222 | myoblast | No | 1 |  |  |
 | BTO:0000224 | liver cell line | No | 40 |  |  |

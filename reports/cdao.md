@@ -13,18 +13,18 @@ The table below contains all unaligned roots in CDAO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| CDAO:0000006 | Network | No | 25 |  |  |
-| CDAO:0000022 | DatumCoordinate | No | 4 |  |  |
+| CDAO:0000006 | Network | No | 24 |  |  |
+| CDAO:0000022 | DatumCoordinate | No | 3 |  |  |
 | CDAO:0000024 | Branch | No | 0 |  |  |
-| CDAO:0000040 | CDAOAnnotation | No | 27 |  |  |
+| CDAO:0000040 | CDAOAnnotation | No | 26 |  |  |
 | CDAO:0000041 | originationEvent | No | 3 |  |  |
 | CDAO:0000056 | CharacterStateDataMatrix | No | 1 |  |  |
 | CDAO:0000059 | SetOfNodes | No | 0 |  |  |
-| CDAO:0000063 | EdgeLengthType | No | 14 |  |  |
-| CDAO:0000071 | Character | No | 8 |  |  |
-| CDAO:0000091 | CharacterStateDomain | No | 12 |  |  |
-| CDAO:0000097 | hereditaryChange | No | 7 |  |  |
-| CDAO:0000098 | CharacterStateDatum | No | 9 |  |  |
+| CDAO:0000063 | EdgeLengthType | No | 13 |  |  |
+| CDAO:0000071 | Character | No | 7 |  |  |
+| CDAO:0000091 | CharacterStateDomain | No | 11 |  |  |
+| CDAO:0000097 | hereditaryChange | No | 6 |  |  |
+| CDAO:0000098 | CharacterStateDatum | No | 8 |  |  |
 | CDAO:0000099 | Edge | No | 0 |  |  |
 | CDAO:0000104 | CoordinateSystem | No | 0 |  |  |
 | CDAO:0000116 | hereditaryPersistance | No | 0 |  |  |
@@ -33,4 +33,4 @@ The table below contains all unaligned roots in CDAO. The column 'Preferred Root
 | CDAO:0000120 | Sequence | No | 0 |  |  |
 | CDAO:0000138 | TU | No | 0 |  |  |
 | CDAO:0000139 | DirectedEdge | No | 0 |  |  |
-| CDAO:0000140 | Node | No | 9 |  |  |
+| CDAO:0000140 | Node | No | 8 |  |  |

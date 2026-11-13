@@ -13,7 +13,7 @@ The table below contains all unaligned roots in GEO. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| GEO:000000337 | aggregate of governmental organizations | No | 4 | BFO:0000004 |  |
+| GEO:000000337 | aggregate of governmental organizations | No | 3 | BFO:0000004 |  |
 | GEO:000000393 | nongovernmental organization | No | 0 | BFO:0000004 |  |
 | GEO:000000401 | aggregate of geopolitical organizations | No | 0 | BFO:0000004 |  |
-| GEO:000083916 | governance organization | No | 10 | BFO:0000004 |  |
+| GEO:000083916 | governance organization | No | 9 | BFO:0000004 |  |

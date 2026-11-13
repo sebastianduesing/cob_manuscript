@@ -47,11 +47,11 @@ The table below contains all unaligned roots in PW. The column 'Preferred Root?'
 | PW:0000581 | translation elongation pathway | No | 0 |  |  |
 | PW:0000582 | translation termination pathway | No | 1 |  |  |
 | PW:0000592 | iron storage pathway | No | 0 |  |  |
-| PW:0000636 | protein exocytosis pathway | No | 3 |  |  |
+| PW:0000636 | protein exocytosis pathway | No | 2 |  |  |
 | PW:0000660 | hematopoiesis pathway | No | 0 |  |  |
 | PW:0000674 | insulin secretion pathway | No | 0 |  |  |
 | PW:0000675 | glucagon secretion pathway | No | 0 |  |  |
-| PW:0000825 | antigen processing and presentation pathway | No | 3 |  |  |
+| PW:0000825 | antigen processing and presentation pathway | No | 2 |  |  |
 | PW:0001066 | ribosome biogenesis pathway | No | 0 |  |  |
 | PW:0001159 | aminoacyl-tRNA biosynthetic pathway | No | 0 |  |  |
 | PW:0001207 | folate cycle metabolic pathway | No | 0 |  |  |

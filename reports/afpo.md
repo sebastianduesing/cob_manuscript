@@ -13,8 +13,8 @@ The table below contains all unaligned roots in AFPO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| AfPO:0000188 | Eastern African | No | 163 |  |  |
-| AfPO:0000274 | Central African | No | 68 |  |  |
-| AfPO:0000275 | Northern African | No | 18 |  |  |
-| AfPO:0000276 | Southern African | No | 40 |  |  |
-| AfPO:0000277 | Western African | No | 102 |  |  |
+| AfPO:0000188 | Eastern African | No | 162 |  |  |
+| AfPO:0000274 | Central African | No | 67 |  |  |
+| AfPO:0000275 | Northern African | No | 17 |  |  |
+| AfPO:0000276 | Southern African | No | 39 |  |  |
+| AfPO:0000277 | Western African | No | 101 |  |  |

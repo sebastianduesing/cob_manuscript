@@ -13,4 +13,4 @@ The table below contains all unaligned roots in PECO. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| PECO:0007359 | plant experimental condition | No | 135 |  |  |
+| PECO:0007359 | plant experimental condition | No | 134 |  |  |

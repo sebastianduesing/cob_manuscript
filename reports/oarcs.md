@@ -13,6 +13,6 @@ The table below contains all unaligned roots in OARCS. The column 'Preferred Roo
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| OARCS:0000226 | anatomical entity | No | 260 |  |  |
-| OARCS:0000250 | anatomical group | No | 46 |  |  |
+| OARCS:0000226 | anatomical entity | No | 259 |  |  |
+| OARCS:0000250 | anatomical group | No | 45 |  |  |
 | OARCS:0000263 | branching artery system | No | 0 |  |  |

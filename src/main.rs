@@ -367,7 +367,9 @@ fn check_class_alignment(
                 };
                 if let Some(root) = ontology.unaligned_roots.get_mut(&root_name) {
                     top_anc_label = root.label.clone();
-                    root.desc_count += 1;
+                    if subject.name() != root_name.to_string() {
+                        root.desc_count += 1;
+                    }
                 } else {
                     if let Some(subj) = graph.get(&root_name) {
                         top_anc_label = subj.label().clone();

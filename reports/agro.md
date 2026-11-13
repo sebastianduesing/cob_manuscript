@@ -33,7 +33,7 @@ The table below contains the first 100 unaligned roots in AGRO. The column 'Pref
 | AGRO:00000194 | mulch color | No | 0 | BFO:0000019 |  |
 | AGRO:00000200 | fertilizer area density | No | 3 | BFO:0000019 |  |
 | AGRO:00000201 | potassium area density | No | 1 | BFO:0000019 |  |
-| AGRO:00000205 | planting rate | No | 2 | BFO:0000019 |  |
+| AGRO:00000205 | planting rate | No | 1 | BFO:0000019 |  |
 | AGRO:00000299 | farm area | No | 0 | BFO:0000019 |  |
 | AGRO:00000300 | field area | No | 0 | BFO:0000019 |  |
 | AGRO:00000302 | plot area | No | 2 | BFO:0000019 |  |

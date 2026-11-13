@@ -13,4 +13,4 @@ The table below contains all unaligned roots in DDANAT. The column 'Preferred Ro
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| DDANAT:0010001 | Dictyostelium discoideum anatomical structure | No | 131 |  |  |
+| DDANAT:0010001 | Dictyostelium discoideum anatomical structure | No | 130 |  |  |

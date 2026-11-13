@@ -15,13 +15,13 @@ The table below contains all unaligned roots in OPMI. The column 'Preferred Root
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | OPMI:0000070 | month of year | No | 12 | BFO:0000038 |  |
 | OPMI:0000083 | day of week | No | 7 | BFO:0000038 |  |
-| OPMI:0000160 | body weight | No | 6 | BFO:0000019 |  |
+| OPMI:0000160 | body weight | No | 5 | BFO:0000019 |  |
 | OPMI:0000285 | visit temporal region | No | 4 | BFO:0000148 |  |
 | OPMI:0000295 | study start date | No | 1 | BFO:0000148 |  |
 | OPMI:0000297 | study completion date | No | 2 | BFO:0000148 |  |
 | OPMI:0000302 | date of registration | No | 0 | BFO:0000148 |  |
 | OPMI:0000313 | today&apos;s date | No | 0 | BFO:0000148 |  |
-| OPMI:0000322 | date of test | No | 3 | BFO:0000148 |  |
+| OPMI:0000322 | date of test | No | 2 | BFO:0000148 |  |
 | OPMI:0000325 | sign date | No | 0 | BFO:0000148 |  |
 | OPMI:0000344 | quality of life | No | 5 | BFO:0000019 |  |
 | OPMI:0000353 | year | No | 0 | BFO:0000038 |  |
@@ -43,5 +43,5 @@ The table below contains all unaligned roots in OPMI. The column 'Preferred Root
 | OPMI:0004475 | age less than 18 years | No | 0 | BFO:0000019 |  |
 | OPMI:0004482 | age at diagnosis of disease | No | 2 | BFO:0000019 |  |
 | OPMI:0004486 | time of biopsy | No | 3 | BFO:0000148 |  |
-| OPMI:0004491 | age at the start of disease | No | 2 | BFO:0000019 |  |
+| OPMI:0004491 | age at the start of disease | No | 1 | BFO:0000019 |  |
 | OPMI:0004500 | age at the start of medication | No | 1 | BFO:0000019 |  |

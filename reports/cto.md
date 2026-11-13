@@ -13,7 +13,7 @@ The table below contains all unaligned roots in CTO. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| CTO:0000201 | clinical trial phase | No | 9 | BFO:0000019 |  |
+| CTO:0000201 | clinical trial phase | No | 8 | BFO:0000019 |  |
 | CTO:0000214 | study start date | No | 0 | BFO:0000148 |  |
 | CTO:0000215 | clinical trial primary completion date | No | 0 | BFO:0000148 |  |
 | CTO:0000216 | clinical trial study completion date | No | 0 | BFO:0000148 |  |

@@ -63,7 +63,7 @@ The table below contains all unaligned roots in CMO. The column 'Preferred Root?
 | CMO:0003733 | blood symmetric dimethylarginine level | No | 1 |  |  |
 | CMO:0003894 | mean arterial pressure at the midpoint of a range of renal sympathetic nerve activity | No | 0 |  |  |
 | CMO:0003897 | mean arterial pressure at the midpoint of a range of heart rates | No | 0 |  |  |
-| CMO:0003929 | midbrain ribonucleic acid level | No | 4 |  |  |
+| CMO:0003929 | midbrain ribonucleic acid level | No | 3 |  |  |
 | CMO:0003941 | interscapular fat pad weight | No | 0 |  |  |
 | CMO:0003974 | temporal lobe ribonucleic acid level | No | 0 |  |  |
 | CMO:0003985 | sinoatrial node ribonucleic acid level | No | 0 |  |  |

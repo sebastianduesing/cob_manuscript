@@ -13,4 +13,4 @@ The table below contains all unaligned roots in FBBI. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| FBbi_root:00000000 | method involved in biological imaging | Yes | 556 |  |  |
+| FBbi_root:00000000 | method involved in biological imaging | Yes | 555 |  |  |

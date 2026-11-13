@@ -14,9 +14,9 @@ The table below contains all unaligned roots in GENO. The column 'Preferred Root
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | GENO:0000575 | zebrafish phenotype | No | 0 | BFO:0000020 | characteristic |
-| GENO:0000701 | sequence feature or set | No | 60 | BFO:0000031 | information content entity |
-| GENO:0000713 | qualified sequence feature or collection | No | 15 | BFO:0000031 | information content entity |
-| GENO:0000788 | sequence feature attribute | No | 57 | BFO:0000020 | characteristic |
+| GENO:0000701 | sequence feature or set | No | 59 | BFO:0000031 | information content entity |
+| GENO:0000713 | qualified sequence feature or collection | No | 14 | BFO:0000031 | information content entity |
+| GENO:0000788 | sequence feature attribute | No | 56 | BFO:0000020 | characteristic |
 | GENO:0000815 | sequence feature location | No | 1 | BFO:0000031 | information content entity |
 | GENO:0000897 | genomic entity | No | 0 | BFO:0000031 | information content entity |
-| GENO:0000921 | biological sequence or set | No | 16 | BFO:0000031 | information content entity |
+| GENO:0000921 | biological sequence or set | No | 15 | BFO:0000031 | information content entity |

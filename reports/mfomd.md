@@ -15,7 +15,7 @@ The table below contains all unaligned roots in MFOMD. The column 'Preferred Roo
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | MFOMD:0000001 | http://purl.obolibrary.org/obo/MFOMD_0000001 | No | 0 |  |  |
 | MFOMD:0000024 | http://purl.obolibrary.org/obo/MFOMD_0000024 | No | 0 |  |  |
-| MFOMD:0000025 | http://purl.obolibrary.org/obo/MFOMD_0000025 | No | 2 |  |  |
+| MFOMD:0000025 | http://purl.obolibrary.org/obo/MFOMD_0000025 | No | 1 |  |  |
 | MFOMD:0000038 | http://purl.obolibrary.org/obo/MFOMD_0000038 | No | 0 |  |  |
 | MFOMD:0000040 | http://purl.obolibrary.org/obo/MFOMD_0000040 | No | 0 |  |  |
 | MFOMD:0000041 | http://purl.obolibrary.org/obo/MFOMD_0000041 | No | 0 |  |  |

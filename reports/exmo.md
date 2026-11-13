@@ -20,5 +20,5 @@ The table below contains all unaligned roots in EXMO. The column 'Preferred Root
 | EXMO:0000326 | total energy expenditure | No | 1 | BFO:0000019 |  |
 | EXMO:0000329 | thermic effect of food | No | 0 | BFO:0000019 |  |
 | EXMO:0000379 | exercise plan | No | 0 | BFO:0000031 | information content entity |
-| EXMO:0000385 | fitness | No | 21 | BFO:0000019 |  |
+| EXMO:0000385 | fitness | No | 20 | BFO:0000019 |  |
 | EXMO:0000399 | screen time | No | 2 | BFO:0000019 |  |

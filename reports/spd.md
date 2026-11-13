@@ -87,24 +87,24 @@ The table below contains the first 100 unaligned roots in SPD. The column 'Prefe
 | SPD:0000323 | eggsac layer | No | 0 |  |  |
 | SPD:0000325 | trochanter eclosion tooth | No | 0 |  |  |
 | SPD:0000326 | attachment disk | No | 0 |  |  |
-| SPD:0000330 | sigilla | No | 4 |  |  |
-| SPD:0000343 | tapetum | No | 4 |  |  |
+| SPD:0000330 | sigilla | No | 3 |  |  |
+| SPD:0000343 | tapetum | No | 3 |  |  |
 | SPD:0000345 | fang furrow | No | 0 |  |  |
 | SPD:0000352 | macroseta shaft | No | 0 |  |  |
-| SPD:0000353 | setal barb | No | 4 |  |  |
-| SPD:0000359 | seta | No | 28 |  |  |
-| SPD:0000360 | setal socket | No | 9 |  |  |
-| SPD:0000363 | spinning field | No | 5 |  |  |
-| SPD:0000364 | spigot | No | 20 |  |  |
+| SPD:0000353 | setal barb | No | 3 |  |  |
+| SPD:0000359 | seta | No | 27 |  |  |
+| SPD:0000360 | setal socket | No | 8 |  |  |
+| SPD:0000363 | spinning field | No | 4 |  |  |
+| SPD:0000364 | spigot | No | 19 |  |  |
 | SPD:0000370 | tartipore | No | 0 |  |  |
 | SPD:0000386 | bothrium distal plate | No | 0 |  |  |
 | SPD:0000390 | metatarsus dorsal stopper | No | 0 |  |  |
 | SPD:0000391 | bothrium proximal plate | No | 0 |  |  |
-| SPD:0000397 | eye lens | No | 5 |  |  |
+| SPD:0000397 | eye lens | No | 4 |  |  |
 | SPD:0000406 | cribellate band axial line | No | 0 |  |  |
 | SPD:0000407 | cribellate band reserve wrap | No | 0 |  |  |
-| SPD:0000428 | booklung | No | 3 |  |  |
-| SPD:0000430 | booklung leaf | No | 3 |  |  |
+| SPD:0000428 | booklung | No | 2 |  |  |
+| SPD:0000430 | booklung leaf | No | 2 |  |  |
 | SPD:0000431 | booklung atrium | No | 3 |  |  |
 | SPD:0000440 | anterior respiratory system | No | 1 |  |  |
 | SPD:0000445 | fang base | No | 0 |  |  |

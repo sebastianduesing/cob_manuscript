@@ -59,7 +59,7 @@ The table below contains all unaligned roots in XCO. The column 'Preferred Root?
 | XCO:0001530 | multigenerational maternal exposure to hyperglycemia | No | 0 |  |  |
 | XCO:0001532 | Masquelet surgery | No | 0 |  |  |
 | XCO:0001533 | sciatic nerve ablation | No | 0 |  |  |
-| XCO:0001537 | transfer of shRNA using a lentivirus vector | No | 5 |  |  |
+| XCO:0001537 | transfer of shRNA using a lentivirus vector | No | 4 |  |  |
 | XCO:0001566 | maternal exposure to perfluorohexane sulfonate during nursing | No | 0 |  |  |
 | XCO:0001569 | maternal exposure to 6-propyl-2-thiouracil during nursing | No | 0 |  |  |
 | XCO:0001570 | multigenerational maternal exposure to controlled air E-cigarette aerosol content | No | 0 |  |  |
@@ -72,5 +72,5 @@ The table below contains all unaligned roots in XCO. The column 'Preferred Root?
 | XCO:0001669 | drug withdrawal via context exposure in a Skinner box | No | 0 |  |  |
 | XCO:0001690 | MitoQ-NP | No | 1 |  |  |
 | XCO:0001750 | multigenerational maternal exposure to nicotine | No | 0 |  |  |
-| XCO:0001759 | experimental osteoarthritis of the knee joint | No | 3 |  |  |
+| XCO:0001759 | experimental osteoarthritis of the knee joint | No | 2 |  |  |
 | XCO:0001762 | experimental carotid intima injury | No | 0 |  |  |

@@ -13,4 +13,4 @@ The table below contains all unaligned roots in WBLS. The column 'Preferred Root
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| WBls:0000075 | worm life stage | Yes | 774 |  |  |
+| WBls:0000075 | worm life stage | Yes | 773 |  |  |

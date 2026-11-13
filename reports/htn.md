@@ -13,6 +13,6 @@ The table below contains all unaligned roots in HTN. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| HTN:00000014 | elevated blood pressure phenotype | No | 4 | BFO:0000019 |  |
+| HTN:00000014 | elevated blood pressure phenotype | No | 3 | BFO:0000019 |  |
 | HTN:00000040 | stage 1 elevated adult systolic blood pressure meaurement datum per ACC 2017 guidelines | No | 0 |  |  |
 | HTN:00000051 | adult over 18 years of age measurement datum | No | 0 |  |  |

@@ -13,4 +13,4 @@ The table below contains all unaligned roots in MPATH. The column 'Preferred Roo
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| MPATH:1000 | pathological phenotype observation | No | 841 |  |  |
+| MPATH:1000 | pathological phenotype observation | No | 840 |  |  |

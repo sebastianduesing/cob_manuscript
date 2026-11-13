@@ -13,5 +13,5 @@ The table below contains all unaligned roots in GENEPIO. The column 'Preferred R
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| GENEPIO:0001432 | awaiting ontology review | No | 7 |  |  |
+| GENEPIO:0001432 | awaiting ontology review | No | 6 |  |  |
 | GENEPIO:0100104 | mRNA extract | No | 0 |  |  |

@@ -14,4 +14,4 @@ The table below contains all unaligned roots in SCDO. The column 'Preferred Root
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | SCDO:0000359 | deprecated terms | No | 4 |  |  |
-| SCDO:0001000 | SCDO | No | 1261 |  |  |
+| SCDO:0001000 | SCDO | No | 1260 |  |  |

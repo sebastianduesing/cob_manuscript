@@ -13,7 +13,7 @@ The table below contains all unaligned roots in SO. The column 'Preferred Root?'
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| SO:0000110 | sequence_feature | Yes | 1862 |  |  |
-| SO:0000400 | sequence_attribute | Yes | 233 |  |  |
-| SO:0001060 | sequence_variant | Yes | 238 |  |  |
-| SO:0001260 | sequence_collection | Yes | 76 |  |  |
+| SO:0000110 | sequence_feature | Yes | 1861 |  |  |
+| SO:0000400 | sequence_attribute | Yes | 232 |  |  |
+| SO:0001060 | sequence_variant | Yes | 237 |  |  |
+| SO:0001260 | sequence_collection | Yes | 75 |  |  |

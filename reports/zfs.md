@@ -13,4 +13,4 @@ The table below contains all unaligned roots in ZFS. The column 'Preferred Root?
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| ZFS:0100000 | zebrafish stage | Yes | 54 |  |  |
+| ZFS:0100000 | zebrafish stage | Yes | 53 |  |  |

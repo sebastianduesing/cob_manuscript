@@ -13,4 +13,4 @@ The table below contains all unaligned roots in DDPHENO. The column 'Preferred R
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| DDPHENO:0010000 | Dicty Phenotypes | No | 1016 |  |  |
+| DDPHENO:0010000 | Dicty Phenotypes | No | 1015 |  |  |

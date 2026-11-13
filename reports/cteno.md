@@ -46,7 +46,7 @@ The table below contains all unaligned roots in CTENO. The column 'Preferred Roo
 | CTENO:0000045 | striated muscle of tentilla | No | 0 |  |  |
 | CTENO:0000046 | mesogleal nerve fiber | No | 1 |  |  |
 | CTENO:0000048 | gastrodermal nerve | No | 0 |  |  |
-| CTENO:0000052 | nerve network cell | No | 3 |  |  |
+| CTENO:0000052 | nerve network cell | No | 2 |  |  |
 | CTENO:0000054 | oral pole | No | 0 |  |  |
 | CTENO:0000055 | apical organ floor | No | 0 |  |  |
 | CTENO:0000056 | lithocyte | No | 0 |  |  |

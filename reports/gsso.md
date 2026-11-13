@@ -25,9 +25,9 @@ The table below contains the first 100 unaligned roots in GSSO. The column 'Pref
 | GSSO:000136 | acronym | No | 0 | BFO:0000030 | material entity |
 | GSSO:000138 | equivalence class | No | 36 | BFO:0000030 | material entity |
 | GSSO:000218 | LGBTQ-related website | No | 0 | BFO:0000030 | material entity |
-| GSSO:000229 | agent | No | 2187 | BFO:0000030 | material entity |
-| GSSO:000244 | subculture | No | 217 | BFO:0000030 | material entity |
-| GSSO:000301 | gender and sexuality symbols | No | 24 | BFO:0000030 | material entity |
+| GSSO:000229 | agent | No | 2186 | BFO:0000030 | material entity |
+| GSSO:000244 | subculture | No | 216 | BFO:0000030 | material entity |
+| GSSO:000301 | gender and sexuality symbols | No | 23 | BFO:0000030 | material entity |
 | GSSO:000306 | pictogram | No | 0 | BFO:0000030 | material entity |
 | GSSO:000456 | birth certificate | No | 25 | BFO:0000030 | material entity |
 | GSSO:000468 | medial surface of ovary | No | 0 | BFO:0000030 | material entity |
@@ -37,7 +37,7 @@ The table below contains the first 100 unaligned roots in GSSO. The column 'Pref
 | GSSO:000473 | transgender wolffian breast | No | 0 | BFO:0000030 | material entity |
 | GSSO:000474 | cisgender wolffian breast | No | 0 | BFO:0000030 | material entity |
 | GSSO:000475 | cisgender müllerian breast | No | 0 | BFO:0000030 | material entity |
-| GSSO:000492 | knowledge content entity | No | 653 | BFO:0000030 | material entity |
+| GSSO:000492 | knowledge content entity | No | 652 | BFO:0000030 | material entity |
 | GSSO:000496 | biological set | No | 114 | BFO:0000030 | material entity |
 | GSSO:000588 | online encyclopedia | No | 0 | BFO:0000030 | material entity |
 | GSSO:000589 | audio-visual document | No | 32 | BFO:0000030 | material entity |
@@ -53,7 +53,7 @@ The table below contains the first 100 unaligned roots in GSSO. The column 'Pref
 | GSSO:000659 | online article | No | 0 | BFO:0000030 | material entity |
 | GSSO:000660 | case report | No | 0 | BFO:0000030 | material entity |
 | GSSO:000662 | law report | No | 0 | BFO:0000030 | material entity |
-| GSSO:000663 | government publication | No | 2 | BFO:0000030 | material entity |
+| GSSO:000663 | government publication | No | 1 | BFO:0000030 | material entity |
 | GSSO:000664 | manual of style | No | 3 | BFO:0000030 | material entity |
 | GSSO:000665 | medical manual | No | 0 | BFO:0000030 | material entity |
 | GSSO:000673 | LGBTQ biography | No | 11 | BFO:0000030 | material entity |
@@ -66,9 +66,9 @@ The table below contains the first 100 unaligned roots in GSSO. The column 'Pref
 | GSSO:000754 | reproductive sequence | No | 0 | BFO:0000030 | material entity |
 | GSSO:001272 | menstrual blood | No | 0 | BFO:0000030 | material entity |
 | GSSO:001813 | health | No | 19 | BFO:0000019 |  |
-| GSSO:001840 | altered libido | No | 4 | BFO:0000001 |  |
+| GSSO:001840 | altered libido | No | 3 | BFO:0000001 |  |
 | GSSO:001842 | normal libido | No | 0 | BFO:0000001 |  |
-| GSSO:001844 | abnormal libido | No | 6 | BFO:0000001 |  |
+| GSSO:001844 | abnormal libido | No | 5 | BFO:0000001 |  |
 | GSSO:001901 | biological characteristic | No | 4 | BFO:0000019 |  |
 | GSSO:001940 | biological emission | No | 9 | BFO:0000030 | material entity |
 | GSSO:002208 | silicone injection | No | 1 | BFO:0000001 |  |
@@ -80,26 +80,26 @@ The table below contains the first 100 unaligned roots in GSSO. The column 'Pref
 | GSSO:003205 | pejorative word | No | 17 | BFO:0000030 | material entity |
 | GSSO:003225 | saying | No | 9 | BFO:0000030 | material entity |
 | GSSO:003234 | vertebrate anus | No | 3 | BFO:0000030 | material entity |
-| GSSO:003238 | principle | No | 78 | BFO:0000030 | material entity |
-| GSSO:003283 | personal identity | No | 133 | BFO:0000019 |  |
+| GSSO:003238 | principle | No | 77 | BFO:0000030 | material entity |
+| GSSO:003283 | personal identity | No | 132 | BFO:0000019 |  |
 | GSSO:003372 | sexual consent | No | 2 | BFO:0000001 |  |
 | GSSO:003405 | clothing | No | 134 | BFO:0000030 | material entity |
 | GSSO:003449 | sexual content entity | No | 26 | BFO:0000030 | material entity |
-| GSSO:003561 | personal status | No | 78 | BFO:0000001 |  |
-| GSSO:003565 | diversité de genre | No | 5 | BFO:0000019 |  |
+| GSSO:003561 | personal status | No | 77 | BFO:0000001 |  |
+| GSSO:003565 | diversité de genre | No | 4 | BFO:0000019 |  |
 | GSSO:003567 | cultural diversity | No | 2 | BFO:0000019 |  |
 | GSSO:003718 | safe word | No | 0 | BFO:0000030 | material entity |
 | GSSO:003741 | neurological diversity | No | 0 | BFO:0000019 |  |
-| GSSO:003824 | period of life | No | 12 | BFO:0000008 |  |
+| GSSO:003824 | period of life | No | 11 | BFO:0000008 |  |
 | GSSO:003831 | rape culture | No | 0 | BFO:0000030 | material entity |
-| GSSO:003837 | social institution | No | 47 | BFO:0000030 | material entity |
+| GSSO:003837 | social institution | No | 46 | BFO:0000030 | material entity |
 | GSSO:003847 | self-diagnosis | No | 0 | BFO:0000030 | material entity |
 | GSSO:003938 | gendered space | No | 8 | BFO:0000001 |  |
 | GSSO:003944 | ethnic diversity | No | 0 | BFO:0000019 |  |
 | GSSO:003945 | noninclusive diversity | No | 2 | BFO:0000019 |  |
 | GSSO:004089 | assumed gender | No | 1 | BFO:0000001 |  |
 | GSSO:004172 | sexual diversity | No | 0 | BFO:0000019 |  |
-| GSSO:004274 | cultural media | No | 37 | BFO:0000030 | material entity |
+| GSSO:004274 | cultural media | No | 36 | BFO:0000030 | material entity |
 | GSSO:004441 | project | No | 4 | BFO:0000030 | material entity |
 | GSSO:004445 | subculture dictionary | No | 7 | BFO:0000030 | material entity |
 | GSSO:004481 | slang dictionary | No | 0 | BFO:0000030 | material entity |

@@ -26,7 +26,7 @@ The table below contains all unaligned roots in EXO. The column 'Preferred Root?
 | ExO:0000047 | biological molecules | No | 0 |  |  |
 | ExO:0000048 | built environment | No | 0 |  |  |
 | ExO:0000050 | temporal quality | No | 5 |  |  |
-| ExO:0000055 | exposure route | No | 17 |  |  |
+| ExO:0000055 | exposure route | No | 16 |  |  |
 | ExO:0000061 | subcutaneous tissue | No | 0 |  |  |
 | ExO:0000062 | muscle | No | 0 |  |  |
 | ExO:0000063 | blood | No | 0 |  |  |
@@ -36,4 +36,4 @@ The table below contains all unaligned roots in EXO. The column 'Preferred Root?
 | ExO:0000083 | exposure medium | No | 0 |  |  |
 | ExO:0000088 | spatial quality | No | 0 |  |  |
 | ExO:0000090 | method | No | 0 |  |  |
-| ExO:0000172 | exposure regimen | No | 6 |  |  |
+| ExO:0000172 | exposure regimen | No | 5 |  |  |

@@ -24,4 +24,4 @@ The table below contains all unaligned roots in APOLLO_SV. The column 'Preferred
 | APOLLO_SV:00000637 | intent to be vaccinated | No | 0 | BFO:0000019 |  |
 | APOLLO_SV:00000638 | intent to vaccinate | No | 0 | BFO:0000019 |  |
 | APOLLO_SV:00000650 | intent to have a ward vaccinated | No | 1 | BFO:0000019 |  |
-| APOLLO_SV:00001008 | TODO | No | 7 | BFO:0000001 |  |
+| APOLLO_SV:00001008 | TODO | No | 6 | BFO:0000001 |  |

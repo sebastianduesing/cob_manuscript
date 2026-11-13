@@ -15,5 +15,5 @@ The table below contains all unaligned roots in PREFER. The column 'Preferred Ro
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | PREFER:0000013 | taxon quality | No | 5 | BFO:0000019 |  |
 | PREFER:0000150 | data acquisition quality | No | 4 | BFO:0000019 |  |
-| PREFER:0000185 | bioreactor scale | No | 6 | BFO:0000019 |  |
+| PREFER:0000185 | bioreactor scale | No | 5 | BFO:0000019 |  |
 | PREFER:0000204 | unpublished strain | No | 0 | BFO:0000019 |  |

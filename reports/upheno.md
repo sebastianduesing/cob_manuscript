@@ -13,4 +13,4 @@ The table below contains all unaligned roots in UPHENO. The column 'Preferred Ro
 
 | Root ID | Root Label | Preferred Root? | Subclasses | Lowest BFO Ancestor ID | Suggested Replacement |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| UPHENO:0001001 | phenotypic feature | Yes | 10560 |  |  |
+| UPHENO:0001001 | phenotypic feature | Yes | 10559 |  |  |
